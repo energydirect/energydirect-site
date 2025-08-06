@@ -1,71 +1,146 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Sign up for electricity in Texas with Ambit Energy. Quick enrollment and competitive rates." />
-    <meta name="keywords" content="Texas electricity sign up, Ambit Energy, enroll electricity Houston Dallas, compare rates Texas" />
-    <title>Texas Electricity Enrollment | Ambit Energy</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            color: #222;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 600px;
-            margin: 60px auto;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
-            border-radius: 8px;
-        }
-        .logo {
-            max-width: 250px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            color: #ec6b1c;
-            font-size: 2rem;
-            margin-bottom: 0;
-        }
-        p {
-            font-size: 1.1rem;
-            margin: 20px 0;
-        }
-        a.cta-button {
-            display: inline-block;
-            background-color: #ec6b1c;
-            color: white;
-            text-decoration: none;
-            padding: 15px 30px;
-            font-size: 1.2rem;
-            border-radius: 6px;
-            margin-top: 30px;
-            transition: background-color 0.3s ease;
-        }
-        a.cta-button:hover {
-            background-color: #d65c14;
-        }
-        footer {
-            text-align: center;
-            font-size: 0.9rem;
-            color: #888;
-            margin-top: 40px;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ambit Energy | Texas Electricity Plans & Enrollment</title>
+<meta name="description" content="Compare Ambit Energy electricity plans and enroll online. View available energy options in Texas and choose the plan that works for you." />
+<meta name="keywords" content="Ambit Energy, Texas electricity, electricity plans, sign up, energy provider, Texas energy options, deregulated market" />
+<meta name="author" content="EnergyDirect" />
+<meta property="og:title" content="Ambit Energy | Texas Electricity Plans & Enrollment" />
+<meta property="og:description" content="Compare Ambit Energy electricity plans and enroll online. View available options in your area." />
+<meta property="og:type" content="website" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #f57c00 0%, #fbb034 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  header {
+    flex: 0 0 auto;
+    padding: 4rem 2rem 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    animation: fadeInDown 1s ease forwards;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  main {
+    flex: 1 0 auto;
+    padding: 0 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    animation: fadeIn 1.5s ease forwards;
+  }
+
+  main p {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: white;
+    color: #f57c00;
+    font-weight: 700;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    border-radius: 40px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: pulse 2.5s infinite;
+  }
+
+  .cta-button:hover,
+  .cta-button:focus {
+    background: #fbb034;
+    color: white;
+    box-shadow: 0 8px 25px rgba(255, 176, 52, 0.8);
+    transform: scale(1.05);
+  }
+
+  footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    color: rgba(255 255 255 / 0.8);
+    background: rgba(0, 0, 0, 0.15);
+  }
+
+  /* Animations */
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-25px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 8px 25px rgba(255, 176, 52, 0.8);
+      transform: scale(1.05);
+    }
+  }
+
+  /* Responsive */
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2.2rem;
+    }
+    main p {
+      font-size: 1.1rem;
+    }
+    .cta-button {
+      padding: 0.9rem 2.5rem;
+      font-size: 1.2rem;
+    }
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-    
-        <h1>Sign Up for Electricity in Texas</h1>
-        <p>Looking for a fast and reliable way to start your electricity service? We help Texans enroll quickly and easily through Ambit Energy — with competitive rates and no hassle.</p>
-        <a href="https://energydirect.myambit.com/rates-and-plans/" class="cta-button" target="_blank" rel="noopener noreferrer">Start Enrollment Now</a>
-        <footer>
-            <p>&copy; 2025 Energy Direct. Powered by an Independent Ambit Energy Consultant.</p>
-        </footer>
-    </div>
+<header>
+  <h1>Texas Electricity Plans</h1>
+</header>
+<main>
+  <p>
+    Ambit Energy offers competitive electricity plans in deregulated Texas markets. Compare and enroll online with confidence. Save on your energy bills today!
+  </p>
+  <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener noreferrer" class="cta-button">
+    View Plans & Enroll
+  </a>
+</main>
+<footer>
+  © 2025 EnergyDirect | Independent Ambit Energy Consultant
+</footer>
 </body>
-
 </html>
