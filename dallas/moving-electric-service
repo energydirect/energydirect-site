@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moving to Dallas? How to Start Electricity Service with Ambit</title>
+  <meta name="description" content="Step-by-step guide to starting electricity service with Ambit Energy in Dallas. Learn about deregulated areas, enrollment steps, documents, and timelines." />
+  <link rel="canonical" href="https://energydirect.org/dallas/moving-electric-service/" />
+  <meta property="og:title" content="Moving to Dallas? How to Start Electricity Service with Ambit" />
+  <meta property="og:description" content="Step-by-step guide to starting electricity service with Ambit Energy in Dallas. Learn about deregulated areas, enrollment steps, documents, and timelines." />
+  <meta property="og:type" content="article" />
+  
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; line-height: 1.6; color:#0a0a0a;}
+      header, footer { padding: 24px 16px; background:#f7f7f8; }
+      main { max-width: 880px; margin: 0 auto; padding: 24px 16px; }
+      h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+      h2 { margin-top: 1.75rem; font-size: 1.25rem; }
+      .lede { color:#444; margin-top: 0.25rem; }
+      .cta { margin: 20px 0; }
+      .button { display:inline-block; padding:12px 18px; border-radius:8px; text-decoration:none; border:1px solid #ccc; }
+      .button:hover { background:#fafafa; }
+      .pill { display:inline-block; padding:4px 10px; border:1px solid #e2e2e2; border-radius:999px; font-size: 12px; margin-right:8px; color:#555;}
+      .cities { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;}
+      .cities a { text-decoration:none; }
+      ol.step { padding-left: 1.2rem; }
+      .meta { color:#666; font-size: 12px; }
+    </style>
+    
+  
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4CWH67FHM0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4CWH67FHM0');
+    </script>
+    <script>
+    document.addEventListener('click', function(e){
+      const a = e.target.closest('a.signup-link');
+      if(!a) return;
+      try {
+        gtag('event','sign_up_click', {
+          event_category:'engagement',
+          event_label: a.dataset.city || 'unknown'
+        });
+      } catch(_e){}
+    });
+    </script>
+    
+</head>
+<body>
+<header>
+  <div class="meta">
+    EnergyDirect — Ambit Energy Independent Consultant
+  </div>
+  <div class="cities">
+    <span class="pill">Texas</span>
+    <a class="pill" href="/houston/">Houston</a>
+    <a class="pill" href="/dallas/">Dallas</a>
+    <a class="pill" href="/corpus/">Corpus Christi</a>
+    <a class="pill" href="/victoria/">Victoria</a>
+  </div>
+</header>
+<main>
+
+<h1>Start Electricity Service in Dallas with Ambit — Step-by-Step</h1>
+<p class="lede">New to Dallas or switching addresses? Here’s a simple checklist to start or transfer electricity service—focused on terms and documents, not savings claims.</p>
+
+<h2>Where Service Is Deregulated</h2>
+<p>Many addresses in the Dallas area fall within deregulated service territories. Use the enrollment ZIP lookup to confirm availability and view plan options for your specific address.</p>
+
+<h2>Start / Stop / Transfer: What’s the Difference?</h2>
+<ul>
+  <li><strong>Start (Move-In):</strong> New service at a new address.</li>
+  <li><strong>Transfer:</strong> Move your current plan to your new Dallas address when eligible.</li>
+  <li><strong>Stop:</strong> End service at an address you’re leaving.</li>
+</ul>
+
+<h2>Enrollment Checklist</h2>
+<ol class="step">
+  <li>Enter your ZIP and select a plan.</li>
+  <li>Open the plan documents (EFL, Terms of Service, YRAC).</li>
+  <li>Provide service address, identity details, and preferred start date.</li>
+  <li>Confirm any deposit requirements and submit.</li>
+</ol>
+
+<div class="cta">
+  <a class="button signup-link" data-city="dallas" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">Start or Transfer Service (Dallas)</a>
+</div>
+
+<h2>Timing: Same-Day vs. Next-Day</h2>
+<p>Timeline depends on the chosen plan and local utility processes. Your enrollment confirmation will show the expected start date.</p>
+
+<h2>After You Enroll</h2>
+<ul>
+  <li>Keep your confirmation email for reference.</li>
+  <li>Save copies of the EFL and Terms for your records.</li>
+  <li>If you’re switching from another provider, check your prior contract’s end date and any early termination provisions.</li>
+</ul>
+
+<h2>Explore Nearby Cities</h2>
+<p><a href="/houston/">Ambit Energy Houston</a> • <a href="/corpus/">Ambit Energy Corpus Christi</a> • <a href="/victoria/">Ambit Energy Victoria</a></p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How soon can I start service at my new Dallas address?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start dates vary based on plan selection and utility processing. You’ll see the expected date during checkout and on your confirmation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I transfer my current plan or start a new one?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on eligibility and your current plan’s terms. Review your existing contract and the new address’s options before deciding."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will I owe a deposit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Deposit requirements are determined during enrollment. You’ll be notified before you submit your order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will my power be interrupted when I move?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The process is typically seamless in deregulated Texas markets. Follow the move-in or transfer steps to avoid gaps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do I report outages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Outages are handled by the local TDU. Your bill includes the correct outage phone number for your service area."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What documents should I save?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Keep the Electricity Facts Label (EFL), Terms of Service, and your enrollment confirmation for your records."
+      }
+    }
+  ]
+}
+</script>
+
+</main>
+<footer>
+  <div class="meta">© 2025 EnergyDirect. Information provided for general guidance; always review current plan documents before enrolling.</div>
+</footer>
+</body>
+</html>
