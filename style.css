@@ -8,7 +8,7 @@
 /* City cross-links */
 .cities {
   display:flex; flex-wrap:wrap; justify-content:center; gap:.5rem .75rem;
-  margin: .75rem auto 0; padding: 0 .5rem; max-width: 900px;
+  margin: .75rem auto 0; padding: 0 .5rem; max-width: 900px; text-align: center
 }
 .cities a, .cities strong {
   display:inline-block; padding:.35rem .6rem; border-radius:999px;
