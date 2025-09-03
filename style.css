@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+:root {
+  --primary-orange: #f57c00;
+  --secondary-orange: #fbb034;
+  --accent-blue: #2196f3; /* New accent color */
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', Arial, sans-serif;
-  background: linear-gradient(135deg, #f57c00 0%, #fbb034 100%);
+  background: linear-gradient(135deg, var(--primary-orange) 0%, var(--secondary-orange) 100%);
   color: white;
   display: flex;
   flex-direction: column;
@@ -61,41 +67,24 @@ main {
 .cta-button {
   display: inline-block;
   background: white;
-  color: #f57c00;
+  color: var(--primary-orange);
   font-weight: 700;
   padding: 1rem 2.5rem;
   font-size: 1.2rem;
   border-radius: 40px;
   text-decoration: none;
   box-shadow: 0 5px 15px rgba(255,255,255,0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .cta-button:hover,
 .cta-button:focus {
-  background: #fbb034;
+  background: var(--accent-blue);
   color: white;
-  box-shadow: 0 8px 25px rgba(255,176,52,0.8);
+  box-shadow: 0 8px 25px rgba(33,150,243,0.6);
   transform: scale(1.05);
 }
 
-details {
-  background: rgba(255,255,255,0.1);
-  margin: 0.5rem 0;
-  padding: 0.8rem 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-details summary {
-  font-weight: 600;
-  cursor: pointer;
-}
-
-footer {
-  text-align: center;
-  padding: 1.2rem;
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.9);
-  background: rgba(0,0,0,0.15);
-}
+/* Links in text */
+a {
+  co
