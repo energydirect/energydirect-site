@@ -12,9 +12,23 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4CWH67FHM0"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-4CWH67FHM0');
   document.addEventListener('click',e=>{const a=e.target.closest('a.signup-link');if(!a)return;try{gtag('event','sign_up_click',{event_category:'engagement',event_label:a.dataset.city||'houston'})}catch(_){}});</script>
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Home","item":"https://energydirect.org/"},
+  {"@type":"ListItem","position":2,"name":"Texas Guides","item":"https://energydirect.org/texas/"},
+  {"@type":"ListItem","position":3,"name":"Houston","item":"https://energydirect.org/houston/"}
+]}
+</script>
 </head>
 <body>
   <header>
+    <!-- Breadcrumb Nav -->
+<nav class="cities" aria-label="Breadcrumb">
+  <a href="/">Home</a>
+  <a href="/texas/">Texas Guides</a>
+  <strong>Houston</strong>
+</nav>
     <h1>Ambit Energy in Houston, TX</h1>
     <p class="lede">Check availability by ZIP, review plan documents, and enroll online—your lights stay on during the switch.</p>
   </header>
