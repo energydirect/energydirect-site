@@ -5,6 +5,17 @@
   --secondary-orange: #fbb034;
   --accent-blue: #2196f3; /* New accent color */
 }
+/* City cross-links */
+.cities {
+  display:flex; flex-wrap:wrap; justify-content:center; gap:.5rem .75rem;
+  margin: .75rem auto 0; padding: 0 .5rem; max-width: 900px;
+}
+.cities a, .cities strong {
+  display:inline-block; padding:.35rem .6rem; border-radius:999px;
+  background: rgba(255,255,255,.15); color:#fff; text-decoration:none;
+  border:1px solid rgba(255,255,255,.25); font-size:.95rem;
+}
+.cities a:hover { background: var(--accent-blue); }
 
 body {
   margin: 0;
