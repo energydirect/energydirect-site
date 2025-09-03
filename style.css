@@ -57,9 +57,8 @@ body.theme-soft .topbar a { color: #1b82d6; }
 
 /* === Logo image (consistent size) === */
 .logo-img {
-  max-width: 300px;
+  max-width: 450px;
   height: auto;
-  border-radius: 10px;
   display: block;
   margin: 1rem auto;
 }
