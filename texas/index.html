@@ -1,72 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Texas Electricity Guides | Ambit Energy Resources & Enrollment</title>
-  <meta name="description" content="Explore Texas electricity guides, city pages, and how-to resources. Review plan documents, understand delivery charges, and enroll online." />
-  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Texas Electricity Guides & Resources | Ambit Energy</title>
+  <meta name="description" content="Explore Ambit Energy resources for Texas. Compare electricity plans, read guides, and learn about electricity facts and glossary terms." />
+  <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="stylesheet" href="/style.css" />
-  <link rel="canonical" href="https://energydirect.org/texas/" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4CWH67FHM0"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-4CWH67FHM0');
-  document.addEventListener('click',e=>{const a=e.target.closest('a.signup-link');if(!a)return;try{gtag('event','sign_up_click',{event_category:'engagement',event_label:a.dataset.city||'texas'})}catch(_){}});</script>
 </head>
 <body>
-  <div style="text-align: center; margin: 1rem 0;">
-  <img src="/images/ambit logo.png" alt="Ambit Energy Consultant" style="max-width: 200px; height: auto; border-radius: 10px;" />
-</div>
-  <header>
-    <h1>Texas Electricity Guides & Resources</h1>
-    <p class="lede">Statewide hub for electricity plan info. Explore city pages, read guides, and enroll online—policy-safe and simple.</p>
+  <!-- Logo -->
+  <div style="text-align:center; margin: 1rem 0;">
+    <img src="/images/ambit logo.png" alt="Ambit Energy Consultant" style="width: 450px; max-width: 100%; height: auto; margin-bottom: 1rem;">
+  </div>
+
+  <!-- Orange gradient header -->
+  <header style="background: linear-gradient(135deg, #f57c00 0%, #fbb034 100%); color: white; text-align: center; padding: 4rem 1rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.3);">
+    <h1 style="font-size: 3rem; margin: 0;">Texas Electricity Guides & Resources</h1>
+    <p style="font-size: 1.2rem; margin-top: 1rem;">Statewide hub for electricity plan info. Explore city pages, read guides, and enroll online—policy-safe and simple.</p>
   </header>
 
-  <main>
-    <h2>Featured Statewide Resource</h2>
-    <section class="grid">
-      <article class="card">
-        <h3><a href="/texas/electricity-glossary/">Texas Electricity Glossary</a></h3>
-        <p>Plain-language definitions for EFL, TDU, REP, ERCOT, and more.</p>
-      </article>
-    </section>
+  <!-- Featured Resource -->
+  <section style="max-width: 800px; margin: 3rem auto; text-align: center;">
+    <h2>Featured Statewide Resources</h2>
+    <ul style="list-style: none; padding: 0; line-height: 1.8;">
+      <li><a href="/texas/electricity-facts-label/">Electricity Facts Label (EFL) Explained</a></li>
+      <li><a href="/texas/electricity-glossary/">Texas Electricity Glossary</a></li>
+    </ul>
+  </section>
 
+  <!-- City Pages -->
+  <section style="max-width: 1000px; margin: 3rem auto; text-align: center;">
     <h2>City Pages</h2>
-    <section class="grid">
-      <article class="card">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+      
+      <div class="card">
         <h3><a href="/houston/">Houston</a></h3>
-        <ul><li><a href="/houston/compare-ambit-plans-by-zip/">Compare Ambit Plans by ZIP (Houston)</a></li></ul>
-      </article>
-      <article class="card">
+        <ul style="list-style:none; padding:0;">
+          <li><a href="/houston/compare-ambit-plans-by-zip/">Compare Ambit Plans by ZIP</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
         <h3><a href="/dallas/">Dallas</a></h3>
-        <ul><li><a href="/dallas/moving-electric-service/">Start or Transfer Electricity Service</a></li></ul>
-      </article>
-      <article class="card">
+        <ul style="list-style:none; padding:0;">
+          <li><a href="/dallas/moving-electric-service/">Moving Electric Service</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
         <h3><a href="/corpus/">Corpus Christi</a></h3>
-        <ul><li><a href="/corpus/tdu-delivery-charges-explained/">Understanding TDU Delivery Charges</a></li></ul>
-      </article>
-      <article class="card">
+        <ul style="list-style:none; padding:0;">
+          <li><a href="/corpus/tdu-delivery-charges-explained/">TDU Delivery Charges Explained</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
         <h3><a href="/victoria/">Victoria</a></h3>
-        <ul><li><a href="/victoria/switching-electricity-providers/">Switching Electricity Providers</a></li></ul>
-      </article>
-       <article class="card">
-        <h3><a href="/Lubbock/">Lubbock</a></h3>
-        <ul><li><a href="/lubbock/moving-electric-service/">Moving Electric Service</a></li></ul>
-    </section>
+        <ul style="list-style:none; padding:0;">
+          <li><a href="/victoria/switching-electricity-providers/">Switching Electricity Providers</a></li>
+        </ul>
+      </div>
 
-    <h2>Get Started</h2>
-    <div class="cta">
-      <a class="cta-button signup-link" data-city="texas" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">View Current Plans</a>
+      <div class="card">
+        <h3><a href="/lubbock/">Lubbock</a></h3>
+        <ul style="list-style:none; padding:0;">
+          <li><a href="/lubbock/moving-electric-service/">Moving Electric Service</a></li>
+        </ul>
+      </div>
+
     </div>
-  </main>
-<nav class="cities" aria-label="City links">
-  <a href="/houston/">Houston</a>
-  <a href="/dallas/">Dallas</a>
-  <a href="/corpus/">Corpus Christi</a>
-  <a href="/victoria/">Victoria</a>
-   <a href="/lubbock/">Lubbock</a>
-  <strong>Texas Hub</strong>
-  <a href="/texas/electricity-glossary/">Glossary</a>
-</nav>
+  </section>
 
-  <footer>© 2025 EnergyDirect — Independent Ambit Energy Consultant | PUCT#10117</footer>
+  <!-- CTA -->
+  <div style="text-align:center; margin: 3rem 0;">
+    <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener noreferrer" class="cta-button">View Current Plans</a>
+  </div>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 1.5rem; background: rgba(0,0,0,0.05); font-size: .9rem;">
+    © 2025 EnergyDirect | Independent Ambit Energy Consultant
+    <div class="puct">PUCT#10117</div>
+    <div style="margin-top: 1rem;">
+      <a href="/">Home</a> | 
+      <a href="/houston/">Houston</a> | 
+      <a href="/dallas/">Dallas</a> | 
+      <a href="/corpus/">Corpus Christi</a> | 
+      <a href="/victoria/">Victoria</a> | 
+      <a href="/lubbock/">Lubbock</a> | 
+      <a href="/texas/">Texas Hub</a>
+    </div>
+  </footer>
 </body>
 </html>
