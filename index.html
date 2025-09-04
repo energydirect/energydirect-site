@@ -1,287 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="icon" type="image/png" href="/favicon.png">
-
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4CWH67FHM0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-4CWH67FHM0');
-</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Compare Ambit Energy Rates in Texas | Local Electricity Plans & Sign-Up</title>
-<meta name="description" content="Find competitve Ambit Energy electricity rates in Texas. Compare plans in Victoria, Houston, Dallas, Lubbock & more." />
-<meta name="keywords" content="Ambit Energy, electricity providers Victoria TX, electric companies Houston, electricity plans Dallas, Texas energy rates, Ambit electricity rates, sign up online" />
-<meta name="author" content="EnergyDirect" />
-<meta property="og:title" content="Ambit Energy | Texas Electricity Plans & Enrollment" />
-<meta property="og:description" content="Compare Ambit Energy electricity plans and enroll online. View available options in your area." />
-<meta property="og:type" content="website" />
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compare Ambit Energy Rates in Texas | Local Electricity Plans & Sign-Up</title>
+  <meta name="description" content="Compare Ambit Energy electricity plans in Texas. Rates vary by ZIP and usage. Review the Electricity Facts Label (EFL) before enrolling." />
+  <meta name="author" content="EnergyDirect" />
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4CWH67FHM0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4CWH67FHM0');
+  </script>
+
+  <!-- LocalBusiness schema -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Energy Direct",
-  "url": "https://energydirect.org",
-  "logo": "https://energydirect.org/logo.png",
-  "description": "Independent Ambit Energy consultant offering electricity plans in Texas deregulated markets.",
-  "telephone": "979-743-5601",
-  "areaServed": {
-    "@type": "State",
-    "name": "Texas"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Houston",
-    "addressRegion": "TX",
-    "addressCountry": "US"
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Energy Direct",
+    "url": "https://energydirect.org",
+    "logo": "https://energydirect.org/logo.png",
+    "description": "Independent Ambit Energy consultant offering electricity plans in Texas deregulated markets.",
+    "telephone": "979-743-5601",
+    "areaServed": {"@type":"State","name":"Texas"},
+    "address": {"@type":"PostalAddress","addressLocality":"Houston","addressRegion":"TX","addressCountry":"US"}
   }
-}
-</script>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-  
+  </script>
 
-  body {
-    margin: 0;
-    font-family: 'Poppins', Arial, sans-serif;
-    background: linear-gradient(135deg, #f57c00 0%, #fbb034 100%);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
-  
-
-  header {
-    flex: 0 0 auto;
-    padding: 4rem 2rem 2rem;
-    text-align: center;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
-    animation: fadeInDown 1s ease forwards;
-  }
-
-  header img {
-    max-width: 180px;
-    margin-bottom: 1rem;
-  }
-
-  header h1 {
-    font-size: 3rem;
-    margin: 0;
-  }
-
-  main {
-    flex: 1 0 auto;
-    padding: 0 1.5rem;
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-    animation: fadeIn 1.5s ease forwards;
-  }
-
-  main p {
-    font-size: 1.3rem;
-    margin-bottom: 2.5rem;
-    line-height: 1.6;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
-  }
-
-  .cta-button {
-    display: inline-block;
-    background: white;
-    color: #f57c00;
-    font-weight: 700;
-    padding: 1rem 3rem;
-    font-size: 1.4rem;
-    border-radius: 40px;
-    text-decoration: none;
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: pulse 2.5s infinite;
-  }
-
-  .cta-button:hover,
-  .cta-button:focus {
-    background: #fbb034;
-    color: white;
-    box-shadow: 0 8px 25px rgba(255, 176, 52, 0.8);
-    transform: scale(1.05);
-  }
-
-  footer {
-    flex-shrink: 0;
-    text-align: center;
-    padding: 1.5rem 1rem;
-    font-size: 0.9rem;
-    color: rgba(255 255 255 / 0.8);
-    background: rgba(0, 0, 0, 0.15);
-  }
-
-  footer .puct {
-    margin-top: 0.5rem;
-    font-weight: 700;
-  }
-
-  /* Animations */
-  @keyframes fadeInDown {
-    0% {
-      opacity: 0;
-      transform: translateY(-25px);
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    :root{
+      --orange-1:#f57c00; --orange-2:#fbb034;
+      --blue:#2563eb; --blue-dark:#1d4ed8;
+      --muted:#475569; --bg:#f9fafb; --card:#fff; --border:#e5e7eb;
     }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Poppins',Arial,sans-serif;background:var(--bg);color:#0f172a}
+    a{color:var(--blue);text-decoration:none}
+    .btn-primary{display:inline-block;padding:12px 20px;background:var(--blue);color:#fff!important;font-weight:700;border-radius:12px}
+    .btn-primary:hover{background:var(--blue-dark)}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+    .logo{text-align:center;margin:1rem 0}
+    .logo img{max-width:450px;width:100%;height:auto}
+    header.hero{background:linear-gradient(135deg,var(--orange-1) 0%,var(--orange-2) 100%);color:#fff;text-align:center;padding:3.5rem 1rem;text-shadow:2px 2px 6px rgba(0,0,0,.25)}
+    header.hero h1{margin:0;font-size:2.6rem}
+    header.hero p{max-width:760px;margin:1rem auto 1.25rem;font-size:1.15rem}
+    /* plan images */
+    .plans-row{display:flex;justify-content:center;flex-wrap:wrap;gap:20px;padding:20px 0}
+    .plans-row img{width:200px;border-radius:10px}
+    .more-plans{font-weight:700;align-self:center}
+    /* map */
+    .map-section{padding:2rem 0;text-align:center}
+    .map-section p{color:var(--muted);max-width:720px;margin:.5rem auto 1rem}
+    .map-img{width:100%;height:auto;max-width:900px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.1);display:block;margin:0 auto}
+    /* cards */
+    .cards{display:grid;gap:16px;grid-template-columns:1fr; margin:0 auto 2rem}
+    @media(min-width:900px){.cards{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;box-shadow:0 2px 8px rgba(15,23,42,.04)}
+    .card h3{margin:.25rem 0 .5rem}
+    .card ul{margin:.25rem 0 0 1.1rem}
+    .card li{margin:.35rem 0}
+    .cta-center{text-align:center;margin-top:1rem}
+    /* FAQ */
+    .faq{max-width:900px;margin:0 auto 2rem}
+    .faq h2{text-align:center;margin:0 0 .5rem}
+    details{background:#fff;border:1px solid var(--border);border-radius:12px;padding:.75rem 1rem;margin:.5rem 0}
+    summary{cursor:pointer;font-weight:600}
+    /* footer */
+    footer{ text-align:center; padding:1.5rem; background:rgba(0,0,0,0.05); font-size:.9rem; }
+    footer .puct{margin-top:.5rem;font-weight:700}
+    /* responsive text */
+    @media(max-width:520px){
+      header.hero h1{font-size:2.1rem}
+      header.hero p{font-size:1.05rem}
     }
-  }
-
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
-
-  @keyframes pulse {
-    0%, 100% {
-      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
-      transform: scale(1);
-    }
-    50% {
-      box-shadow: 0 8px 25px rgba(255, 176, 52, 0.8);
-      transform: scale(1.05);
-    }
-  }
-
-  /* Responsive */
-  @media (max-width: 480px) {
-    header h1 {
-      font-size: 2.2rem;
-    }
-    main p {
-      font-size: 1.1rem;
-    }
-    .cta-button {
-      padding: 0.9rem 2.5rem;
-      font-size: 1.2rem;
-    }
-  }
-  
-</style>
+  </style>
 </head>
 <body>
 
+  <!-- Logo -->
+  <div class="logo">
+    <img src="/images/ambit logo.png" alt="Ambit Energy Consultant">
+  </div>
 
-<!-- Add this image here -->
-<div style="text-align: center; margin: 1rem 0;">
-  <img src="/images/ambit logo.png" alt="Ambit Energy Plans" style="max-width: 100%; height: auto; border-radius: 10px;" />
-</div>
-  <header>
-
-   <h1>Compare Ambit Energy Rates & Electricity Plans in Texas</h1>
+  <!-- Hero -->
+  <header class="hero">
+    <div class="wrap">
+      <h1>Compare Ambit Energy Rates & Plans in Texas</h1>
+      <p>Shop electricity plan options in deregulated Texas areas. <strong>Rates vary by ZIP</strong> and usage. Always review the <strong>Electricity Facts Label (EFL)</strong> before you enroll.</p>
+      <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener" class="btn-primary">View Plans & Enroll</a>
+    </div>
   </header>
-  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 20px 0;">
-  <img src="/images/budget.png" alt="Ambit Energy Budget Relief" style="width: 200px; border-radius: 10px;" />
-  <img src="/images/free.png" alt="Ambit Energy Free Nights" style="width: 200px; border-radius: 10px;" />
-  <img src="/images/secure.png" alt="Ambit Energy Secure Savings" style="width: 200px; border-radius: 10px;" />
-  <img src="/images/summer.png" alt="Ambit Energy Summer Break" style="width: 200px; border-radius: 10px;" />
-     <div class="more-plans">+ many more</div>
-</div>
 
-  <main>
-    <p>
-      Ambit Energy offers competitive electricity plans in deregulated Texas markets. Compare Ambit Energy Plans in Texas — Rates vary by ZIP. Always review the Electricity Facts Label (EFL).
-    </p>
-    <p>
-Now enrolling new customers in major Texas cities including <strong>Victoria, Houston, Dallas, Lubbock and Corpus Christi</strong>. Whether you're switching providers or signing up for the first time, Ambit Energy makes it simple. Enjoy flexible plan options, reliable service, and no interruption during the switch.
-</p>
-<section id="benefits" style="max-width: 700px; margin: 2rem auto; text-align: left; color: white; text-shadow: 1px 1px 4px rgba(0,0,0,0.3);">
-  <h2>Why Choose Ambit Energy?</h2>
-  <ul style="list-style-type: disc; padding-left: 1.2rem; font-size: 1.2rem; line-height: 1.6;">
-    <li><strong>Competitive Rates:</strong> Ambit Energy offers affordable electricity plans tailored for Texas deregulated markets, helping you save on your monthly bills.</li>
-    <li><strong>Flexible Plans:</strong> Choose from a variety of fixed-rate and renewable energy plans to fit your needs and budget.</li>
-    <li><strong>Reliable Service:</strong> Seamless provider switching with no service interruptions — your electricity stays on without hassle.</li>
-    <li><strong>Paperless Billing & AutoPay Discounts:</strong> Save more with Ambit's E-Plan by enrolling in paperless billing and automatic payments.</li>
-    <li><strong>Texas-Based Customer Support:</strong> Friendly, local customer service ready to assist you whenever needed.</li>
-    <li><strong>Green Energy Options:</strong> Support clean energy with Ambit’s renewable energy plans available in many Texas areas.</li>
-  </ul>
-</section>
+  <!-- Service Area Map -->
+  <section class="map-section wrap">
+    <h2>Ambit Energy Service Area in Texas</h2>
+    <p>The highlighted areas show where you can compare Ambit Energy plans and enroll online.</p>
+    <picture>
+      <source type="image/webp" srcset="/images/ambit-service-area.webp">
+      <img src="/images/ambit-service-area.webp" alt="Map of Ambit Energy service area in Texas" class="map-img" loading="lazy" decoding="async">
+    </picture>
+    <div class="cta-center">
+      <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener" class="btn-primary">Check Plans by ZIP</a>
+    </div>
+  </section>
 
-    <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener noreferrer" class="cta-button">
-      View Plans & Enroll
-      
-    </a>
-  </main>
-  <p>
- 
-      
-      <ul style="list-style-position: inside; text-align: center; padding-left: 0;">
-   <section class="faq">
-       <h2>FAQ</h2>
+  <!-- Plan images -->
+  <div class="plans-row wrap">
+    <img src="/images/budget.png" alt="Budget Relief" loading="lazy" decoding="async">
+    <img src="/images/free.png" alt="Free Nights" loading="lazy" decoding="async">
+    <img src="/images/secure.png" alt="Secure Savings" loading="lazy" decoding="async">
+    <img src="/images/summer.png" alt="Summer Break" loading="lazy" decoding="async">
+    <div class="more-plans">+ many more</div>
+  </div>
 
-  <details>
-      
-    <summary>How do I switch electricity providers in Texas?</summary>
-    <p>Switching is easy. Just pick a plan and sign up online — your new provider handles the rest. There’s no need to contact your current provider or worry about service interruptions.</p>
-  </details>
+  <!-- Compact 3-card section -->
+  <section class="wrap">
+    <div class="cards">
+      <div class="card">
+        <h3>How Texas Choice Works</h3>
+        <ul>
+          <li>Your TDU (Oncor, CenterPoint, AEP Texas, TNMP) maintains lines/meters.</li>
+          <li>You choose a retail provider and plan features.</li>
+          <li>Delivery charges are set by your TDU and apply to any provider.</li>
+        </ul>
+        <div class="cta-center"><a class="btn-primary" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">Compare Plans</a></div>
+      </div>
+      <div class="card">
+        <h3>What to Check in the EFL</h3>
+        <ul>
+          <li>Average price at 500 / 1000 / 2000 kWh.</li>
+          <li>Base or minimum usage fees.</li>
+          <li>Bill credit thresholds and contract length.</li>
+          <li>Renewable content.</li>
+        </ul>
+        <div class="cta-center"><a class="btn-primary" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">See Options</a></div>
+      </div>
+      <div class="card">
+        <h3>Resources & Support</h3>
+        <ul style="list-style:none;padding-left:0;">
+          <li><a href="/texas/electricity-facts-label/">How to Read the EFL</a></li>
+          <li><a href="/texas/electricity-glossary/">Electricity Glossary</a></li>
+          <li><a href="/texas/">Texas Electricity Guide</a></li>
+        </ul>
+        <div class="cta-center"><a class="btn-primary" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">Start or Switch</a></div>
+      </div>
+    </div>
+  </section>
 
-  <details>
-    <summary>Does Ambit offer any discounts?</summary>
-    <p> Texas Customers
-Yes, Ambit Energy offers you the opportunity to earn a discount through our E-Plan, which requires continued enrollment in paperless billing and automatic payment on most 12- and 24-month term plans. You can enroll in E-Plan any time using MyAmbit Account or by contacting Customer Care at (877) 282-6248.
+  <!-- Compact FAQ -->
+  <section class="faq wrap">
+    <h2>FAQ</h2>
+    <details>
+      <summary>Will my power go out when I switch?</summary>
+      <p>No. Your lights stay on during provider changes because your local TDU continues delivery.</p>
+    </details>
+    <details>
+      <summary>Who do I contact for an outage?</summary>
+      <p>Outages are handled by your TDU (Oncor, CenterPoint, AEP Texas, or TNMP), regardless of the retail provider you choose.</p>
+    </details>
+    <details>
+      <summary>How do I compare plans for my address?</summary>
+      <p>Select your ZIP on the plans page to see options. <strong>Rates vary by ZIP</strong> and usage—always review the EFL.</p>
+    </details>
+  </section>
 
-Qualifying plans are:
-<P>
-
-    -Lone Star Plus 12
-    -Texas Plus 12
-    -Lone Star Basics 12
-    -Texas Basics 12
-    -Lone Star Classic 24
-    -Texas Classic 24
-    -Ambit Green Texas - 12
-
-    </p>
-  </details>
-
-  <details>
-        <summary>What happens if I move?</summary>
-    <p>If you are moving within the same service area, just give us a call and update your address. Ambit's contact information is available on our Contact Us page. If you are moving out of the area, call Customer Care or check to see if we provide energy to your new address. </p>
-  </details>
-
-  <details>
-    <summary>How do I renew my plan?</summary>
-    <p>Convenient options to renew your agreement include: Online through your MyAmbit Account or by calling Customer Care at (877) 282-6248.</p>
-  </details>
-</section>
-</p>
+  <!-- Footer -->
   <footer>
     © 2025 EnergyDirect | Independent Ambit Energy Consultant
-    <div class="puct">PUCT#10117.</div>
-    <section style="text-align: center; margin-top: 2rem;">
-  <h2>Find Electricity Plans in Your City</h2>
-  <p>
- <div style="margin-top: 1rem;">
-  <a href="/">Home</a> | 
-  <a href="/houston/">Houston</a> | 
-  <a href="/dallas/">Dallas</a> | 
-  <a href="/corpus/">Corpus Christi</a> | 
-  <a href="/victoria/">Victoria</a> | 
-  <a href="/lubbock/">Lubbock</a> | 
-  <a href="/texas/">Texas Hub</a>
-</div>
-  </p>
-</section>
+    <div class="puct">PUCT#10117</div>
+    <section class="wrap" style="text-align:center;margin-top:1rem;">
+      <h2 style="margin:.5rem 0 0;">Find Electricity Plans in Your City</h2>
+      <div style="margin-top:.5rem;">
+        <a href="/">Home</a> |
+        <a href="/houston/">Houston</a> |
+        <a href="/dallas/">Dallas</a> |
+        <a href="/corpus/">Corpus Christi</a> |
+        <a href="/victoria/">Victoria</a> |
+        <a href="/lubbock/">Lubbock</a> |
+        <a href="/texas/">Texas Hub</a>
+      </div>
+    </section>
   </footer>
+
+  <!-- Optional: FAQ JSON-LD for homepage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Will my power go out when I switch?","acceptedAnswer":{"@type":"Answer","text":"No. Your lights stay on during provider changes because your local TDU continues delivery."}},
+      {"@type":"Question","name":"Who do I contact for an outage?","acceptedAnswer":{"@type":"Answer","text":"Outages are handled by your TDU (Oncor, CenterPoint, AEP Texas, or TNMP), regardless of the retail provider you choose."}},
+      {"@type":"Question","name":"How do I compare plans for my address?","acceptedAnswer":{"@type":"Answer","text":"Select your ZIP on the plans page to see options. Rates vary by ZIP and usage—always review the EFL."}}
+    ]
+  }
+  </script>
+
+  <!-- Simple CTA click tracking -->
+  <script>
+    document.addEventListener('click', function(e){
+      const a = e.target.closest('a');
+      if(!a) return;
+      if (a.href && a.href.indexOf('energydirect.myambit.com/rates-and-plans') !== -1) {
+        if(window.gtag) gtag('event', 'cta_click', {event_category:'CTA', event_label: location.pathname});
+      }
+    });
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
