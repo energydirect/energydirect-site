@@ -4,9 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Corpus Christi Electricity Plans & Rates | Energy Direct</title>
-  <meta name="description" content="Compare electricity plans in Corpus Christi, Texas. Review EFLs and see options in AEP Texas territory. Rates vary by ZIP and usage." />
+  <meta name="description" content="Compare electricity plans in Corpus Christi, Texas. Review options in AEP Texas territory, check EFLs, and enroll online. Rates vary by ZIP." />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="stylesheet" href="/style.css" />
+  <style>
+    .wrap { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+    .cards { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    @media (min-width: 720px) { .cards { grid-template-columns: repeat(4, 1fr); } }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:18px; box-shadow:0 2px 8px rgba(0,0,0,.04); }
+    .card h3 { margin:.25rem 0 .5rem; font-size:1.05rem; }
+    .muted { color:#475569; }
+    .cta-hero {
+      display:inline-block; margin-top:1rem; padding:12px 20px;
+      background:#fff; color:#f57c00; font-weight:700; border-radius:10px;
+      text-decoration:none; border: 2px solid rgba(255,255,255,0.65);
+    }
+    .cta-hero:hover { filter: brightness(0.97); }
+    .badge { display:inline-block; background:#e2e8f0; color:#0f172a;
+      padding:4px 10px; border-radius:999px; font-size:.8rem; margin-right:8px; }
+    ul.clean { padding-left: 1rem; margin: .25rem 0 0 0; }
+    ul.clean li { margin: .25rem 0; }
+  </style>
 </head>
 <body>
   <!-- Logo -->
@@ -14,15 +32,14 @@
     <img src="/images/ambit logo.png" alt="Ambit Energy Consultant" style="width: 450px; max-width: 100%; height: auto; margin-bottom: 1rem;">
   </div>
 
-  <!-- Hero Header (ORANGE gradient restored) -->
+  <!-- Hero Header (orange) -->
   <header style="background: linear-gradient(135deg, #f57c00 0%, #fbb034 100%); color: white; text-align: center; padding: 4rem 1rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.3);">
     <h1 style="font-size: 2.5rem; margin: 0;">Corpus Christi Electricity Plans & Rates</h1>
-    <p style="max-width: 700px; margin: 1rem auto 0; font-size: 1.2rem;">
-      Compare electricity plans available in Corpus Christi. <strong>Rates vary by ZIP</strong> and usage.
+    <p style="max-width: 700px; margin: 1rem auto 0; font-size: 1.15rem;">
+      Compare electricity plan options available in Corpus Christi. <strong>Rates vary by ZIP</strong> and usage.
       Always review the <strong>Electricity Facts Label (EFL)</strong> before you enroll.
     </p>
-    <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener"
-       style="display:inline-block; margin-top:16px; padding:12px 20px; border:0; background:#0f172a; color:#fff; border-radius:10px; font-weight:700; text-decoration:none;">
+    <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener" class="cta-hero">
       View Plans & Enroll
     </a>
   </header>
@@ -36,8 +53,46 @@
     <div style="font-weight:700; align-self:center;">+ many more</div>
   </div>
 
-  <!-- Main -->
-  <main style="max-width: 1000px; margin: 0 auto; padding: 2rem;">
+  <!-- Four-Card Layout -->
+  <section class="wrap">
+    <div class="cards">
+      <div class="card">
+        <div class="badge">Compare</div>
+        <h3>Plans for Your Address</h3>
+        <p class="muted">See available options and plan features. Rates vary by ZIP and usage.</p>
+        <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">Compare plans →</a>
+      </div>
+      <div class="card">
+        <div class="badge">TDU</div>
+        <h3>AEP Texas (Delivery)</h3>
+        <p class="muted">AEP Texas maintains the lines and meters in Corpus Christi.</p>
+        <ul class="clean">
+          <li><a href="https://www.aeptexas.com/outages/" target="_blank" rel="noopener">Outage Center</a></li>
+          <li><a href="https://outagemap.aeptexas.com/" target="_blank" rel="noopener">Outage Map</a></li>
+          <li><a href="https://www.aeptexas.com/contact/" target="_blank" rel="noopener">Customer Support</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="badge">EFL</div>
+        <h3>What to Check</h3>
+        <ul class="clean">
+          <li>Average price at 500/1000/2000 kWh</li>
+          <li>Base/minimum usage fees</li>
+          <li>Bill credit thresholds</li>
+          <li>Contract length & ETF</li>
+          <li>Renewable content</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="badge">FAQs</div>
+        <h3>Corpus Christi Tips</h3>
+        <p class="muted">Humidity and long cooling seasons can increase summer usage. Compare EFL averages and plan structures to fit your pattern.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main copy -->
+  <main class="wrap">
     <section>
       <div style="background:#fff; border:1px solid #e5e7eb; border-radius: 14px; padding: 20px; margin-bottom:2rem;">
         <div style="font-size:0.9rem; margin-bottom: 1rem;">
@@ -46,37 +101,23 @@
 
         <h2>How electricity choice works in Corpus Christi</h2>
         <p>
-          Corpus Christi is in AEP Texas Central’s delivery territory. The TDU maintains poles and wires, while you pick a retail
-          electricity provider for your plan. Whether you live in <em>Calallen</em>, <em>Flour Bluff</em>, or <em>Padre Island</em>,
-          plan availability and pricing can vary by ZIP code and usage.
+          AEP Texas maintains delivery (poles and wires) while retail electricity providers offer plans and billing.
+          Neighborhoods like <em>Calallen</em>, <em>Flour Bluff</em>, and <em>Padre Island</em> can see different offers by ZIP,
+          which is why it’s important to compare for your address and read the EFL.
         </p>
-        <p>
-          Coastal humidity and long cooling seasons can increase summer usage. Use the EFL to compare pricing at
-          <strong>500 / 1000 / 2000 kWh</strong>, and check for any bill credits, base charges, or minimum usage fees.
-        </p>
-
-        <h2>What to look for in the EFL</h2>
-        <ul>
-          <li>Average price at 500/1000/2000 kWh</li>
-          <li>Base charges or minimum usage fees</li>
-          <li>Bill credits and threshold levels</li>
-          <li>Contract length and early termination fee</li>
-          <li>Renewable content</li>
-        </ul>
 
         <h2>Corpus Christi FAQs</h2>
         <div style="border-top:1px solid #e5e7eb; padding-top:1rem;">
           <p><strong>Who handles outages?</strong><br>
-            AEP Texas manages delivery and outage restoration, regardless of provider.
-            Visit the <a href="https://www.aeptexas.com/outages/" target="_blank" rel="noopener">AEP Texas outage center</a> or check the
-            <a href="https://outagemap.aeptexas.com/" target="_blank" rel="noopener">outage map</a>.
+            AEP Texas, regardless of your provider. Use the <a href="https://www.aeptexas.com/outages/" target="_blank" rel="noopener">Outage Center</a> or
+            <a href="https://outagemap.aeptexas.com/" target="_blank" rel="noopener">Outage Map</a>.
           </p>
-          <p><strong>Are time-of-use plans available?</strong><br>
-            Some providers offer plans with on-peak/off-peak pricing. Check the EFL to see if it fits your routine.
+          <p><strong>Do time-of-use plans exist?</strong><br>
+            Some providers offer on-peak/off-peak plans. Check the EFL to see if the schedule fits your routine.
           </p>
-          <p><strong>Will switching interrupt my power?</strong><br>
-            No—switching providers is seamless, and your lights stay on during the change.
-            For assistance, see <a href="https://www.aeptexas.com/contact/" target="_blank" rel="noopener">AEP Texas customer support</a>.
+          <p><strong>Does switching interrupt power?</strong><br>
+            No—service stays on during provider changes. For TDU help, visit
+            <a href="https://www.aeptexas.com/contact/" target="_blank" rel="noopener">AEP Texas support</a>.
           </p>
         </div>
       </div>
@@ -91,23 +132,23 @@
       </ul>
     </section>
 
-    <!-- Nearby Cities (plain text to avoid dead links) -->
+    <!-- Nearby Areas (plain text so nothing breaks) -->
     <section style="margin: 3rem auto; max-width: 800px; text-align: center;">
       <h2>Nearby Areas</h2>
-      <p style="color:#475569; font-size:0.9rem;">Explore electricity options in nearby Coastal Bend areas:</p>
+      <p class="muted" style="font-size:0.95rem;">Coastal Bend</p>
       <p>Portland | Ingleside | Aransas Pass | Rockport</p>
     </section>
   </main>
 
-  <!-- Footer (cities as plain text until pages are live) -->
+  <!-- Footer: only working links are clickable -->
   <footer style="text-align: center; padding: 1.5rem; background: rgba(0,0,0,0.05); font-size: .9rem;">
     © 2025 EnergyDirect | Independent Ambit Energy Consultant
     <div class="puct">PUCT#10117</div>
     <div style="margin-top: 1rem;">
-      <span>Home</span> | 
+      <a href="/">Home</a> | 
       <span>Houston</span> | 
       <span>Dallas</span> | 
-      <span>Corpus Christi</span> | 
+      <a href="/corpus/">Corpus Christi</a> | 
       <span>Victoria</span> | 
       <span>Lubbock</span> | 
       <span>Texas Hub</span>
