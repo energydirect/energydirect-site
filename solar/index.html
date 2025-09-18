@@ -1,263 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Solar Buyback Plans in Texas | Compare Electricity Options | EnergyDirect</title>
   <meta name="description" content="Learn how solar buyback works in Texas and compare electricity plans that support solar credits. Rates vary by ZIP and TDU (Oncor, CenterPoint, AEP Texas, TNMP). Always review the EFL." />
-  <link rel="canonical" href="https://energydirect.org/solar/" />
-  <meta name="robots" content="index,follow" />
+  <meta name="author" content="EnergyDirect" />
 
-  <!-- OpenGraph -->
-  <meta property="og:title" content="Solar Buyback Plans in Texas" />
-  <meta property="og:description" content="Compare electricity options that support solar buyback credits. Rates vary by ZIP. Review the EFL before enrolling." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://energydirect.org/solar/" />
-  <meta property="og:image" content="https://energydirect.org/repo/images/solar-buyback-texas.png" />
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4CWH67FHM0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4CWH67FHM0');
+  </script>
 
-  <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" />
+  <!-- LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Energy Direct",
+    "url": "https://energydirect.org",
+    "logo": "https://energydirect.org/logo.png",
+    "description": "Independent electricity consultant offering solar buyback plans in Texas deregulated markets.",
+    "telephone": "979-743-5601",
+    "areaServed": {"@type":"State","name":"Texas"},
+    "address": {"@type":"PostalAddress","addressLocality":"Houston","addressRegion":"TX","addressCountry":"US"}
+  }
+  </script>
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
     :root{
-      --brand:#0b5cff;--dark:#0c1b2a;--text:#1b2a3a;--muted:#5a6b7b;--bg:#f6f8fb;--accent:#19c37d
+      --orange-1:#f57c00; --orange-2:#fbb034;
+      --blue:#2563eb; --blue-dark:#1d4ed8;
+      --muted:#475569; --bg:#f9fafb; --card:#fff; --border:#e5e7eb;
     }
-    html{scroll-behavior:smooth}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg)}
-    a{color:var(--brand);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .container{max-width:1100px;margin-inline:auto;padding: clamp(16px,3vw,32px)}
-    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.15rem;border-radius:.75rem;border:1px solid transparent;font-weight:600;cursor:pointer}
-    .btn-primary{background:var(--brand);color:#fff}
-    .btn-outline{border-color:var(--brand);color:var(--brand);background:#fff}
-    header{position:sticky;top:0;background:#fff;z-index:50;border-bottom:1px solid #e6ebf2}
-    header .bar{display:flex;align-items:center;justify-content:space-between}
-    nav ul{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
-    nav a{color:var(--text);font-weight:600}
-
-    /* Hero */
-    .hero{background:linear-gradient(180deg,#ffffff 0%, #eef4ff 100%)}
-    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
-    .badge{display:inline-flex;align-items:center;gap:.4rem;background:#e9f2ff;border:1px solid #d9e7ff;color:#1a3d8f;padding:.35rem .6rem;border-radius:999px;font-size:.85rem;font-weight:700}
-    .hero h1{font-size:clamp(1.9rem,3.3vw,3rem);line-height:1.15;margin:.6rem 0}
-    .sub{color:var(--muted);font-size:1.05rem;max-width:60ch}
-    .card{background:#fff;border:1px solid #e6ebf2;border-radius:1rem;padding:1rem;box-shadow:0 6px 16px rgba(16,24,40,.06)}
-
-    /* Zip form */
-    .zip-form{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1rem}
-    .zip-form input{flex:1;min-width:180px;padding:.9rem 1rem;border:1px solid #cfd8e3;border-radius:.75rem;font-size:1rem}
-    .disclaimer{font-size:.9rem;color:var(--muted);margin-top:.5rem}
-
-    /* Trust row */
-    .trust{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.25rem}
-    .trust .item{display:flex;gap:.75rem;align-items:center;background:#fff;border:1px solid #e6ebf2;border-radius:.75rem;padding:.75rem}
-    .trust strong{display:block;font-size:.95rem}
-    .trust span{color:var(--muted);font-size:.9rem}
-
-    /* Sections */
-    section{padding: clamp(32px,6vw,64px) 0}
-    h2{font-size:clamp(1.5rem,2.6vw,2rem);margin:0 0 .75rem}
-    .lead{color:var(--muted);max-width:72ch}
-
-    /* How it works */
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
-    .steps .step{background:#fff;border:1px solid #e6ebf2;border-radius:1rem;padding:1rem}
-    .step .num{width:34px;height:34px;border-radius:999px;display:grid;place-content:center;background:#eef6f2;color:#0b5134;font-weight:800;margin-bottom:.5rem}
-
-    /* Compare cards */
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-    .plan{position:relative}
-    .pill{position:absolute;top:12px;right:12px;background:#f1f5ff;color:#1a3d8f;border:1px solid #d9e7ff;padding:.25rem .6rem;border-radius:999px;font-size:.8rem;font-weight:700}
-    .features{display:grid;gap:.5rem;margin:.5rem 0}
-    .features li{display:flex;align-items:center;gap:.5rem}
-
-    /* TDU table */
-    table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid #e6ebf2;border-radius:12px;overflow:hidden}
-    th,td{padding:.9rem 1rem;border-bottom:1px solid #eef2f7;text-align:left}
-    th{background:#f7f9fc;font-weight:700}
-    tr:last-child td{border-bottom:0}
-
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Poppins',Arial,sans-serif;background:var(--bg);color:#0f172a}
+    a{color:var(--blue);text-decoration:none}
+    .btn-primary{display:inline-block;padding:12px 20px;background:var(--blue);color:#fff!important;font-weight:700;border-radius:12px}
+    .btn-primary:hover{background:var(--blue-dark)}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+    .logo{text-align:center;margin:1rem 0}
+    .logo img{max-width:450px;width:100%;height:auto}
+    header.hero{background:linear-gradient(135deg,var(--orange-1) 0%,var(--orange-2) 100%);color:#fff;text-align:center;padding:3.5rem 1rem;text-shadow:2px 2px 6px rgba(0,0,0,.25)}
+    header.hero h1{margin:0;font-size:2.6rem}
+    header.hero p{max-width:760px;margin:1rem auto 1.25rem;font-size:1.15rem}
+    /* cards */
+    .cards{display:grid;gap:16px;grid-template-columns:1fr; margin:0 auto 2rem}
+    @media(min-width:900px){.cards{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;box-shadow:0 2px 8px rgba(15,23,42,.04)}
+    .card h3{margin:.25rem 0 .5rem}
+    .card ul{margin:.25rem 0 0 1.1rem}
+    .card li{margin:.35rem 0}
+    .cta-center{text-align:center;margin-top:1rem}
     /* FAQ */
-    details{background:#fff;border:1px solid #e6ebf2;border-radius:.75rem;padding:1rem}
-    details+details{margin-top:.75rem}
-    summary{font-weight:700;cursor:pointer}
-
-    .breadcrumbs{font-size:.9rem;margin:1rem 0;}
-    .breadcrumbs a{color:var(--brand)}
-    .breadcrumbs span{color:var(--muted)}
-
-    /* Responsive */
-    @media (max-width: 980px){
-      .hero-grid{grid-template-columns:1fr}
-      .trust{grid-template-columns:repeat(2,1fr)}
-      .steps{grid-template-columns:1fr}
-      .grid-3{grid-template-columns:1fr}
+    .faq{max-width:900px;margin:0 auto 2rem}
+    .faq h2{text-align:center;margin:0 0 .5rem}
+    details{background:#fff;border:1px solid var(--border);border-radius:12px;padding:.75rem 1rem;margin:.5rem 0}
+    summary{cursor:pointer;font-weight:600}
+    /* footer */
+    footer{ text-align:center; padding:1.5rem; background:rgba(0,0,0,0.05); font-size:.9rem; }
+    footer .puct{margin-top:.5rem;font-weight:700}
+    /* responsive */
+    @media(max-width:520px){
+      header.hero h1{font-size:2.1rem}
+      header.hero p{font-size:1.05rem}
     }
   </style>
 </head>
 <body>
-  <header aria-label="Site header">
-    <div class="container bar">
-      <a href="/" class="logo" aria-label="EnergyDirect home" style="display:flex;align-items:center;gap:.6rem;font-weight:800;color:var(--dark)">
-        <img src="/assets/logo.svg" alt="EnergyDirect" width="28" height="28" loading="eager" />
-        <span>EnergyDirect</span>
-      </a>
-      <nav aria-label="Primary">
-        <ul>
-          <li><a href="/plans/">Plans</a></li>
-          <li><a href="/solar/" aria-current="page">Solar</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a class="btn btn-outline" href="#zip">Compare Plans</a></li>
-        </ul>
-      </nav>
+
+  <!-- Logo -->
+  <div class="logo">
+    <img src="/images/solar-buyback-texas.png" alt="EnergyDirect Solar Buyback">
+  </div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="wrap">
+      <h1>Solar Buyback Plans in Texas</h1>
+      <p>Send your extra rooftop solar back to the grid and receive bill credits through eligible electricity plans. <strong>Rates vary by ZIP and Transmission & Distribution Utility (Oncor, CenterPoint, AEP Texas, TNMP)</strong>. Always review the <strong>Electricity Facts Label (EFL)</strong> before you enroll.</p>
+      <form action="/plans/" method="get" style="margin-top:1rem">
+        <input type="text" name="zip" placeholder="Enter ZIP (e.g., 75001)" maxlength="5" pattern="\d{5}" required style="padding:10px;border-radius:8px;border:1px solid #ccc">
+        <button type="submit" class="btn-primary">See Solar Options</button>
+      </form>
     </div>
   </header>
 
-  <main id="main-content">
-    <!-- Breadcrumbs -->
-    <nav class="container breadcrumbs" aria-label="Breadcrumb">
-      <a href="/">Home</a> › 
-      <a href="/texas/">Texas</a> › 
-      <span aria-current="page">Solar</span>
-    </nav>
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid" itemscope itemtype="https://schema.org/WebPage">
-        <div>
-          <div class="badge" aria-label="Texas solar buyback focus">☀ Solar Buyback in Texas</div>
-          <h1 itemprop="headline">Solar Buyback Plans in Texas</h1>
-          <p class="sub">Send your extra rooftop solar back to the grid and receive bill credits through eligible electricity plans. <strong>Rates vary by ZIP and Transmission &amp; Distribution Utility (Oncor, CenterPoint, AEP Texas, TNMP)</strong>. Always review the <abbr title="Electricity Facts Label">EFL</abbr> before enrolling.</p>
-
-          <form id="zip" class="zip-form" action="/plans/" method="get" aria-label="Enter ZIP to compare solar buyback plans">
-            <label for="zipcode" class="visually-hidden">ZIP Code</label>
-            <input id="zipcode" name="zip" inputmode="numeric" pattern="\d{5}" maxlength="5" placeholder="Enter ZIP (e.g., 75001)" aria-describedby="zip-help" required />
-            <button class="btn btn-primary" type="submit">See solar options</button>
-            <a class="btn btn-outline" href="#how">How it works</a>
-            <div id="zip-help" class="disclaimer">We’ll show available plan options for your area. Solar buyback eligibility depends on provider and TDU rules.</div>
-          </form>
-        </div>
-        <div>
-          <figure class="card" style="text-align:center">
-            <img src="/repo/images/solar-buyback-texas.png" alt="Diagram showing home solar sending excess energy to the grid and receiving credits" width="520" height="360" loading="lazy" />
-            <figcaption class="disclaimer">Illustration for educational purposes. Always verify plan details in the EFL.</figcaption>
-          </figure>
-        </div>
+  <!-- Compact 3-card section -->
+  <section class="wrap">
+    <div class="cards">
+      <div class="card">
+        <h3>How Solar Buyback Works</h3>
+        <ul>
+          <li>Your solar powers your home first, then excess flows to the grid.</li>
+          <li>Export credits depend on provider and TDU (Oncor, CenterPoint, AEP Texas, TNMP).</li>
+          <li>Credit type (1:1, rate-based, or capped) is in the plan’s EFL.</li>
+        </ul>
       </div>
-      <div class="container trust" aria-label="Trust signals">
-        <div class="item"><div aria-hidden="true">🔎</div><div><strong>Compare Plans</strong><span>Filter for solar buyback</span></div></div>
-        <div class="item"><div aria-hidden="true">🏷️</div><div><strong>No sales pressure</strong><span>Explore options first</span></div></div>
-        <div class="item"><div aria-hidden="true">📄</div><div><strong>Review the EFL</strong><span>Key terms & credits</span></div></div>
-        <div class="item"><div aria-hidden="true">📍</div><div><strong>ZIP-specific</strong><span>Eligibility varies</span></div></div>
+      <div class="card">
+        <h3>What to Check in the EFL</h3>
+        <ul>
+          <li>Export credit rules and caps.</li>
+          <li>Base or minimum usage fees.</li>
+          <li>Renewable content.</li>
+        </ul>
       </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section id="how" aria-labelledby="how-title">
-      <div class="container">
-        <h2 id="how-title">How Solar Buyback Works in Texas</h2>
-        <p class="lead">In competitive retail areas, certain electricity plans credit you for excess solar your system exports to the grid. Credit methods and caps vary by provider and TDU service territory.</p>
-        <div class="steps" role="list">
-          <div class="step" role="listitem">
-            <div class="num" aria-hidden="true">1</div>
-            <h3>Produce & Use</h3>
-            <p>Your rooftop PV powers your home first. A smart meter records what you use and what you export.</p>
-          </div>
-          <div class="step" role="listitem">
-            <div class="num" aria-hidden="true">2</div>
-            <h3>Export Excess</h3>
-            <p>When production exceeds usage, excess flows to the grid through your TDU (Oncor, CenterPoint, AEP Texas, TNMP).</p>
-          </div>
-          <div class="step" role="listitem">
-            <div class="num" aria-hidden="true">3</div>
-            <h3>Receive Credits</h3>
-            <p>Eligible plans provide bill credits. The credit type (1:1, rate-based, or capped) is specified in the plan’s EFL.</p>
-          </div>
-        </div>
+      <div class="card">
+        <h3>Compare ZIP-Specific Plans</h3>
+        <ul>
+          <li>Enter your ZIP to filter for solar buyback plans.</li>
+          <li>Availability varies by TDU territory.</li>
+          <li>Always download and review the EFL.</li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- COMPARE SECTION -->
-    <section id="compare" aria-labelledby="compare-title">
-      <div class="container">
-        <h2 id="compare-title">Compare Electricity Plans with Solar Buyback</h2>
-        <p class="lead">Enter your ZIP above to see plans in your area that support solar credits. You can filter for <em>solar buyback</em> in our comparison tool. Availability and credit types vary by provider and EFL.</p>
+  <!-- Compact FAQ -->
+  <section class="faq wrap">
+    <h2>FAQ: Solar Buyback in Texas</h2>
+    <details>
+      <summary>Which providers offer solar buyback?</summary>
+      <p>Availability changes. Enter your ZIP to compare current plan options. Always review the plan’s EFL for details.</p>
+    </details>
+    <details>
+      <summary>Do credits roll over month to month?</summary>
+      <p>Some plans allow rollover, others apply credits only in the current billing cycle. Rules are in the EFL.</p>
+    </details>
+    <details>
+      <summary>Is there a minimum system size?</summary>
+      <p>Some plans require interconnection approval via your TDU. System sizing and caps are explained in the EFL.</p>
+    </details>
+    <details>
+      <summary>Can I get 1:1 credit for exports?</summary>
+      <p>Some plans offer 1:1 credits up to a cap. Others use a set buyback rate. Check the EFL for exact terms.</p>
+    </details>
+  </section>
 
-        <div class="grid-3" aria-label="Example card types" role="list">
-          <article class="card plan" role="listitem">
-            <span class="pill">Credit Type</span>
-            <h3>1:1 Export Credit</h3>
-            <ul class="features">
-              <li>• Credit per kWh exported (up to plan cap)</li>
-              <li>• Often requires enrollment in a specific plan</li>
-              <li>• See monthly caps and rollover rules in EFL</li>
-            </ul>
-            <a class="btn btn-outline" href="#zip">Check availability</a>
-          </article>
-          <article class="card plan" role="listitem">
-            <span class="pill">Bill Credit</span>
-            <h3>Rate-Based Credit</h3>
-            <ul class="features">
-              <li>• Fixed or market-indexed credit rate</li>
-              <li>• May differ from your plan’s energy charge</li>
-              <li>• Verify credit calculation in EFL</li>
-            </ul>
-            <a class="btn btn-outline" href="#zip">Check availability</a>
-          </article>
-          <article class="card plan" role="listitem">
-            <span class="pill">Limits</span>
-            <h3>Cap & Rollover</h3>
-            <ul class="features">
-              <li>• Monthly export caps may apply</li>
-              <li>• Some credits don’t roll over</li>
-              <li>• Terms vary by provider & TDU</li>
-            </ul>
-            <a class="btn btn-outline" href="#zip">Check availability</a>
-          </article>
-        </div>
+  <!-- Footer -->
+  <footer>
+    © 2025 EnergyDirect | Independent Electricity Consultant
+    <div class="puct">PUCT#10117</div>
+    <section class="wrap" style="text-align:center;margin-top:1rem;">
+      <h2 style="margin:.5rem 0 0;">Find Electricity Plans in Your City</h2>
+      <div style="margin-top:.5rem;">
+        <a href="/">Home</a> |
+        <a href="/houston/">Houston</a> |
+        <a href="/dallas/">Dallas</a> |
+        <a href="/corpus/">Corpus Christi</a> |
+        <a href="/victoria/">Victoria</a> |
+        <a href="/lubbock/">Lubbock</a> |
+        <a href="/texas/">Texas Hub</a>
       </div>
     </section>
+  </footer>
 
-    <!-- TDU TABLE -->
-    <section id="tdu" aria-labelledby="tdu-title">
-      <div class="container">
-        <h2 id="tdu-title">TDU Service Areas</h2>
-        <p class="lead">Solar buyback plan eligibility and metering are coordinated through your Transmission &amp; Distribution Utility (TDU). Use your ZIP to confirm which TDU serves your address.</p>
-        <div class="card" role="region" aria-label="TDU table">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">TDU</th>
-                <th scope="col">Areas Served (Examples)</th>
-                <th scope="col">Notes</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Oncor</th>
-                <td>DFW, North/Central Texas</td>
-                <td>Advanced meter required; plan terms define credit type and caps.</td>
-              </tr>
-              <tr>
-                <th scope="row">CenterPoint</th>
-                <td>Greater Houston</td>
-                <td>Buyback availability varies by provider plan; see EFL.</td>
-              </tr>
-              <tr>
-                <th scope="row">AEP Texas (North/South)</th>
-                <td>West/South Texas, Corpus Christi, Rio Grande Valley</td>
-                <td>Export rules follow plan terms; check any cap/rollover details.</td>
-              </tr>
-              <tr>
-                <th scope="row">TNMP</th>
-                <td>Gulf Coast, West/North Texas pockets</td>
-                <td>Plan-specific eligibility and credit methods apply.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="
+  <!-- FAQ JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Which providers offer solar buyback?","acceptedAnswer":{"@type":"Answer","text":"Availability changes. Enter your ZIP to compare current plan options. Always review the plan’s EFL for details."}},
+      {"@type":"Question","name":"Do credits roll over month to month?","acceptedAnswer":{"@type":"Answer","text":"Some plans allow rollover, others apply credits only in the current billing cycle. Rules are in the EFL."}},
+      {"@type":"Question","name":"Is there a minimum system size?","acceptedAnswer":{"@type":"Answer","text":"Some plans require interconnection approval via your TDU. System sizing and caps are explained in the EFL."}},
+      {"@type":"Question","name":"Can I get 1:1 credit for exports?","acceptedAnswer":{"@type":"Answer","text":"Some plans offer 1:1 credits up to a cap. Others use a set buyback rate. Check the EFL for exact terms."}}
+    ]
+  }
+  </script>
+</body>
+</html>
