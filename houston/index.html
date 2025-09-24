@@ -31,14 +31,10 @@
     <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener" class="btn-primary">View Plans & Enroll</a>
   </header>
 
-  <!-- Plan Images -->
-  <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:20px; padding:20px 0;">
-    <img src="/images/budget.png" alt="Budget Relief" style="width:200px; border-radius:10px;" />
-    <img src="/images/free.png" alt="Free Nights" style="width:200px; border-radius:10px;" />
-    <img src="/images/secure.png" alt="Secure Savings" style="width:200px; border-radius:10px;" />
-    <img src="/images/summer.png" alt="Summer Break" style="width:200px; border-radius:10px;" />
-    <div style="font-weight:700; align-self:center;">+ many more</div>
-  </div>
+<!-- Skyline Image -->
+<div style="display:flex; justify-content:center; padding:20px 0;">
+  <img src="/images/houston-skyline.webp" alt="Houston Skyline" style="width:100%; max-width:900px; border-radius:14px; box-shadow:0 4px 10px rgba(0,0,0,0.15);" />
+</div>
 
   <!-- Cards -->
   <main class="grid-2" style="max-width:1100px; margin:0 auto; padding:2rem;">
@@ -126,16 +122,61 @@
   <div class="cta-section"><a class="btn-primary" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">See Our Green Plans</a></div>
 </div>
 
-<!-- New SEO card -->
+<!-- New Houston FAQ Section with Accordion -->
 <div class="card">
   <h2>Frequently Asked Questions</h2>
-  <details><summary>Will my lights go out when I switch?</summary><p>No, CenterPoint continues delivery without interruption.</p></details>
-  <details><summary>Who is the TDU in Houston?</summary><p>CenterPoint Energy handles outages, maintenance, and delivery infrastructure in Houston.</p></details>
-  <details><summary>What is an EFL?</summary><p>An Electricity Facts Label lists average prices, contract terms, fees, and renewable content.</p></details>
-  <details><summary>How do I transfer service when moving?</summary><p>Provide your new address during enrollment. Transfers usually take 1–3 business days.</p></details>
-  <details><summary>Can I choose renewable energy?</summary><p>Yes. Ambit offers renewable plans in many Houston ZIP codes.</p></details>
-  <details><summary>Do I need to cancel my old provider?</summary><p>No. Ambit manages the switch automatically.</p></details>
+
+  <style>
+    .accordion {
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      background: #fff;
+    }
+    .accordion summary {
+      cursor: pointer;
+      padding: 12px 16px;
+      font-weight: 600;
+      list-style: none;
+    }
+    .accordion summary:hover {
+      background: #f3f4f6;
+    }
+    .accordion p {
+      padding: 0 16px 12px;
+      margin: 0;
+      color: #374151;
+    }
+  </style>
+
+  <details class="accordion">
+    <summary>Will my lights go out when I switch?</summary>
+    <p>No. CenterPoint Energy continues electricity delivery without interruption.</p>
+  </details>
+
+  <details class="accordion">
+    <summary>Who is the TDU in Houston?</summary>
+    <p>CenterPoint Energy manages power lines, outages, and infrastructure in Houston.</p>
+  </details>
+
+  <details class="accordion">
+    <summary>What is an EFL?</summary>
+    <p>The Electricity Facts Label lists average kWh prices, contract length, base charges, and renewable content.</p>
+  </details>
+
+  <details class="accordion">
+    <summary>Do I need to cancel my old provider?</summary>
+    <p>No. Ambit Energy handles the switch automatically with CenterPoint.</p>
+  </details>
 </div>
+
+<!-- Small Visual Trust Element -->
+<div class="card" style="text-align:center;">
+  <h2>Trusted Houston Provider</h2>
+  <img src="/images/centerpoint-logo.png" alt="CenterPoint Energy Logo" style="width:180px; margin:10px auto; display:block;">
+  <img src="/images/houston-skyline.png" alt="Houston Skyline" style="width:100%; max-width:500px; border-radius:10px; margin-top:10px;">
+</div>
+
 
   </main>
 
