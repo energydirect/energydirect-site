@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://energydirect.org/sitemap.xml
