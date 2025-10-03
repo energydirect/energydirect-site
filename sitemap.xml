@@ -5,32 +5,39 @@
   <url>
     <loc>https://energydirect.org/</loc>
   </url>
+
+  <!-- Solar -->
   <url>
-    <loc>https://energydirect.org/solar</loc>
+    <loc>https://energydirect.org/solar/</loc>
   </url>
-    
 
   <!-- City landing pages -->
   <url>
     <loc>https://energydirect.org/houston/</loc>
   </url>
   <url>
-    <loc>https://energydirect.org/lubbock/</loc></url>
-
+    <loc>https://energydirect.org/lubbock/</loc>
+  </url>
   <url>
     <loc>https://energydirect.org/dallas/</loc>
   </url>
   <url>
-    <loc>https://energydirect.org/corpus/</loc>
-  </url>
-  <url>
     <loc>https://energydirect.org/victoria/</loc>
   </url>
-  
+  <url>
+    <loc>https://energydirect.org/corpus/</loc>
+  </url>
+
+  <!-- Texas section -->
+  <url>
+    <loc>https://energydirect.org/texas/</loc>
+  </url>
   <url>
     <loc>https://energydirect.org/texas/electricity-facts-label/</loc>
   </url>
-
+  <url>
+    <loc>https://energydirect.org/texas/electricity-glossary/</loc>
+  </url>
 
   <!-- City subpages -->
   <url>
@@ -46,15 +53,7 @@
     <loc>https://energydirect.org/victoria/switching-electricity-providers/</loc>
   </url>
   <url>
-  <loc>https://energydirect.org/texas/</loc>
-</url>
-<url>
-  <loc>https://energydirect.org/lubbock/moving-electric-service/</loc>
-</url>
-
-  <!-- Texas-wide evergreen -->
-  <url>
-    <loc>https://energydirect.org/texas/electricity-glossary/</loc>
+    <loc>https://energydirect.org/lubbock/moving-electric-service/</loc>
   </url>
 
 </urlset>
