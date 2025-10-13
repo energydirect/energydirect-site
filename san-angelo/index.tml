@@ -40,7 +40,7 @@
 
 <!-- Image -->
 <div style="max-width:1200px; margin:2rem auto; padding:0 1rem;">
-  <img src="/images/san-angelo-electricity-skyline.webp"
+  <img src="/images/san-angelo-skyline.webp"
        alt="San Angelo Texas skyline AEP Texas North electricity territory"
        loading="lazy"
        style="width:100%; height:auto; border-radius:14px; box-shadow:0 4px 12px rgba(0,0,0,0.08);" />
