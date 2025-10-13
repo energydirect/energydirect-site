@@ -28,6 +28,32 @@
     <loc>https://energydirect.org/corpus/</loc>
   </url>
 
+  <!-- NEW: West Texas cities -->
+  <url>
+    <loc>https://energydirect.org/midland/</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://energydirect.org/odessa/</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://energydirect.org/abilene/</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://energydirect.org/san-angelo/</loc>
+    <lastmod>2025-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Texas section -->
   <url>
     <loc>https://energydirect.org/texas/</loc>
