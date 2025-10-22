@@ -10,7 +10,6 @@
   <meta property="og:description" content="Learn how to check Ambit Energy availability and compare plan documents in Houston by ZIP code. Review plan types, terms, and fees, then enroll online when ready." />
   <meta property="og:type" content="article" />
   
-    
 <style>
 :root{
   --brand-50:#eff6ff;
@@ -42,6 +41,18 @@ a:hover{ text-decoration: underline; }
 .button:hover{ background: var(--brand-700); text-decoration:none; }
 .pill{ display:inline-block; padding:6px 12px; border:1px solid rgba(255,255,255,.25); border-radius:999px; font-size: 12px; margin-right:8px; color:#fff; background: rgba(255,255,255,.12); }
 .cities{ display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+
+/* FIXED HEADER LINK COLORS */
+.cities a {
+  color: #ffffff;
+  font-weight: 500;
+}
+.cities a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  text-shadow: 0 0 4px rgba(255,255,255,0.5);
+}
+
 footer{ padding: 26px 16px; background: var(--surface); color:#334155; border-top:1px solid #e5e7eb; }
 .meta{ color:#64748b; font-size: 12px; }
 code, pre{ background:#0f172a; color:#e2e8f0; padding:2px 6px; border-radius:6px; }
@@ -49,169 +60,168 @@ code, pre{ background:#0f172a; color:#e2e8f0; padding:2px 6px; border-radius:6px
 hr{ border:0; border-top:1px solid #e5e7eb; margin: 24px 0; }
 </style>
 
-    
-  
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4CWH67FHM0"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-4CWH67FHM0');
-    </script>
-    <script>
-    document.addEventListener('click', function(e){
-      const a = e.target.closest('a.signup-link');
-      if(!a) return;
-      try {
-        gtag('event','sign_up_click', {
-          event_category:'engagement',
-          event_label: a.dataset.city || 'unknown'
-        });
-      } catch(_e){}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4CWH67FHM0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4CWH67FHM0');
+</script>
+<script>
+document.addEventListener('click', function(e){
+  const a = e.target.closest('a.signup-link');
+  if(!a) return;
+  try {
+    gtag('event','sign_up_click', {
+      event_category:'engagement',
+      event_label: a.dataset.city || 'unknown'
     });
-    </script>
-    
+  } catch(_e){}
+});
+</script>
 </head>
+
 <body>
   <div style="text-align: center; margin: 1rem 0;">
-  <img src="/images/ambit logo.png" alt="Ambit Energy Consultant" style="max-width: 450px; height: auto; border-radius: 10px;" />
-</div>
+    <img src="/images/ambit logo.png" alt="Ambit Energy Consultant" style="max-width: 450px; height: auto; border-radius: 10px;" />
+  </div>
 
   <div class="breadcrumb-wrapper">
-  <nav class="breadcrumbs" aria-label="Breadcrumb">
-    <a href="/">Home</a> › 
-    <a href="/houston/">Houston</a> › 
-    <span>Compare Ambit Plans by ZIP</span>
-  </nav>
-</div>
-
-<header>
-  <div class="meta">
-    EnergyDirect — Ambit Energy Independent Consultant
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a> › 
+      <a href="/houston/">Houston</a> › 
+      <span>Compare Ambit Plans by ZIP</span>
+    </nav>
   </div>
-  <div class="cities">
-        <a href="/">Home</a> |
-<a href="/houston/">Houston</a> |
-<a href="/dallas/">Dallas</a> |
-<a href="/corpus/">Corpus Christi</a> |
-<a href="/victoria/">Victoria</a> |
-<a href="/lubbock/">Lubbock</a> |
-<a href="/texas/">Texas Hub</a> |
-<a href="/abilene/">Abilene</a> |
-<a href="/midland/">Midland</a> |
-<a href="/odessa/">Odessa</a> |
-<a href="/san-angelo/">San Angelo</a> |
-<a href="/solar/">Solar Plans</a>
-</header>
-<main>
 
-<h1>Compare Ambit Energy Plans in Houston by ZIP</h1>
-<p class="lede">This quick guide shows how to check availability by ZIP, review plan documents, and enroll online—without making any savings claims.</p>
+  <header>
+    <div class="meta">
+      EnergyDirect — Ambit Energy Independent Consultant
+    </div>
+    <div class="cities">
+      <a href="/">Home</a> |
+      <a href="/houston/">Houston</a> |
+      <a href="/dallas/">Dallas</a> |
+      <a href="/corpus/">Corpus Christi</a> |
+      <a href="/victoria/">Victoria</a> |
+      <a href="/lubbock/">Lubbock</a> |
+      <a href="/texas/">Texas Hub</a> |
+      <a href="/abilene/">Abilene</a> |
+      <a href="/midland/">Midland</a> |
+      <a href="/odessa/">Odessa</a> |
+      <a href="/san-angelo/">San Angelo</a> |
+      <a href="/solar/">Solar Plans</a>
+    </div>
+  </header>
 
-<h2>Quick Steps to Compare</h2>
-<ol class="step">
-  <li>Go to the official plan page and enter your ZIP.</li>
-  <li>Open the Electricity Facts Label (EFL) for each plan you’re considering.</li>
-  <li>Compare contract terms, fees, and plan type (fixed or variable).</li>
-  <li>Choose the plan that fits your household’s needs and enroll online.</li>
-</ol>
+  <main>
+    <h1>Compare Ambit Energy Plans in Houston by ZIP</h1>
+    <p class="lede">This quick guide shows how to check availability by ZIP, review plan documents, and enroll online—without making any savings claims.</p>
 
-<div class="cta">
-  <a class="button signup-link" data-city="houston" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">Check Rates &amp; Enroll (Houston)</a>
-</div>
+    <h2>Quick Steps to Compare</h2>
+    <ol class="step">
+      <li>Go to the official plan page and enter your ZIP.</li>
+      <li>Open the Electricity Facts Label (EFL) for each plan you’re considering.</li>
+      <li>Compare contract terms, fees, and plan type (fixed or variable).</li>
+      <li>Choose the plan that fits your household’s needs and enroll online.</li>
+    </ol>
 
-<h2>Eligibility by ZIP</h2>
-<p>Many Houston-area ZIP codes are in deregulated service areas. Availability can vary by address, so the ZIP lookup on the enrollment page is the best way to confirm what’s offered in your neighborhood.</p>
+    <div class="cta">
+      <a class="button signup-link" data-city="houston" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">Check Rates &amp; Enroll (Houston)</a>
+    </div>
 
-<h2>Fixed vs. Variable Plans</h2>
-<p><strong>Fixed-rate plans</strong> typically keep the energy charge constant during the contract term. <strong>Variable plans</strong> can change month to month. Review each plan’s EFL for details and current terms.</p>
+    <h2>Eligibility by ZIP</h2>
+    <p>Many Houston-area ZIP codes are in deregulated service areas. Availability can vary by address, so the ZIP lookup on the enrollment page is the best way to confirm what’s offered in your neighborhood.</p>
 
-<h2>Contract Term &amp; EFL Basics</h2>
-<p>The EFL summarizes key details: term length, energy charges, delivery charges, fees, and disclosures. Compare EFLs side by side before you enroll.</p>
+    <h2>Fixed vs. Variable Plans</h2>
+    <p><strong>Fixed-rate plans</strong> typically keep the energy charge constant during the contract term. <strong>Variable plans</strong> can change month to month. Review each plan’s EFL for details and current terms.</p>
 
-<h2>Fees to Review</h2>
-<ul>
-  <li><strong>TDU delivery charges:</strong> Transmission and distribution charges from the local utility.</li>
-  <li><strong>Early termination fee:</strong> If applicable, listed in the EFL.</li>
-  <li><strong>Other fees:</strong> Any additional charges and conditions are explained in the EFL.</li>
-</ul>
+    <h2>Contract Term &amp; EFL Basics</h2>
+    <p>The EFL summarizes key details: term length, energy charges, delivery charges, fees, and disclosures. Compare EFLs side by side before you enroll.</p>
 
-<h2>How to Enroll Online</h2>
-<ol class="step">
-  <li>Use the ZIP tool to see available plans.</li>
-  <li>Open and read the plan documents (EFL, Terms of Service, Your Rights as a Customer).</li>
-  <li>Complete the online enrollment with accurate service address details.</li>
-</ol>
+    <h2>Fees to Review</h2>
+    <ul>
+      <li><strong>TDU delivery charges:</strong> Transmission and distribution charges from the local utility.</li>
+      <li><strong>Early termination fee:</strong> If applicable, listed in the EFL.</li>
+      <li><strong>Other fees:</strong> Any additional charges and conditions are explained in the EFL.</li>
+    </ul>
 
-<div class="cta">
-  <a class="button signup-link" data-city="houston" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">View Current Plans</a>
-</div>
+    <h2>How to Enroll Online</h2>
+    <ol class="step">
+      <li>Use the ZIP tool to see available plans.</li>
+      <li>Open and read the plan documents (EFL, Terms of Service, Your Rights as a Customer).</li>
+      <li>Complete the online enrollment with accurate service address details.</li>
+    </ol>
 
-<h2>Explore Nearby Cities</h2>
-<p>Compare info for other Texas cities:</p>
-<p><a href="/dallas/">Ambit Energy Dallas</a> • <a href="/corpus/">Ambit Energy Corpus Christi</a> • <a href="/victoria/">Ambit Energy Victoria</a></p>
+    <div class="cta">
+      <a class="button signup-link" data-city="houston" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">View Current Plans</a>
+    </div>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+    <h2>Explore Nearby Cities</h2>
+    <p>Compare info for other Texas cities:</p>
+    <p><a href="/dallas/">Ambit Energy Dallas</a> • <a href="/corpus/">Ambit Energy Corpus Christi</a> • <a href="/victoria/">Ambit Energy Victoria</a></p>
+
+    <script type="application/ld+json">
     {
-      "@type": "Question",
-      "name": "Is Ambit Energy available in my Houston ZIP?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Availability depends on your address in deregulated areas. Use the ZIP tool on the enrollment page to check plans for your location."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Will my power be interrupted when I switch?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Service transfers are typically seamless in deregulated Texas markets. Always review the enrollment timeline during checkout."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to pay a deposit?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Deposit requirements vary and are determined during enrollment. Details will be shown before you submit."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where can I find the Electricity Facts Label (EFL)?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Each plan lists an EFL link on the offer page. Open it to compare rates, fees, terms, and disclosures."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who do I contact for outages?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Outages are handled by your local Transmission and Distribution Utility (TDU). Your bill lists the correct contact number."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does switching take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Timing varies by plan and TDU processes. Check the enrollment confirmation for your expected start date."
-      }
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Ambit Energy available in my Houston ZIP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Availability depends on your address in deregulated areas. Use the ZIP tool on the enrollment page to check plans for your location."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my power be interrupted when I switch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Service transfers are typically seamless in deregulated Texas markets. Always review the enrollment timeline during checkout."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to pay a deposit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Deposit requirements vary and are determined during enrollment. Details will be shown before you submit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find the Electricity Facts Label (EFL)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Each plan lists an EFL link on the offer page. Open it to compare rates, fees, terms, and disclosures."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who do I contact for outages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Outages are handled by your local Transmission and Distribution Utility (TDU). Your bill lists the correct contact number."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does switching take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Timing varies by plan and TDU processes. Check the enrollment confirmation for your expected start date."
+          }
+        }
+      ]
     }
-  ]
-}
-</script>
+    </script>
+  </main>
 
-</main>
-<footer>
-  <div class="meta">© 2025 EnergyDirect. Information provided for general guidance; always review current plan documents before enrolling.</div>
-</footer>
+  <footer>
+    <div class="meta">© 2025 EnergyDirect. Information provided for general guidance; always review current plan documents before enrolling.</div>
+  </footer>
 </body>
 </html>
