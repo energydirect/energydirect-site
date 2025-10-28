@@ -114,69 +114,101 @@
     </div>
   </section>
 
- <!-- Plan Images Section -->
-<style>
-  .plans-row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 24px;
-    padding: 30px 0;
-  }
+<!-- ===================== POPULAR ENERGY PLANS SECTION ===================== -->
+<section class="wrap" style="text-align:center; padding:3rem 1rem;">
+  <h2 style="font-size:2rem; color:#0f172a; margin-bottom:.5rem;">Popular Energy Plans</h2>
+  <p style="max-width:700px; margin:0 auto 2rem; color:#475569;">
+    Explore Ambit Energy plans available through your EnergyDirect consultant. 
+    <strong>Rates vary by ZIP</strong> and usage — always review the 
+    <strong>Electricity Facts Label (EFL)</strong> before enrolling.
+  </p>
 
-  .plans-row a {
-    display: inline-block;
-    text-decoration: none;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-  }
+  <style>
+    .plans-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 24px;
+      padding: 30px 0;
+    }
 
-  .plans-row a:hover {
-    transform: scale(1.05);
-  }
+    .plans-row a {
+      display: inline-block;
+      text-decoration: none;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
 
-  .plans-row img {
-    width: 260px;
-    max-width: 100%;
-    border-radius: 14px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-  }
+    .plans-row a:hover {
+      transform: scale(1.05);
+    }
 
-  .plans-row img:hover {
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-  }
+    .plans-row img {
+      width: 260px;
+      max-width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
 
-  .more-plans {
-    font-weight: 700;
-    align-self: center;
-    font-size: 1.1rem;
-    color: #475569;
-  }
+    .plans-row img:hover {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
 
-  @media (max-width: 900px) {
-    .plans-row img { width: 45%; }
-  }
+    .more-plans {
+      font-weight: 700;
+      align-self: center;
+      font-size: 1.1rem;
+      color: #475569;
+    }
 
-  @media (max-width: 600px) {
-    .plans-row img { width: 90%; }
-  }
-</style>
+    @media (max-width: 900px) {
+      .plans-row img { width: 45%; }
+    }
 
-<div class="plans-row wrap">
-  <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">
-    <img src="/images/budget.webp" alt="Budget Relief Plan - Earn $50 bill credit monthly for flexible energy usage" loading="lazy" decoding="async">
-  </a>
-  <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">
-    <img src="/images/free.webp" alt="Free & Clear Nights Plan - Free night energy hours for Texas homes" loading="lazy" decoding="async">
-  </a>
-  <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">
-    <img src="/images/secure.webp" alt="Secure Savings Plan - Predictable fixed rates and peace of mind" loading="lazy" decoding="async">
-  </a>
-  <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">
-    <img src="/images/summer.webp" alt="Summer Break Plan - 50% off energy charges during summer usage period" loading="lazy" decoding="async">
-  </a>
-  <div class="more-plans">+ many more</div>
-</div>
+    @media (max-width: 600px) {
+      .plans-row img { width: 90%; }
+    }
+  </style>
+
+  <div class="plans-row">
+    <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">
+      <img src="/images/budget.webp" 
+           alt="Budget Relief Plan - Earn $50 monthly bill credit for flexible energy usage" 
+           loading="lazy" decoding="async">
+    </a>
+
+    <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">
+      <img src="/images/free.webp" 
+           alt="Free & Clear Nights Plan - Free nighttime electricity hours for Texas customers" 
+           loading="lazy" decoding="async">
+    </a>
+
+    <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">
+      <img src="/images/secure.webp" 
+           alt="Secure Savings Plan - Fixed-rate electricity with predictable monthly bills" 
+           loading="lazy" decoding="async">
+    </a>
+
+    <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">
+      <img src="/images/summer.webp" 
+           alt="Summer Break Plan - 50% off energy charges during summer months" 
+           loading="lazy" decoding="async">
+    </a>
+
+    <div class="more-plans">+ many more</div>
+  </div>
+
+  <div style="margin-top:2rem;">
+    <a href="https://energydirect.myambit.com/rates-and-plans/" 
+       class="btn-primary" 
+       style="background:#2563eb; color:#fff; font-weight:700; padding:14px 26px; 
+              border-radius:12px; text-decoration:none; transition:background 0.3s;">
+      View All Plans & Enroll
+    </a>
+  </div>
+</section>
+<!-- ===================== END POPULAR ENERGY PLANS SECTION ===================== -->
+
 
 
   <!-- Compact 3-card section -->
@@ -279,6 +311,7 @@
   </script>
 </body>
 </html>
+
 
 
 
