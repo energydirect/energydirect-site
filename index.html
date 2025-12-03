@@ -176,6 +176,15 @@
       }
     }
 
+    /* ===== FIX: Disable sticky header on mobile ===== */
+    @media (max-width: 768px) {
+      .top-nav {
+        position: static !important;
+        top: auto !important;
+        box-shadow: none !important;
+      }
+    }
+
     /* ===== Hero ===== */
     header.hero{
       background:linear-gradient(135deg,var(--orange-1) 0%,var(--orange-2) 100%);
@@ -678,5 +687,6 @@
   <script>
   (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="q3jbqwMknA-qsuvShLBBX";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
   </script>
+
 </body>
 </html>
