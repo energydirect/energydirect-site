@@ -16,19 +16,116 @@
     .btn-primary:hover { background:#1d4ed8; }
     .cta-section { text-align:center; margin-top:1.5rem; }
     .muted { color:#475569; }
+
+    /* Table of contents styling */
+    .toc {
+      background:#ffffff;
+      border:1px solid #e5e7eb;
+      border-radius:12px;
+      padding:16px 20px;
+      margin-bottom:24px;
+      box-shadow:0 2px 6px rgba(15,23,42,.04);
+    }
+    .toc h2 {
+      font-size:1.1rem;
+      margin-top:0;
+      margin-bottom:0.5rem;
+    }
+    .toc ul {
+      list-style:none;
+      padding-left:0;
+      margin:0;
+    }
+    .toc li {
+      margin:4px 0;
+    }
+    .toc a {
+      color:#2563eb;
+      text-decoration:none;
+    }
+    .toc a:hover {
+      text-decoration:underline;
+    }
+    table.tdu-table {
+      width:100%;
+      border-collapse:collapse;
+      margin:1rem 0;
+      font-size:0.95rem;
+    }
+    table.tdu-table th,
+    table.tdu-table td {
+      border:1px solid #e5e7eb;
+      padding:8px 10px;
+      text-align:left;
+    }
+    table.tdu-table th {
+      background:#f1f5f9;
+      font-weight:600;
+    }
   </style>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I know if I live in a deregulated area in Texas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you live in cities like Houston, Dallas, Fort Worth, Corpus Christi, Lubbock, Midland, Odessa, Abilene, or many surrounding suburbs, you are likely in a deregulated electricity area where you can choose your retail electricity provider."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does my electricity get disconnected when I switch providers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. In deregulated parts of Texas, switching providers is a seamless process handled behind the scenes. Your lights stay on during the switch as long as there are no billing or disconnect issues on the account."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I choose my TDU in Texas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Your Transmission and Distribution Utility (TDU) is assigned based on your location. You can choose your retail electricity provider, but not the TDU that maintains the poles and wires in your area."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are delivery charges the same no matter which provider I choose?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. TDU delivery charges are regulated and are the same across all retail electricity providers in that TDU service area. Those charges appear as a separate line item on your bill regardless of which supplier you choose."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What contract length is best for a Texas electricity plan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most Texans choose a 12-month fixed-rate plan because it balances rate stability with flexibility. Longer terms like 24 or 36 months can be a good fit when market prices are low and you want long-term price protection."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Logo -->
   <div style="text-align:center; margin: 1rem 0;">
     <img src="/images/ambit logo.png" alt="Ambit Energy Consultant" style="width: 450px; max-width: 100%; height: auto; margin-bottom: 1rem;">
   </div>
-<div class="breadcrumb-wrapper">
-  <nav class="breadcrumbs" aria-label="Breadcrumb">
-    <a href="/">Home</a> › 
-    <a href="/texas/">Texas Hub</a>
-  </nav>
-</div>
+
+  <div class="breadcrumb-wrapper">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a> › 
+      <a href="/texas/">Texas Hub</a>
+    </nav>
+  </div>
 
   <!-- Hero -->
   <header style="background: linear-gradient(135deg, #f57c00 0%, #fbb034 100%); color:#fff; text-align:center; padding:4rem 1rem; text-shadow:2px 2px 6px rgba(0,0,0,.3);">
@@ -63,7 +160,7 @@
         <li>Average price at 500/1000/2000 kWh</li>
         <li>Base/minimum usage fees</li>
         <li>Bill credit thresholds</li>
-        <li>Contract length & early termination fee</li>
+        <li>Contract length &amp; early termination fee</li>
         <li>Renewable content</li>
       </ul>
       <div class="cta-section"><a class="btn-primary" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">Compare Plans</a></div>
@@ -77,7 +174,7 @@
         <li><a href="/corpus/">Corpus Christi</a></li>
         <li><a href="/victoria/">Victoria</a></li>
         <li><a href="/lubbock/">Lubbock</a></li>
-        <li><a href="/abilene/">Ailene</a></li>
+        <li><a href="/abilene/">Abilene</a></li>
         <li><a href="/midland/">Midland</a></li>
         <li><a href="/odessa/">Odessa</a></li>
         <li><a href="/san-angelo/">San Angelo</a></li>
@@ -95,23 +192,223 @@
     </div>
   </main>
 
+  <!-- Long-Form Texas Electricity Guide (Authority Content) -->
+  <section id="texas-guide" style="max-width:1100px; margin:0 auto; padding:2rem; line-height:1.7; color:#1e293b;">
+
+    <!-- Table of Contents -->
+    <div class="toc">
+      <h2>On this page</h2>
+      <ul>
+        <li><a href="#how-texas-electricity-works">How electricity works in deregulated Texas</a></li>
+        <li><a href="#why-rates-vary">Why electricity rates vary by ZIP code</a></li>
+        <li><a href="#compare-plans">How to compare Texas electricity plans</a></li>
+        <li><a href="#reading-efl">How to read the Electricity Facts Label (EFL)</a></li>
+        <li><a href="#moving-to-texas">Moving to Texas: setting up electricity</a></li>
+        <li><a href="#apartments">Electricity for apartments</a></li>
+        <li><a href="#tdu-table">TDU service areas and outage contacts</a></li>
+        <li><a href="#texas-faq">Frequently asked questions</a></li>
+      </ul>
+    </div>
+
+    <h2 id="how-texas-electricity-works" style="font-size:2rem; margin-bottom:1rem;">How electricity works in deregulated Texas</h2>
+    <p>
+      Texas has one of the most unique electricity systems in the country. In deregulated areas—such as Houston, Dallas, Fort Worth, Waco, Corpus Christi, Lubbock, Abilene, Midland, Odessa, and many others—you have the freedom to choose your electricity provider.
+    </p>
+    <p>
+      This choice exists because Texas split responsibilities between two groups:
+    </p>
+
+    <h3>Retail Electricity Providers (REPs)</h3>
+    <ul>
+      <li>Companies like Ambit Energy that sell electricity plans.</li>
+      <li>They handle billing, customer service, and plan options.</li>
+      <li>Rates vary by ZIP code and usage.</li>
+    </ul>
+
+    <h3>Transmission &amp; Distribution Utilities (TDUs)</h3>
+    <p>TDUs maintain the poles, wires, and deliver the electricity to your home. These include:</p>
+    <ul>
+      <li><strong>Oncor</strong> – Dallas/Fort Worth and surrounding areas</li>
+      <li><strong>CenterPoint</strong> – Greater Houston region</li>
+      <li><strong>AEP Texas</strong> – Corpus Christi, Rio Grande Valley, West Texas</li>
+      <li><strong>TNMP</strong> – Parts of North, Central, and West Texas</li>
+    </ul>
+    <p>
+      Your REP does not change your TDU. If you switch providers, your TDU remains the same, and outages are still handled by that utility—not the REP.
+    </p>
+
+    <hr style="margin:2rem 0;">
+
+    <h2 id="why-rates-vary" style="font-size:2rem; margin-bottom:1rem;">Why electricity rates vary by ZIP code</h2>
+    <p>When you search for electricity plans in Texas, you’ll notice every provider asks for your ZIP code. This is because:</p>
+    <ul>
+      <li>TDUs have different delivery charges.</li>
+      <li>Local competition affects price ranges.</li>
+      <li>Usage patterns vary by region (urban vs. rural).</li>
+      <li>Wholesale energy costs differ across TDU load zones.</li>
+    </ul>
+    <p>
+      Even neighboring cities—like Dallas and Fort Worth—can have different rates depending on promotions, plan structures, and delivery fees.
+    </p>
+
+    <hr style="margin:2rem 0;">
+
+    <h2 id="compare-plans" style="font-size:2rem; margin-bottom:1rem;">How to compare Texas electricity plans</h2>
+    <p>Not all plans are built the same. Before choosing a REP, look for these plan types and how they fit your usage habits:</p>
+
+    <h3>1. Fixed-rate plans</h3>
+    <p>Rate stays the same for the entire contract. Best for budgeting and stability.</p>
+
+    <h3>2. Variable or indexed plans</h3>
+    <p>Rate may change month-to-month based on the market. Not ideal for most homes because bills can spike unexpectedly.</p>
+
+    <h3>3. Time-of-use (TOU) plans</h3>
+    <p>Examples: Free Nights, Free Weekends. Best when your usage matches the free windows and you can shift laundry, dishwashing, and EV charging into those hours.</p>
+
+    <h3>4. Bill credit or usage credit plans</h3>
+    <p>
+      Plans that give a bill credit once you pass a certain usage threshold (for example, 1200 kWh). These can be great if you consistently hit that number—but painful if you fall just short and miss the credit.
+    </p>
+
+    <h3>5. Prepaid electricity</h3>
+    <p>Pay-as-you-go electricity with no traditional deposit or credit check. Useful for short-term stays or when credit is a concern, but daily or weekly notifications are common and rates can be higher.</p>
+
+    <hr style="margin:2rem 0;">
+
+    <h2 id="reading-efl" style="font-size:2rem; margin-bottom:1rem;">How to read the Electricity Facts Label (EFL)</h2>
+    <p>The EFL is the “nutrition label” of any Texas electricity plan. It shows the real cost details. Look closely at:</p>
+    <ul>
+      <li><strong>Average price at 500, 1000, and 2000 kWh</strong> – these show how the plan behaves at different usage levels.</li>
+      <li><strong>Base or minimum usage fees</strong> – extra charges if you don’t hit a certain kWh.</li>
+      <li><strong>Bill credit rules</strong> – such as credits only applying between 1200–2000 kWh.</li>
+      <li><strong>TDU delivery charges</strong> – regulated charges that change a couple of times per year.</li>
+      <li><strong>Contract length and early termination fee</strong> – what it costs if you leave early.</li>
+      <li><strong>Renewable content</strong> – the percentage of energy from renewable sources.</li>
+    </ul>
+    <p>
+      A plan may advertise a low rate but only deliver that rate at a very specific usage level. When in doubt, compare the 1000 kWh number—that’s the statewide benchmark for plan comparisons.
+    </p>
+
+    <hr style="margin:2rem 0;">
+
+    <h2 id="moving-to-texas" style="font-size:2rem; margin-bottom:1rem;">Moving to Texas? Here’s how to set up electricity</h2>
+    <p>Setting up electricity in a deregulated part of Texas is quick and can usually be done same day or next day. Here’s what you’ll need:</p>
+    <ul>
+      <li>Your new address and ZIP code</li>
+      <li>Planned move-in date</li>
+      <li>Your ID or SSN (for a soft credit check)</li>
+      <li>Estimated usage (small apartment, townhome, or full house)</li>
+    </ul>
+    <p>
+      You can start or switch service online in just a few minutes. If you’re renting an apartment, the office may recommend a provider—but in most deregulated areas you are free to choose any REP that serves your ZIP.
+    </p>
+
+    <hr style="margin:2rem 0;">
+
+    <h2 id="apartments" style="font-size:2rem; margin-bottom:1rem;">Electricity for apartments in Texas</h2>
+    <p>Apartments often benefit from:</p>
+    <ul>
+      <li>Plans that don’t punish low usage under 800–900 kWh.</li>
+      <li>Shorter-term contracts that match your lease length.</li>
+      <li>Fixed-rate plans for predictable monthly bills.</li>
+    </ul>
+    <p>
+      If your usage is consistently under 700 kWh, be cautious with plans that rely on bill credits or minimum usage requirements. Those plans are often designed for larger homes and may cost more for small apartments.
+    </p>
+
+    <hr style="margin:2rem 0;">
+
+    <h2 id="tdu-table" style="font-size:2rem; margin-bottom:1rem;">TDU service areas and outage contacts</h2>
+    <p>
+      Your <strong>TDU</strong> handles outages and delivery issues—not your REP. Keep your TDU’s emergency number handy:
+    </p>
+
+    <table class="tdu-table">
+      <thead>
+        <tr>
+          <th>TDU</th>
+          <th>Typical Service Area</th>
+          <th>Outage Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Oncor</strong></td>
+          <td>Dallas/Fort Worth, parts of North and Central Texas</td>
+          <td>888-313-4747</td>
+        </tr>
+        <tr>
+          <td><strong>CenterPoint</strong></td>
+          <td>Greater Houston metro area</td>
+          <td>800-332-7143</td>
+        </tr>
+        <tr>
+          <td><strong>AEP Texas</strong></td>
+          <td>Corpus Christi, Rio Grande Valley, West and South Texas</td>
+          <td>866-223-8508</td>
+        </tr>
+        <tr>
+          <td><strong>TNMP</strong></td>
+          <td>Parts of North, Central, and West Texas</td>
+          <td>888-866-7456</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr style="margin:2rem 0;">
+
+    <h2 id="texas-faq" style="font-size:2rem; margin-bottom:1rem;">Frequently asked questions</h2>
+    
+    <h3>How do I know if I live in a deregulated area?</h3>
+    <p>
+      If you’re in cities like Houston, Dallas, Fort Worth, Corpus Christi, Lubbock, Midland, Odessa, Abilene, or many surrounding suburbs, you are likely in a deregulated area where you can choose your electricity provider.
+    </p>
+
+    <h3>Does my electricity get disconnected when I switch providers?</h3>
+    <p>
+      No. Switching providers in deregulated Texas is designed to be seamless. As long as your account is in good standing, your power stays on while the switch is processed.
+    </p>
+
+    <h3>Do I choose my TDU?</h3>
+    <p>
+      No. Your TDU is assigned based on your physical location. You choose the REP (like Ambit Energy), but the TDU that maintains the grid in your area stays the same.
+    </p>
+
+    <h3>Are delivery charges the same for every REP?</h3>
+    <p>
+      Yes. TDU delivery charges are regulated by the state and are identical across all providers in that service area. Every REP passes through those same charges on your bill.
+    </p>
+
+    <h3>What contract length is best?</h3>
+    <p>
+      Many Texans choose a 12-month fixed plan for balance and predictability. When rates are favorable, longer terms like 24 or 36 months can lock in protection for a longer period.
+    </p>
+
+    <div class="cta-section" style="margin-top:2rem;">
+      <a class="btn-primary" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">
+        Compare Texas Electricity Plans
+      </a>
+    </div>
+
+  </section>
+
   <!-- Footer -->
   <footer style="text-align:center; padding:1.5rem; background:rgba(0,0,0,0.05); font-size:.9rem;">
     © 2025 EnergyDirect | Independent Ambit Energy Consultant
     <div class="puct">PUCT#10117</div>
     <div style="margin-top:1rem;">
-       <a href="/">Home</a> |
-<a href="/houston/">Houston</a> |
-<a href="/dallas/">Dallas</a> |
-<a href="/corpus/">Corpus Christi</a> |
-<a href="/victoria/">Victoria</a> |
-<a href="/lubbock/">Lubbock</a> |
-<a href="/texas/">Texas Hub</a> |
-<a href="/abilene/">Abilene</a> |
-<a href="/midland/">Midland</a> |
-<a href="/odessa/">Odessa</a> |
-<a href="/san-angelo/">San Angelo</a> |
-<a href="/solar/">Solar Plans</a>
+      <a href="/">Home</a> |
+      <a href="/houston/">Houston</a> |
+      <a href="/dallas/">Dallas</a> |
+      <a href="/corpus/">Corpus Christi</a> |
+      <a href="/victoria/">Victoria</a> |
+      <a href="/lubbock/">Lubbock</a> |
+      <a href="/texas/">Texas Hub</a> |
+      <a href="/abilene/">Abilene</a> |
+      <a href="/midland/">Midland</a> |
+      <a href="/odessa/">Odessa</a> |
+      <a href="/san-angelo/">San Angelo</a> |
+      <a href="/solar/">Solar Plans</a>
     </div>
   </footer>
 </body>
