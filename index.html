@@ -91,7 +91,7 @@
     .top-nav .inner {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 0.6rem 1.25rem;
+      padding: 0.6rem 1.0rem;
       display: grid;
       grid-template-columns: 1fr auto 1fr;   /* Ambit | ED | Nav */
       align-items: center;
@@ -112,9 +112,18 @@
 
     .brand-ed {
       justify-self: center;
+      justify-content: center;
     }
-    .brand-ed img {
-      height: 130px;
+
+    /* Big bold brand text */
+    .ed-text {
+      font-size: 52px;
+      font-weight: 900;
+      color: #000000 !important;
+      text-decoration: none !important;
+      line-height: 1;
+      font-family: 'Poppins', sans-serif;
+      white-space: nowrap;
     }
 
     .top-nav nav {
@@ -162,11 +171,11 @@
       }
 
       .brand-ambit img {
-        height: 56px;
+        height: 70px;
       }
 
-      .brand-ed img {
-        height: 72px;
+      .ed-text {
+        font-size: 40px;
       }
 
       .top-nav nav {
@@ -177,6 +186,10 @@
     }
 
     @media (max-width: 520px) {
+      .ed-text {
+        font-size: 32px;
+      }
+
       .top-nav nav {
         flex-direction: column;
         gap: 10px;
@@ -397,16 +410,16 @@
 
 <body>
 
-  <!-- Header with Ambit left, EnergyDirect logo center -->
+  <!-- Header with Ambit left, EnergyDirect text center -->
   <div class="top-nav">
     <div class="inner">
       <a href="/" class="brand-ambit">
         <img src="/images/ambit logo.png" alt="Ambit Energy Consultant">
       </a>
 
-    <a href="/" class="brand-ed">
-  <span class="ed-text">EnergyDirect</span>
-</a>
+      <a href="/" class="brand-ed">
+        <span class="ed-text">EnergyDirect</span>
+      </a>
 
       <nav>
         <a href="#plans">Plans</a>
@@ -701,5 +714,3 @@
 
 </body>
 </html>
-
-
