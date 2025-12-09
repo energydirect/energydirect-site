@@ -166,3 +166,34 @@ footer {
   main p { font-size: 1rem; }
   .cta-button { padding: .9rem 2rem; font-size: 1rem; }
 }
+
+/* === Fix: city links in article header (blue bar) === */
+header .cities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .5rem .75rem;
+  margin: .75rem auto 0;
+  padding: 0 .5rem;
+  max-width: 900px;
+  text-align: center;
+}
+
+header .cities a,
+header .cities strong {
+  display: inline-block;
+  padding: .35rem .6rem;
+  border-radius: 999px;
+  background: #ffffff !important;       /* white pill */
+  color: #222 !important;               /* dark text */
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,.08);
+  font-size: .95rem;
+  opacity: 1 !important;
+}
+
+header .cities a:hover {
+  background: #1b82d6 !important;
+  color: #ffffff !important;
+}
+
