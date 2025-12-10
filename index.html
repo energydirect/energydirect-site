@@ -102,6 +102,7 @@
       display: grid;
       grid-template-columns: 1fr auto 1fr;   /* Ambit | ED | Nav */
       align-items: center;
+      column-gap: 72px;                      /* ADDED: space between EnergyDirect and nav */
     }
 
     .brand-ambit,
@@ -138,7 +139,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 26px;
+      gap: 32px;            /* INCREASED: more space between menu items */
     }
 
     .top-nav nav a {
@@ -686,26 +687,7 @@
     </div>
   </section>
 
-  <!-- ===================== POPULAR CITIES IN TEXAS ===================== -->
-  <section class="wrap reveal-up" id="popular-cities" style="padding:3rem 1rem 2rem;">
-    <h2 style="text-align:center; margin-top:0; margin-bottom:.5rem;">Popular Cities in Texas</h2>
-    <p style="max-width:700px; margin:0 auto 1.5rem; text-align:center; color:#475569;">
-      Compare electricity plan options in these popular Texas cities. Rates vary by ZIP code and local TDU, so always review the
-      <strong>Electricity Facts Label (EFL)</strong> before you enroll.
-    </p>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; max-width:800px; margin:0 auto; text-align:center;">
-      <a href="/houston/">Houston Electricity Plans</a>
-      <a href="/dallas/">Dallas Electricity Plans</a>
-      <a href="/corpus/">Corpus Christi Electricity Plans</a>
-      <a href="/victoria/">Victoria Electricity Plans</a>
-      <a href="/lubbock/">Lubbock Electricity Plans</a>
-      <a href="/abilene/">Abilene Electricity Plans</a>
-      <a href="/midland/">Midland Electricity Plans</a>
-      <a href="/odessa/">Odessa Electricity Plans</a>
-      <a href="/san-angelo/">San Angelo Electricity Plans</a>
-    </div>
-  </section>
-  <!-- ===================== END POPULAR CITIES IN TEXAS ===================== -->
+
 
   <!-- FAQ -->
   <section class="faq wrap reveal-up" id="faq">
