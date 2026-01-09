@@ -167,6 +167,13 @@ footer {
   .cta-button { padding: .9rem 2rem; font-size: 1rem; }
 }
 
+/* Remove list bullets in cards */
+.card ul{
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
 /* === Fix: city links in article header (blue bar) === */
 header .cities {
   display: flex;
