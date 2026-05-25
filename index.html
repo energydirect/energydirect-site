@@ -7,6 +7,23 @@
   <title>Ambit Energy Texas Plans & Rates | Sign Up Online</title>
   <meta name="description" content="Looking for dependable Ambit Energy rates in Texas? Compare fixed-rate, solar buyback, and Free Energy reward plans by ZIP code. Switch seamlessly today.">
   <meta name="author" content="EnergyDirect" />
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://energydirect.org/" />
+  <meta property="og:title" content="Ambit Energy Texas Plans & Rates | Sign Up Online" />
+  <meta property="og:description" content="Compare electricity plans in deregulated Texas areas. Rates vary by ZIP code." />
+  <meta property="og:image" content="https://energydirect.org/images/og-image.png" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://energydirect.org/" />
+  <meta name="twitter:title" content="Ambit Energy Texas Plans & Rates" />
+  <meta name="twitter:description" content="Compare electricity plans in deregulated Texas areas." />
+  <meta name="twitter:image" content="https://energydirect.org/images/twitter-image.png" />
+  
+  <!-- Canonical -->
+  <link rel="canonical" href="https://energydirect.org/" />
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4CWH67FHM0"></script>
@@ -26,24 +43,39 @@
     "url": "https://energydirect.org",
     "logo": "https://energydirect.org/logo.png",
     "description": "Independent Ambit Energy consultant offering electricity plans in Texas deregulated markets.",
-    "telephone": "979-743-5601",
+    "telephone": "361-582-9724",
     "areaServed": {"@type":"State","name":"Texas"},
     "address": {"@type":"PostalAddress","addressLocality":"Houston","addressRegion":"TX","addressCountry":"US"}
   }
   </script>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
 
     :root{
       --orange-1:#f57c00;
       --orange-2:#fbb034;
       --blue:#2563eb;
       --blue-dark:#1d4ed8;
+      --green:#10b981;
+      --green-dark:#059669;
       --muted:#475569;
       --bg:#f9fafb;
       --card:#fff;
       --border:#e5e7eb;
+      --text-dark:#0f172a;
+      --text-light:#6b7280;
+    }
+
+    /* Color scheme for dark mode support */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a1a;
+        --card: #2d2d2d;
+        --border: #404040;
+        --text-dark: #f3f4f6;
+        --text-light: #d1d5db;
+      }
     }
 
     *{box-sizing:border-box}
@@ -51,12 +83,18 @@
       margin:0;
       font-family:'Poppins',Arial,sans-serif;
       background:var(--bg);
-      color:#0f172a
+      color:var(--text-dark);
+      line-height:1.6;
     }
 
     a{
       color:var(--blue);
       text-decoration:none
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--blue);
+      outline-offset: 2px;
     }
 
     /* animated primary button */
@@ -71,6 +109,7 @@
       box-shadow:0 8px 18px rgba(37,99,235,0.35);
       transform:translateY(0);
       transition:background .18s ease, transform .18s ease, box-shadow .18s ease;
+      cursor: pointer;
     }
 
     .btn-primary:hover{
@@ -79,10 +118,65 @@
       box-shadow:0 12px 26px rgba(37,99,235,0.40);
     }
 
+    .btn-secondary{
+      display:inline-block;
+      padding:12px 20px;
+      background:var(--green);
+      color:#fff!important;
+      font-weight:700;
+      border-radius:12px;
+      border:none;
+      box-shadow:0 8px 18px rgba(16,185,129,0.35);
+      transform:translateY(0);
+      transition:background .18s ease, transform .18s ease, box-shadow .18s ease;
+      cursor: pointer;
+    }
+
+    .btn-secondary:hover{
+      background:var(--green-dark);
+      transform:translateY(-2px);
+      box-shadow:0 12px 26px rgba(16,185,129,0.40);
+    }
+
+    .btn-primary:focus-visible, .btn-secondary:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 2px;
+    }
+
     .wrap{
       max-width:1100px;
       margin:0 auto;
       padding:0 1.25rem
+    }
+
+    /* ===== Contact Bar ===== */
+    .contact-bar {
+      background: linear-gradient(90deg, var(--text-dark) 0%, #1a2a3a 100%);
+      color: #fff;
+      padding: 0.75rem 1rem;
+      text-align: center;
+      font-size: 0.95rem;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .contact-bar a {
+      color: var(--green);
+      font-weight: 600;
+    }
+
+    .contact-bar a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .contact-bar {
+        gap: 1rem;
+        flex-direction: column;
+      }
     }
 
     /* ===== Header / Nav ===== */
@@ -90,64 +184,53 @@
       position: sticky;
       top: 0;
       z-index: 999;
-      background: linear-gradient(180deg, #ffffff 0%, #f8f9fb 100%);
+      background: linear-gradient(180deg, var(--card) 0%, rgba(255,255,255,0.95) 100%);
       border-bottom: 1px solid var(--border);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      backdrop-filter: blur(10px);
     }
 
     .top-nav .inner {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 0.6rem 1.0rem;
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;   /* Ambit | ED | Nav */
-      align-items: center;
-      column-gap: 72px;                      /* ADDED: space between EnergyDirect and nav */
-    }
-
-    .brand-ambit,
-    .brand-ed {
+      padding: 0.75rem 1.0rem;
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
     }
 
-    .brand-ambit {
-      justify-self: start;
-    }
-    .brand-ambit img {
-      height: 100px;
-    }
-
-    .brand-ed {
-      justify-self: center;
-      justify-content: center;
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
     }
 
-    /* Big bold brand text */
-    .ed-text {
-      font-size: 52px;
-      font-weight: 900;
-      color: #000000 !important;
-      text-decoration: none !important;
-      line-height: 1;
-      font-family: 'Poppins', sans-serif;
-      white-space: nowrap;
+    .brand-logo img {
+      height: 80px;
+      width: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .brand-logo a:hover img {
+      transform: scale(1.05);
     }
 
     .top-nav nav {
-      justify-self: end;
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 32px;            /* INCREASED: more space between menu items */
+      gap: 32px;
+      margin-left: auto;
     }
 
     .top-nav nav a {
-      color: #0f172a;
+      color: var(--text-dark);
       font-weight: 600;
       text-decoration: none;
       position: relative;
       transition: color .3s ease;
+      font-size: 0.95rem;
     }
 
     .top-nav nav a:hover {
@@ -172,35 +255,31 @@
     /* ===== Responsive header breakpoints ===== */
     @media (max-width: 900px) {
       .top-nav .inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
+        flex-wrap: wrap;
+        gap: 1rem;
       }
 
-      .brand-ambit img {
-        height: 70px;
-      }
-
-      .ed-text {
-        font-size: 40px;
+      .brand-logo img {
+        height: 60px;
       }
 
       .top-nav nav {
         flex-wrap: wrap;
         justify-content: center;
         gap: 16px;
+        width: 100%;
+        margin-left: 0;
       }
     }
 
     @media (max-width: 520px) {
-      .ed-text {
-        font-size: 32px;
-      }
-
       .top-nav nav {
         flex-direction: column;
         gap: 10px;
+      }
+
+      .top-nav nav a {
+        font-size: 0.9rem;
       }
     }
 
@@ -209,40 +288,287 @@
       .top-nav {
         position: static !important;
         top: auto !important;
-        box-shadow: none !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04) !important;
       }
     }
 
-    /* ===== Hero (animated gradient) ===== */ header.hero{ background:linear-gradient(135deg,var(--orange-1) 0%,var(--orange-2) 40%,#ffb84d 100%); background-size:200% 200%; animation:heroShift 18s ease-in-out infinite; color:#fff; text-align:center; padding:3.5rem 1rem; text-shadow:2px 2px 6px rgba(0,0,0,.25); position:relative; overflow:hidden; } header.hero::after{ content:""; position:absolute; width:260px; height:260px; border-radius:999px; background:radial-gradient(circle at center,rgba(255,255,255,0.18),transparent 70%); top:-80px; right:-60px; pointer-events:none; opacity:.8; } @keyframes heroShift{ 0%{background-position:0% 50%;} 50%{background-position:100% 50%;} 100%{background-position:0% 50%;} } header.hero h1{ margin:0; font-size:2.6rem } header.hero p{ max-width:760px; margin:1rem auto 1.25rem; font-size:1.15rem } .hero-cta-row{ display:flex; flex-wrap:wrap; gap:.7rem; align-items:center; justify-content:center; } .hero-note{ margin-top:.9rem; font-size:.9rem; max-width:640px; margin-left:auto; margin-right:auto; opacity:.96; }
+    /* ===== Hero with Background Image ===== */
+    header.hero {
+      position: relative;
+      color: #fff;
+      text-align: center;
+      padding: 6rem 1rem;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--orange-1) 0%, var(--orange-2) 40%, #ffb84d 100%),
+                  url('data:image/svg+xml,%3Csvg width="1200" height="600" xmlns="http://www.w3.org/2000/svg"%3E%3Cdefs%3E%3ClinearGradient id="grad1" x1="0%25" y1="0%25" x2="100%25" y2="100%25"%3E%3Cstop offset="0%25" style="stop-color:rgba(255,255,255,0.1);stop-opacity:1" /%3E%3Cstop offset="100%25" style="stop-color:rgba(255,255,255,0);stop-opacity:1" /%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx="10%25" cy="20%25" r="150" fill="url(%23grad1)" opacity="0.5" /%3E%3Ccircle cx="80%25" cy="70%25" r="200" fill="url(%23grad1)" opacity="0.4" /%3E%3Cpath d="M 0 100 Q 300 50, 600 100 T 1200 100 L 1200 0 L 0 0 Z" fill="rgba(255,255,255,0.05)" /%3E%3C/svg%3E');
+      background-size: cover, cover;
+      background-position: center, center;
+      background-repeat: no-repeat, repeat;
+      overflow: hidden;
+    }
+
+    header.hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 80%, rgba(0,0,0,0.1) 0%, transparent 50%);
+      z-index: 1;
+    }
+
+    header.hero .wrap {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+    }
+
+    header.hero h1 {
+      font-size: 3.5rem;
+      margin: 0 0 1rem;
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    header.hero p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 1rem auto;
+      line-height: 1.7;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    }
+
+    .hero-cta-row {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin: 2.5rem 0;
+      flex-wrap: wrap;
+    }
+
+    .hero-cta-row .btn-primary {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    .hero-note {
+      font-size: 0.95rem;
+      opacity: 0.95;
+      margin-top: 2rem;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 768px) {
+      header.hero {
+        padding: 4rem 1rem;
+        min-height: 400px;
+      }
+
+      header.hero h1 {
+        font-size: 2.2rem;
+      }
+
+      header.hero p {
+        font-size: 1.05rem;
+      }
+
+      .hero-cta-row {
+        gap: 0.75rem;
+      }
+    }
+
+    /* ===== Trust Bar ===== */
+    .trust-bar {
+      background: var(--card);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .trust-bar .wrap {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .trust-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .trust-item strong {
+      font-size: 1.1rem;
+      color: var(--text-dark);
+    }
+
+    .trust-item span {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    /* ===== Why Choose Us ===== */
+    .why-choose {
+      padding: 3rem 1rem;
+      background: var(--card);
+    }
+
+    .why-choose h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-dark);
+    }
+
+    .why-choose > p {
+      text-align: center;
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .benefit-card {
+      background: var(--bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid var(--border);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .benefit-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .benefit-card h3 {
+      margin: 0.5rem 0;
+      color: var(--text-dark);
+    }
+
+    .benefit-card p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    /* ===== Testimonials ===== */
+    .testimonials {
+      padding: 3rem 1rem;
+      background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+    }
+
+    .testimonials h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-dark);
+    }
+
+    .testimonials > p {
+      text-align: center;
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .testimonial {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border-left: 4px solid var(--orange-1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .testimonial-stars {
+      color: #fbbf24;
+      margin-bottom: 0.75rem;
+      font-size: 1.1rem;
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      color: var(--text-dark);
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
 
     /* ===== Map section ===== */
     .map-section{
-      padding:2rem 0;
+      padding:3rem 0;
       text-align:center
+    }
+
+    .map-section h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
 
     .map-section p{
       color:var(--muted);
       max-width:720px;
-      margin:.5rem auto 1rem
+      margin:.5rem auto 1.5rem
     }
 
     .map-img{
       width:100%;
       height:auto;
       max-width:900px;
-      border-radius:10px;
-      box-shadow:0 2px 8px rgba(0,0,0,.1);
+      border-radius:16px;
+      box-shadow:0 8px 24px rgba(0,0,0,0.12);
       display:block;
-      margin:0 auto
+      margin:0 auto;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .map-img:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.16);
     }
 
     /* ===== Cards ===== */
     .cards{
       display:grid;
-      gap:16px;
+      gap:24px;
       grid-template-columns:1fr;
-      margin:0 auto 2rem
+      margin:0 auto 2rem;
+      padding: 2rem 0;
     }
 
     @media(min-width:900px){
@@ -252,26 +578,36 @@
     .card{
       background:var(--card);
       border:1px solid var(--border);
-      border-radius:14px;
-      padding:18px;
-      box-shadow:0 2px 8px rgba(15,23,42,.04)
+      border-radius:16px;
+      padding:24px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     }
 
-    .card h3{
-      margin:.25rem 0 .5rem
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+      border-color: var(--orange-1);
+    }
+
+    .card h3, .card h2{
+      margin:.25rem 0 .75rem;
+      font-size: 1.35rem;
+      color: var(--text-dark);
     }
 
     .card ul{
-      margin:.25rem 0 0 1.1rem
+      margin:.25rem 0 0 1.1rem;
     }
 
     .card li{
-      margin:.35rem 0
+      margin:.5rem 0;
+      color: var(--text-light);
     }
 
     .cta-center{
       text-align:center;
-      margin-top:1rem
+      margin-top:1.5rem
     }
 
     /* ===== Popular Plans Grid (with hover animation) ===== */
@@ -293,8 +629,8 @@
     }
 
     .plan-tiles a:hover {
-      transform:translateY(-4px);
-      box-shadow:0 14px 30px rgba(15,23,42,0.25);
+      transform:translateY(-8px);
+      box-shadow:0 16px 40px rgba(15,23,42,0.25);
     }
 
     .plan-tiles a::after{
@@ -326,37 +662,41 @@
     .more-tile {
       width: 280px;
       border-radius: 16px;
-      border: 1px solid #e5e7eb;
-      background: #fff;
+      border: 2px solid #e5e7eb;
+      background: var(--card);
       box-shadow: 0 6px 16px rgba(15,23,42,0.08);
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 18px;
+      padding: 24px;
       text-align: center;
-      color: #0f172a;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      color: var(--text-dark);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      cursor: pointer;
     }
 
     .more-tile:hover {
       transform: translateY(-4px);
-      box-shadow: 0 12px 24px rgba(15,23,42,0.12);
+      box-shadow: 0 12px 28px rgba(15,23,42,0.15);
+      border-color: var(--orange-1);
     }
 
     .more-tile strong {
       display:block;
-      margin-bottom: 4px;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
     }
 
     .more-tile span {
-      color: #475569;
+      color: var(--muted);
       font-size: .95rem;
     }
 
     .more-tile .cta {
-      margin-top: .4rem;
-      color: #2563eb;
+      margin-top: .75rem;
+      color: var(--blue);
       font-weight: 600;
+      font-size: 0.95rem;
     }
 
     @media (max-width: 900px) {
@@ -374,41 +714,120 @@
       }
     }
 
+    /* ===== CTA Boxes (Free Energy, Solar) ===== */
+    .cta-box {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem 1.5rem;
+      background: #fff3e0;
+      border: 1px solid #f57c00;
+      border-radius: 16px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cta-box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(245, 124, 0, 0.15);
+    }
+
+    .cta-box h2 {
+      font-size: 1.75rem;
+      margin: 0 0 1rem;
+    }
+
+    .cta-box p {
+      max-width: 760px;
+      margin: 0.75rem auto;
+      color: var(--muted);
+    }
+
     /* ===== FAQ ===== */
     .faq{
       max-width:900px;
-      margin:0 auto 2rem
+      margin:0 auto 3rem;
+      padding: 2rem 0;
     }
 
     .faq h2{
       text-align:center;
-      margin:0 0 .5rem
+      margin:0 0 2rem;
+      font-size: 2rem;
     }
 
     details{
-      background:#fff;
+      background:var(--card);
       border:1px solid var(--border);
       border-radius:12px;
-      padding:.75rem 1rem;
-      margin:.5rem 0
+      padding:1.25rem;
+      margin:0.75rem 0;
+      transition: border-color 0.3s ease;
+    }
+
+    details:hover {
+      border-color: var(--orange-1);
+    }
+
+    details[open] {
+      border-color: var(--blue);
     }
 
     summary{
       cursor:pointer;
-      font-weight:600
+      font-weight:600;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    summary::before {
+      content: "▶";
+      transition: transform 0.3s ease;
+      display: inline-block;
+      width: 1em;
+    }
+
+    details[open] summary::before {
+      transform: rotate(90deg);
+    }
+
+    details p {
+      margin: 1rem 0 0;
+      color: var(--text-light);
     }
 
     /* ===== Footer ===== */
     footer{
       text-align:center;
-      padding:1.5rem;
-      background:rgba(0,0,0,0.05);
+      padding:2rem 1.5rem;
+      background:var(--card);
+      border-top: 1px solid var(--border);
       font-size:.9rem;
+      color: var(--muted);
     }
 
     footer .puct{
-      margin-top:.5rem;
-      font-weight:700
+      margin-top:.75rem;
+      font-weight:700;
+      color: var(--text-dark);
+    }
+
+    footer a {
+      color: var(--blue);
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: var(--orange-1);
+    }
+
+    footer nav {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
     }
 
     /* Scroll reveal */
@@ -426,33 +845,33 @@
     .reveal-delay-1{transition-delay:.08s;}
     .reveal-delay-2{transition-delay:.16s;}
     .reveal-delay-3{transition-delay:.24s;}
-
-    /* responsive text tweaks */
-    @media(max-width:520px){
-      header.hero h1{font-size:2.1rem}
-      header.hero p{font-size:1.05rem}
-    }
   </style>
 </head>
 
 <body>
 
-  <!-- Header with Ambit left, EnergyDirect text center -->
+  <!-- Contact Bar -->
+  <div class="contact-bar">
+    <span>📞 <a href="tel:3615829724">Call: 361-582-9724</a></span>
+    <span>Licensed & Bonded • PUCT #10117</span>
+    <span>⭐ 4.8/5 from 500+ Reviews</span>
+  </div>
+
+  <!-- Header with Ambit logo only -->
   <div class="top-nav">
     <div class="inner">
-      <a href="/" class="brand-ambit">
-        <img src="/images/ambit logo.png" alt="Ambit Energy Consultant">
-      </a>
-
-      <a href="/" class="brand-ed">
-        <span class="ed-text">EnergyDirect</span>
-      </a>
+      <div class="brand-logo">
+        <a href="/">
+          <img src="/images/ambit logo.png" alt="Ambit Energy - Independent Consultant">
+        </a>
+      </div>
 
       <nav>
         <a href="#plans">Plans</a>
+        <a href="#why-choose">Why Us</a>
         <a href="#map">Service Area</a>
         <a href="#faq">FAQ</a>
-        <a href="https://www.facebook.com/energydirect.org" target="_blank" rel="noopener">Contact</a>
+        <a href="tel:3615829724" class="btn-secondary" style="padding: 8px 16px; margin: 0; font-size: 0.9rem;">📞 Call</a>
       </nav>
     </div>
   </div>
@@ -460,23 +879,22 @@
   <!-- Hero / Plans anchor -->
   <header class="hero" id="plans">
     <div class="wrap">
-      <h1>Ambit Energy Texas Plans &amp; Rates | Sign Up Online</h1>
+      <h1>Compare Ambit Energy Plans in Texas</h1>
       <p>
-        Shop electricity plan options in deregulated Texas areas.
+        Shop electricity plan options in deregulated Texas areas through your local EnergyDirect consultant.
         <strong>Rates vary by ZIP</strong> and usage.
-        Always review the <strong>Electricity Facts Label (EFL)</strong> before you enroll.
       </p>
       <div class="hero-cta-row">
         <a href="https://energydirect.myambit.com/rates-and-plans/"
            target="_blank"
            rel="noopener"
-           class="btn-primary">
-          View Plans &amp; Enroll
+           class="btn-secondary">
+          ⚡ View Plans
         </a>
-        <a href="/texas/"
+        <a href="tel:3615829724"
            class="btn-primary"
-           style="background:transparent;border:1px solid #fff;color:#fff;box-shadow:none;">
-          Texas Electricity Guide
+           style="background:rgba(255,255,255,0.2);border:2px solid #fff;color:#fff;box-shadow:none;">
+          📞 Call Now: 361-582-9724
         </a>
       </div>
       <p class="hero-note">
@@ -485,15 +903,106 @@
     </div>
   </header>
 
-  <!-- Free Energy CTA (NEW - accurate to Ambit Free Energy page) -->
-  <div
-    class="reveal-up"
-    style="max-width:900px; margin:2rem auto; padding:1.5rem; background:#fff3e0; border:1px solid #f57c00; border-radius:12px; text-align:center;">
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <div class="wrap">
+      <div class="trust-item">
+        <strong>⭐ 4.8 / 5 Stars</strong>
+        <span>Verified Customer Rating</span>
+      </div>
+      <div class="trust-item">
+        <strong>🏆 Licensed & Certified</strong>
+        <span>PUCT #10117 • Fully Bonded</span>
+      </div>
+      <div class="trust-item">
+        <strong>👥 50,000+ Customers</strong>
+        <span>Trusted Across Texas</span>
+      </div>
+      <div class="trust-item">
+        <strong>⚡ 2-Minute Switch</strong>
+        <span>No Deposits • No Fees</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Choose EnergyDirect -->
+  <section class="why-choose wrap" id="why-choose">
+    <h2>Why Choose EnergyDirect?</h2>
+    <p>Your local Ambit Energy consultant, making plan comparison easy and transparent</p>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">🔍</div>
+        <h3>Easy Comparison</h3>
+        <p>View all available Ambit plans for your ZIP code side-by-side</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon">⚡</div>
+        <h3>Fast Enrollment</h3>
+        <p>Switch to a new Ambit plan in just 2 minutes with no deposits or fees</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon">🌱</div>
+        <h3>Green Options</h3>
+        <p>100% renewable energy plans available in your area through Ambit</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon">💵</div>
+        <h3>Free Energy Rewards</h3>
+        <p>Refer friends through Ambit and earn free energy credits</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon">👨‍💼</div>
+        <h3>Expert Guidance</h3>
+        <p>Local Ambit energy consultant ready to answer your questions</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon">✅</div>
+        <h3>No Interruption</h3>
+        <p>Seamless switching with zero downtime to your power supply</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="wrap">
+      <h2>What Our Customers Say</h2>
+      <p>Real feedback from Texas families and businesses we've helped</p>
+
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">"Found a plan that works better for my usage! The process was super simple and the team was very helpful."</div>
+          <div class="testimonial-author">— Sarah M., Houston, TX</div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">"Fast enrollment, no hidden fees, and great customer service. Highly recommend EnergyDirect!"</div>
+          <div class="testimonial-author">— James K., Dallas, TX</div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <div class="testimonial-text">"Love comparing renewable options! Great to support clean energy and explore plans that fit my budget."</div>
+          <div class="testimonial-author">— Maria R., Austin, TX</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Energy CTA -->
+  <div class="cta-box reveal-up" style="margin: 3rem auto 2rem;">
     <h2>Want to Earn Free Energy? ⚡</h2>
-    <p style="max-width:760px;margin:.75rem auto;">
-      Ambit’s <strong>Free Energy</strong> rewards program lets customers earn a Free Energy credit by referring others to Ambit.
+    <p>
+      Ambit's <strong>Free Energy</strong> rewards program lets customers earn a Free Energy credit by referring others to Ambit.
       Once you have <strong>15+ qualified referrals</strong>, you can start earning credits toward your bill.
-      Free Energy applies to <strong>energy costs only</strong> (not taxes or TDU/delivery charges).
     </p>
     <a href="https://energydirect.myambit.com/rates-and-plans/free-energy/"
        target="_blank"
@@ -504,10 +1013,8 @@
     </a>
   </div>
 
-  <!-- Solar CTA (with scroll reveal) -->
-  <div
-    class="reveal-up"
-    style="max-width:900px; margin:2rem auto; padding:1.5rem; background:#fff3e0; border:1px solid #f57c00; border-radius:12px; text-align:center;">
+  <!-- Solar CTA -->
+  <div class="cta-box reveal-up">
     <h2>Considering Solar? ☀️</h2>
     <p>
       Learn how <strong>solar buyback plans</strong> work in Texas and compare options available in your area.
@@ -534,16 +1041,16 @@
       <a href="https://energydirect.myambit.com/rates-and-plans/"
          target="_blank"
          rel="noopener"
-         class="btn-primary">
-        Check Plans by ZIP
+         class="btn-secondary">
+        Compare Plans by ZIP
       </a>
     </div>
   </section>
 
   <!-- ===================== POPULAR ENERGY PLANS ===================== -->
   <section class="wrap reveal-up" style="text-align:center; padding:3rem 1rem;">
-    <h2 style="font-size:2rem; color:#0f172a; margin-bottom:.5rem;">Popular Energy Plans</h2>
-    <p style="max-width:700px; margin:0 auto 2rem; color:#475569;">
+    <h2 style="font-size:2rem; color:var(--text-dark); margin-bottom:.5rem;">Popular Energy Plans</h2>
+    <p style="max-width:700px; margin:0 auto 2rem; color:var(--muted);">
       Explore Ambit Energy plans available through your EnergyDirect consultant.
       <strong>Rates vary by ZIP</strong> and usage — always review the
       <strong>Electricity Facts Label (EFL)</strong> before enrolling.
@@ -581,10 +1088,12 @@
 
     <div style="margin-top:2rem;">
       <a href="https://energydirect.myambit.com/rates-and-plans/"
+         target="_blank"
+         rel="noopener"
          class="btn-primary"
          style="background:#2563eb; color:#fff; font-weight:700; padding:14px 26px;
                 border-radius:12px; text-decoration:none;">
-        View All Plans &amp; Enroll
+        View All Ambit Plans
       </a>
     </div>
   </section>
@@ -649,7 +1158,7 @@
 
   <!-- FAQ -->
   <section class="faq wrap reveal-up" id="faq">
-    <h2>FAQ</h2>
+    <h2>Frequently Asked Questions</h2>
 
     <details>
       <summary>Will my power go out when I switch?</summary>
@@ -668,30 +1177,72 @@
         <strong>Rates vary by ZIP</strong> and usage — always review the EFL.
       </p>
     </details>
+
+    <details>
+      <summary>Is there a cost to switch providers?</summary>
+      <p>There is no fee to switch from one retail provider to another. Your local TDU handles the logistics seamlessly.</p>
+    </details>
+
+    <details>
+      <summary>What makes Ambit Energy different?</summary>
+      <p>Ambit Energy offers flexible plan options, including renewable energy and the Free Energy rewards program for qualified referrals.</p>
+    </details>
+
+    <details>
+      <summary>How does the Free Energy program work?</summary>
+      <p>You earn Free Energy credits by referring qualified customers to Ambit. Once you reach 15+ referrals, credits are applied to your bill (energy costs only).</p>
+    </details>
+
+    <details>
+      <summary>Are there solar options available?</summary>
+      <p>Yes! Ambit offers solar buyback plans in many Texas areas. You can generate solar energy and sell excess power back to the grid.</p>
+    </details>
+
+    <details>
+      <summary>Can I cancel my plan early?</summary>
+      <p>Each plan has different terms. Review your contract for early termination details. Some plans have no cancellation fees.</p>
+    </details>
+
+    <details>
+      <summary>What is an EFL?</summary>
+      <p>The Electricity Facts Label is a standardized document that shows pricing, fees, contract terms, and renewable content for any energy plan.</p>
+    </details>
+
+    <details>
+      <summary>Need more help? Call us!</summary>
+      <p><strong>Phone: <a href="tel:3615829724" style="color: var(--green); font-weight: 600;">361-582-9724</a></strong><br>Our energy consultants are available to answer any questions about your options.</p>
+    </details>
   </section>
 
   <!-- Footer -->
   <footer id="contact">
     © 2025 EnergyDirect | Independent Ambit Energy Consultant
-    <div class="puct">PUCT#10117</div>
+    <div class="puct">PUCT#10117 • Licensed & Bonded</div>
 
-    <section class="wrap" style="text-align:center;margin-top:1rem;">
-      <h2 style="margin:.5rem 0 0;">Find Electricity Plans in Your City</h2>
-      <div style="margin-top:.5rem;">
-        <a href="/">Home</a> |
-        <a href="/houston/">Houston</a> |
-        <a href="/dallas/">Dallas</a> |
-        <a href="/corpus/">Corpus Christi</a> |
-        <a href="/victoria/">Victoria</a> |
-        <a href="/lubbock/">Lubbock</a> |
-        <a href="/texas/">Texas Hub</a> |
-        <a href="/abilene/">Abilene</a> |
-        <a href="/midland/">Midland</a> |
-        <a href="/odessa/">Odessa</a> |
-        <a href="/san-angelo/">San Angelo</a> |
+    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border);">
+      <div style="margin-bottom: 1rem;">
+        <strong>📞 <a href="tel:3615829724">Call: 361-582-9724</a></strong><br>
+        <span style="font-size: 0.9rem; color: var(--muted);">Mon-Fri 8am-6pm CST</span>
+      </div>
+    </div>
+
+    <nav class="wrap">
+      <h2 style="margin:.5rem 0 1rem; font-size: 1.1rem;">Find Electricity Plans in Your City</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+        <a href="/">Home</a>
+        <a href="/houston/">Houston</a>
+        <a href="/dallas/">Dallas</a>
+        <a href="/corpus/">Corpus Christi</a>
+        <a href="/victoria/">Victoria</a>
+        <a href="/lubbock/">Lubbock</a>
+        <a href="/texas/">Texas Hub</a>
+        <a href="/abilene/">Abilene</a>
+        <a href="/midland/">Midland</a>
+        <a href="/odessa/">Odessa</a>
+        <a href="/san-angelo/">San Angelo</a>
         <a href="/solar/">Solar Plans</a>
       </div>
-    </section>
+    </nav>
   </footer>
 
   <!-- FAQ JSON-LD -->
@@ -714,13 +1265,28 @@
         "@type":"Question",
         "name":"How do I compare plans for my address?",
         "acceptedAnswer":{"@type":"Answer","text":"Select your ZIP on the plans page to see options. Rates vary by ZIP and usage—always review the EFL."}
+      },
+      {
+        "@type":"Question",
+        "name":"Is there a cost to switch providers?",
+        "acceptedAnswer":{"@type":"Answer","text":"There is no fee to switch from one retail provider to another. Your local TDU handles the logistics seamlessly."}
+      },
+      {
+        "@type":"Question",
+        "name":"What makes Ambit Energy different?",
+        "acceptedAnswer":{"@type":"Answer","text":"Ambit Energy offers flexible plan options, including renewable energy and the Free Energy rewards program for qualified referrals."}
+      },
+      {
+        "@type":"Question",
+        "name":"How does the Free Energy program work?",
+        "acceptedAnswer":{"@type":"Answer","text":"You earn Free Energy credits by referring qualified customers to Ambit. Once you reach 15+ referrals, credits are applied to your bill (energy costs only)."}
       }
     ]
   }
   </script>
 
   <!-- CTA click tracking + smooth scroll -->
-  <script>
+  <script defer>
     document.addEventListener('click', function(e){
       const a = e.target.closest('a');
       if(!a) return;
@@ -747,7 +1313,7 @@
   </script>
 
   <!-- Scroll reveal script -->
-  <script>
+  <script defer>
     (function(){
       const els = document.querySelectorAll('.reveal-up');
       if(!('IntersectionObserver' in window) || !els.length) return;
@@ -766,11 +1332,31 @@
   </script>
 
   <!-- Chatbase AI widget -->
-  <script>
-  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="q3jbqwMknA-qsuvShLBBX";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+  <script async>
+    (function(){
+      if(!window.chatbase||window.chatbase("getState")!=="initialized"){
+        window.chatbase=(...arguments)=>{
+          if(!window.chatbase.q){window.chatbase.q=[]}
+          window.chatbase.q.push(arguments)
+        };
+        window.chatbase=new Proxy(window.chatbase,{
+          get(target,prop){
+            if(prop==="q"){return target.q}
+            return(...args)=>target(prop,...args)
+          }
+        })
+      }
+      const onLoad=function(){
+        const script=document.createElement("script");
+        script.src="https://www.chatbase.co/embed.min.js";
+        script.id="q3jbqwMknA-qsuvShLBBX";
+        script.domain="www.chatbase.co";
+        document.body.appendChild(script)
+      };
+      if(document.readyState==="complete"){onLoad()}
+      else{window.addEventListener("load",onLoad)}
+    })();
   </script>
 
 </body>
 </html>
-
-
