@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Energy Blog | Texas Electricity Plans & Money-Saving Tips</title>
+  <meta name="description" content="Read expert guides on Texas electricity plans, energy savings tips, and how to get the best rates. Learn about fixed vs variable rates, solar buyback, and more.">
+  <meta name="author" content="EnergyDirect" />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://energydirect.org/blog/" />
+  <meta property="og:title" content="Energy Blog | Texas Electricity Plans & Tips" />
+  <meta property="og:description" content="Expert guides on saving money on electricity in Texas." />
+  
+  <!-- Canonical -->
+  <link rel="canonical" href="https://energydirect.org/blog/" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+
+    :root{
+      --orange-1:#f57c00;
+      --orange-2:#fbb034;
+      --blue:#2563eb;
+      --blue-dark:#1d4ed8;
+      --green:#10b981;
+      --green-dark:#059669;
+      --muted:#475569;
+      --bg:#f9fafb;
+      --card:#fff;
+      --border:#e5e7eb;
+      --text-dark:#0f172a;
+      --text-light:#6b7280;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a1a;
+        --card: #2d2d2d;
+        --border: #404040;
+        --text-dark: #f3f4f6;
+        --text-light: #d1d5db;
+      }
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Poppins',Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text-dark);
+      line-height:1.6;
+    }
+
+    a{
+      color:var(--blue);
+      text-decoration:none
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--blue);
+      outline-offset: 2px;
+    }
+
+    .wrap{
+      max-width:1100px;
+      margin:0 auto;
+      padding:0 1.25rem
+    }
+
+    /* Hero */
+    header.hero {
+      position: relative;
+      color: #fff;
+      text-align: center;
+      padding: 5rem 1rem;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--orange-1) 0%, var(--orange-2) 40%, #ffb84d 100%);
+      overflow: hidden;
+    }
+
+    header.hero h1 {
+      font-size: 3rem;
+      margin: 0 0 1rem;
+      font-weight: 900;
+      line-height: 1.1;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    header.hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    }
+
+    /* Blog grid */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1.25rem;
+    }
+
+    .blog-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+    }
+
+    .blog-card-body {
+      padding: 1.5rem;
+    }
+
+    .blog-card h3 {
+      margin: 0 0 0.75rem;
+      font-size: 1.3rem;
+      color: var(--text-dark);
+    }
+
+    .blog-meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .blog-card p {
+      margin: 0 0 1rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .read-more {
+      display: inline-block;
+      color: var(--blue);
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .read-more:hover {
+      color: var(--orange-1);
+    }
+
+    /* Footer */
+    footer{
+      text-align:center;
+      padding:2rem 1.5rem;
+      background:var(--card);
+      border-top: 1px solid var(--border);
+      font-size:.9rem;
+      color: var(--muted);
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: var(--blue);
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: var(--orange-1);
+    }
+
+    @media (max-width: 768px) {
+      header.hero {
+        padding: 3rem 1rem;
+        min-height: 300px;
+      }
+
+      header.hero h1 {
+        font-size: 2rem;
+      }
+
+      header.hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div style="text-align:center; margin: 1rem 0;">
+    <a href="/">
+      <img src="/images/ambit logo.png" alt="EnergyDirect - Ambit Energy Consultant" style="width: 300px; max-width: 100%; height: auto;">
+    </a>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="wrap">
+      <h1>Energy Blog</h1>
+      <p>Expert guides to help you save money on electricity in Texas</p>
+    </div>
+  </header>
+
+  <!-- Blog Posts Grid -->
+  <main class="wrap">
+    <div class="blog-grid">
+      
+      <!-- Post 1 -->
+      <article class="blog-card">
+        <div class="blog-card-body">
+          <div class="blog-meta">📅 Published: June 2026</div>
+          <h3>Fixed-Rate vs Variable-Rate Plans: Which Saves More in Texas?</h3>
+          <p>Understand the differences between fixed and variable electricity rates in Texas. Learn which plan structure works best for your home and budget.</p>
+          <a href="/blog/fixed-vs-variable-rate-plans/" class="read-more">Read Article →</a>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="blog-card">
+        <div class="blog-card-body">
+          <div class="blog-meta">📅 Published: June 2026</div>
+          <h3>Why Do Texas Electricity Rates Vary by ZIP Code?</h3>
+          <p>Discover why your neighbor might pay a different rate than you. Learn about service territories, demand, and how ZIP codes affect your electricity cost.</p>
+          <a href="/blog/why-rates-vary-by-zip/" class="read-more">Read Article →</a>
+        </div>
+      </article>
+
+      <!-- Post 3 -->
+      <article class="blog-card">
+        <div class="blog-card-body">
+          <div class="blog-meta">📅 Published: June 2026</div>
+          <h3>How to Read Your Texas Electricity Bill</h3>
+          <p>Break down every charge on your electric bill. Understand base charges, energy charges, and how to spot savings opportunities.</p>
+          <a href="/blog/how-to-read-electricity-bill/" class="read-more">Read Article →</a>
+        </div>
+      </article>
+
+      <!-- Post 4 -->
+      <article class="blog-card">
+        <div class="blog-card-body">
+          <div class="blog-meta">📅 Published: June 2026</div>
+          <h3>Solar Buyback Plans Explained: Earn While You Save</h3>
+          <p>Learn how solar buyback plans work in Texas. Find out if you qualify and how much you can earn by generating your own electricity.</p>
+          <a href="/blog/solar-buyback-plans/" class="read-more">Read Article →</a>
+        </div>
+      </article>
+
+      <!-- Post 5 -->
+      <article class="blog-card">
+        <div class="blog-card-body">
+          <div class="blog-meta">📅 Published: June 2026</div>
+          <h3>Switching Electricity Providers in Texas: Complete Guide</h3>
+          <p>Everything you need to know about switching providers. Learn about the process, timelines, and why there's zero downtime when you switch.</p>
+          <a href="/blog/switching-providers-guide/" class="read-more">Read Article →</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 EnergyDirect | Independent Ambit Energy Consultant
+    <div style="margin-top:1rem;">
+      <a href="/">Home</a> |
+      <a href="/blog/">Blog</a> |
+      <a href="/houston/">Houston</a> |
+      <a href="/dallas/">Dallas</a> |
+      <a href="/texas/">Texas Hub</a>
+    </div>
+  </footer>
+
+  <!-- Schema: Blog Collection -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "EnergyDirect Energy Blog",
+    "description": "Expert guides on Texas electricity plans and energy savings",
+    "url": "https://energydirect.org/blog/"
+  }
+  </script>
+
+</body>
+</html>
