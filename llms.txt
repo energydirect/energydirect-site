@@ -1,0 +1,56 @@
+# Energy Direct
+> This website offers electricity plans and services for residents and businesses in Texas, aiming to provide reliable, affordable, and transparent energy solutions. The site allows users to compare and select various electricity plans, including options for fixed rates, variable rates, renewable green energy, and solar buyback programs. It also provides comprehensive information on setting up utilities, accessing customer support, and managing energy accounts. The platform emphasizes a customer-first approach, focusing on helping Texans easily navigate the deregulated energy market.
+
+## AI Agent Access
+
+This site supports the Model Context Protocol (MCP) for agentic AI access. AI agents can connect directly to retrieve live, up-to-date site content - no traditional scraping required.
+
+- **Site MCP Endpoint:** https://www.energydirect.org/_api/mcp
+
+## Available MCP Tools
+
+### GetBusinessDetails
+Retrieves business and site details such as timezone, email, phone, and address.
+- No parameters required.
+
+### SearchInSite
+Searches the site for general content, articles, and coverage information.
+- `searchTerm` - The term to search for across the site.
+
+### SearchSiteApiDocs
+Retrieves the API schema and documentation for the integrated energy services and platform endpoints. Use this tool for locating structured fields regarding rates, plans, and provider information instead of generic text searches.
+- `searchTerm` - The term to search for in the site API documentation.
+
+### GenerateVisitorToken
+Creates a new visitor session and obtains an ephemeral visitor access token for the site session. Must be called before making any platform API requests if no token is already available in context.
+- No parameters required.
+
+### CallSiteAPI
+Calls API methods on the platform to perform actions or fetch structured data on a visitor's behalf, such as querying specific rate schedules, checking plan details, or initiating a service enrollment.
+- `visitorToken` - Visitor access token. Use GenerateVisitorToken first if not available.
+- `url` - Absolute URL of the API method to call. Retrieve using SearchSiteApiDocs.
+- `method` - HTTP method to use for the API call (e.g., GET, POST).
+- `body` - Request body as a valid JSON string.
+
+### ReadFullDocsArticle
+Fetches a complete reference or support article from the platform's developer or documentation portal.
+- `articleUrl` - URL of an article in the site's documentation portal.
+
+### ReadFullDocsMethodSchema
+Fetches the full schema for a platform API method. Should be called before executing the actual method via CallSiteAPI to ensure correct parameter structures.
+- `articleUrl` - URL of the reference article for the platform API method.
+
+## What Visitors Can Do via AI + MCP
+
+- Get operational details (contact info, hours, Texas TDSP service coverage areas)
+- Discover, filter, and compare available electricity plans, TDU charges, and EFL (Electricity Facts Label) details
+- Start an energy service enrollment and be seamlessly directed to the site to complete checkout
+- Ask questions about Texas energy deregulation, fixed vs. variable rates, and green energy options
+- Receive precise, real-time answers without having to manually parse or filter the site layout
+
+## Notes
+
+- No authentication or developer keys required to connect to the public MCP endpoint
+- Only public information and public-facing plans accessible on the site are available
+- Data provided via the endpoint is always live and pulled straight from the platform database
+- To receive tool updates, implement a tools/list call upon receipt of a tool update notification
