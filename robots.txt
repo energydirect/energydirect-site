@@ -5,3 +5,6 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://energydirect.org/sitemap.xml
+
+# AI Agent Configuration
+Sitemap: https://energydirect.org/llms.txt
