@@ -3,413 +3,504 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ambit Energy Texas | Compare Electricity Plans by City & ZIP - Energy Direct</title>
-  <meta name="description" content="Texas electricity guide for deregulated areas: compare plan options, learn how to read the Electricity Facts Label (EFL), and find helpful resources. Rates vary by ZIP." />
-  <link rel="icon" type="image/png" href="/favicon.png" />
-  <link rel="stylesheet" href="/style.css" />
+  <title>Texas Electricity Guide: Compare Plans by ZIP</title>
+  <meta name="description" content="Your plain-English guide to Texas electricity: how deregulation works, what a TDU is, reading an EFL, and comparing Ambit Energy plans by ZIP to switch." />
+  <link rel="canonical" href="https://energydirect.org/texas/"
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Energy Direct">
+  <meta property="og:title" content="Texas Electricity Guide: Compare Plans by ZIP">
+  <meta property="og:description" content="Your plain-English guide to Texas electricity: how deregulation works, what a TDU is, reading an EFL, and comparing Ambit Energy plans by ZIP to switch.">
+  <meta property="og:url" content="https://energydirect.org/texas/">
+  <meta property="og:image" content="https://energydirect.org/images/ambit-service-area.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Texas Electricity Guide: Compare Plans by ZIP">
+  <meta name="twitter:description" content="Your plain-English guide to Texas electricity: how deregulation works, what a TDU is, reading an EFL, and comparing Ambit Energy plans by ZIP to switch.">
+  <meta name="twitter:image" content="https://energydirect.org/images/ambit-service-area.webp">
+   />
+  <link rel="icon" type="image/png" href="../favicon.png" />
   <style>
-    body { background:#f9fafb; }
-    .grid-2 { display:grid; gap:24px; grid-template-columns: 1fr; }
-    @media(min-width:900px){ .grid-2{ grid-template-columns: 1fr 1fr; } }
-    .card { background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:20px; box-shadow:0 2px 8px rgba(15,23,42,.04); }
-    .btn-primary { display:inline-block; padding:12px 20px; background:#2563eb; color:#fff !important; font-weight:600; border-radius:10px; text-decoration:none; }
-    .btn-primary:hover { background:#1d4ed8; }
-    .cta-section { text-align:center; margin-top:1.5rem; }
-    .muted { color:#475569; }
+    :root{ --ink:#0f172a; --body:#1e293b; --muted:#475569; --line:#e5e7eb;
+           --brand:#f57c00; --brand-d:#d96b00; --go:#16a34a; --go-d:#15803d; }
+    *{ box-sizing:border-box; }
+    body{ margin:0; background:#f7f8fa; color:var(--body);
+          font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+          font-size:1.18rem; line-height:1.65; -webkit-text-size-adjust:100%; }
+    .wrap{ max-width:1080px; margin:0 auto; padding:0 1.1rem; }
+    h1,h2,h3,h4{ color:var(--ink); }
+    p{ font-size:1.13rem; }
+    a{ color:var(--brand); }
 
-    /* Table of contents styling */
-    .toc {
-      background:#ffffff;
-      border:1px solid #e5e7eb;
-      border-radius:12px;
-      padding:16px 20px;
-      margin-bottom:24px;
-      box-shadow:0 2px 6px rgba(15,23,42,.04);
-    }
-    .toc h2 {
-      font-size:1.1rem;
-      margin-top:0;
-      margin-bottom:0.5rem;
-    }
-    .toc ul {
-      list-style:none;
-      padding-left:0;
-      margin:0;
-    }
-    .toc li {
-      margin:4px 0;
-    }
-    .toc a {
-      color:#2563eb;
-      text-decoration:none;
-    }
-    .toc a:hover {
-      text-decoration:underline;
-    }
-    table.tdu-table {
-      width:100%;
-      border-collapse:collapse;
-      margin:1rem 0;
-      font-size:0.95rem;
-    }
-    table.tdu-table th,
-    table.tdu-table td {
-      border:1px solid #e5e7eb;
-      padding:8px 10px;
-      text-align:left;
-    }
-    table.tdu-table th {
-      background:#f1f5f9;
-      font-weight:600;
+    /* Slim identity bar — phone is a quiet secondary link, NOT a loud CTA */
+    .util{ background:#fff; color:var(--ink); font-size:.95rem; border-bottom:1px solid var(--line);
+           display:flex; justify-content:space-between; flex-wrap:wrap; gap:.3rem 1rem;
+           align-items:center; padding:.5rem 1.1rem; }
+    .util b{ color:#fff; }
+    .util a{ color:var(--ink); text-decoration:none; font-weight:800; }
+    .util a:hover{ text-decoration:underline; }
+    .util img{ height:62px; width:auto; display:block; }
+
+    /* HERO — the WHY + the one conversion action */
+    .hero{ position:relative; color:#fff; text-align:center; padding:4rem 1rem 3.4rem;
+      background:linear-gradient(180deg, rgba(15,23,42,.32) 0%, rgba(15,23,42,.55) 100%),
+                 url('../images/ambit-service-area.webp') center/cover no-repeat; }
+    .hero .eyebrow{ display:inline-block; letter-spacing:.13em; text-transform:uppercase; font-size:1rem; font-weight:800; color:#ffb84d; background:rgba(245,124,0,.16); border:1px solid rgba(255,184,77,.5); padding:.42rem 1.05rem; border-radius:999px; margin:0 0 1.1rem; }
+    .hero h1{ color:#fff; font-size:3.25rem; line-height:1.1; margin:.5rem auto .7rem; max-width:900px;
+      text-shadow:0 2px 14px rgba(0,0,0,.45); }
+    .hero .lede{ max-width:680px; margin:0 auto 1.6rem; font-size:1.3rem; line-height:1.5;
+      color:#f1f5f9; text-shadow:0 1px 8px rgba(0,0,0,.5); }
+    .zipform{ display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap;
+      max-width:560px; margin:0 auto; }
+    .zipform input[type=text]{ flex:1 1 200px; min-width:0; padding:1.15rem 1.2rem; border-radius:12px;
+      border:0; font-size:1.2rem; color:#0f172a; box-shadow:0 8px 22px rgba(0,0,0,.25); }
+    .zipform select.dwell{ flex:0 1 170px; padding:1.15rem .9rem; border-radius:12px; border:0;
+      font-size:1.1rem; color:#0f172a; background:#fff; box-shadow:0 8px 22px rgba(0,0,0,.25); cursor:pointer; }
+    .zipform button{ padding:1.15rem 1.9rem; border-radius:12px; border:0; background:var(--go);
+      color:#fff; font-weight:800; font-size:1.18rem; cursor:pointer;
+      box-shadow:0 8px 22px rgba(22,163,74,.45); }
+    .zipform button:hover{ background:var(--go-d); }
+    .hero .micro{ display:block; margin:1rem auto 0; font-size:1rem; color:#fed7aa; }
+    .hero .micro a{ color:#fff; font-weight:700; }
+
+    /* 3-step: "here is how you convert" */
+    .steps{ background:#fff; border-bottom:1px solid var(--line); }
+    .steps .wrap{ display:grid; gap:20px; grid-template-columns:1fr; padding:1.8rem 1.1rem; }
+    @media(min-width:760px){ .steps .wrap{ grid-template-columns:repeat(3,1fr); } }
+    .step{ display:flex; gap:.9rem; align-items:flex-start; }
+    .step .n{ flex:0 0 auto; width:44px; height:44px; border-radius:50%; background:var(--brand);
+      color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:1.3rem; }
+    .step h4{ margin:.15rem 0 .25rem; font-size:1.2rem; }
+    .step p{ margin:0; font-size:1.05rem; color:var(--muted); }
+
+    /* Trust strip — real credentials only */
+    .trust{ background:linear-gradient(135deg,#f57c00 0%,#fbb034 40%,#ffb84d 100%); color:#fff; }
+    .trust .wrap{ display:flex; flex-wrap:wrap; justify-content:center; gap:.7rem 2.2rem; padding:1rem 1.1rem; }
+    .trust span{ font-size:1rem; font-weight:600; }
+    .trust b{ color:#fff; }
+    .trust .tico{ width:17px; height:17px; vertical-align:-3px; color:#fff; }
+
+    .section{ padding:2.6rem 0 .4rem; }
+    .section h2{ font-size:2.05rem; line-height:1.18; margin:0 0 .4rem; }
+    .section .sub{ color:var(--muted); max-width:720px; margin:0 0 1.4rem; }
+    .center{ text-align:center; } .center .sub{ margin-left:auto; margin-right:auto; }
+
+    /* WHY-switch benefit cards with REAL photography */
+    .why{ display:grid; gap:22px; grid-template-columns:1fr; margin-top:1.2rem; }
+    @media(min-width:820px){ .why{ grid-template-columns:repeat(3,1fr); } }
+    .why .card{ background:#fff; border:1px solid var(--line); border-radius:18px; overflow:hidden;
+      box-shadow:0 8px 24px rgba(15,23,42,.07); }
+    .why .card img{ width:100%; height:190px; object-fit:cover; display:block; }
+    .why .card .pad{ padding:1.1rem 1.25rem 1.4rem; }
+    .why .card h3{ margin:.1rem 0 .45rem; font-size:1.3rem; }
+    .why .card p{ font-size:1.05rem; color:var(--muted); margin:0; }
+
+    /* Value-comparison grid — where Ambit genuinely wins (verified terms only) */
+    .compare{ margin-top:1.3rem; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    .ctable{ width:100%; border-collapse:separate; border-spacing:0; min-width:560px; background:#fff;
+      border:1px solid var(--line); border-radius:18px; overflow:hidden; box-shadow:0 10px 28px rgba(15,23,42,.08); }
+    .ctable th,.ctable td{ padding:1.05rem 1.15rem; text-align:left; border-bottom:1px solid var(--line);
+      font-size:1.04rem; vertical-align:top; }
+    .ctable thead th{ background:#f1f5f9; color:var(--ink); font-size:1.05rem; text-align:center; }
+    .ctable thead th.feat{ text-align:left; }
+    .ctable thead th.amb{ background:linear-gradient(135deg,#c25e00,#f57c00); color:#fff; font-weight:800; font-size:1.15rem; }
+    .ctable .feat{ font-weight:600; color:var(--ink); width:46%; }
+    .ctable td.amb{ background:#fff7ed; text-align:center; font-weight:700; }
+    .ctable td.alt{ text-align:center; color:var(--muted); }
+    .ctable tbody tr:last-child td{ border-bottom:0; }
+    .yes{ color:var(--go-d); font-weight:800; }
+    .meh{ color:#94a3b8; font-weight:700; }
+    .cnote{ font-size:.92rem; color:var(--muted); margin:.8rem 0 0; }
+    .cnote a{ color:var(--brand); }
+
+    /* City grid */
+    .cities{ display:grid; gap:16px; grid-template-columns:repeat(2,1fr); margin-top:1.2rem; }
+    @media(min-width:680px){ .cities{ grid-template-columns:repeat(3,1fr); } }
+    @media(min-width:960px){ .cities{ grid-template-columns:repeat(5,1fr); } }
+    .citycard{ background:#fff; border:1px solid var(--line); border-radius:14px; padding:1.1rem 1rem;
+      text-align:center; text-decoration:none; color:var(--ink); font-weight:700; font-size:1.08rem;
+      box-shadow:0 4px 14px rgba(15,23,42,.05); transition:transform .12s, box-shadow .12s; }
+    .citycard:hover{ transform:translateY(-2px); box-shadow:0 10px 24px rgba(37,99,235,.16); color:var(--brand-d); }
+    .citycard span{ display:block; font-size:.9rem; font-weight:500; color:var(--muted); margin-top:.2rem; }
+
+    /* Repeated conversion band */
+    .cta-band{ background:linear-gradient(135deg,#f57c00 0%,#fbb034 40%,#ffb84d 100%); color:#fff;
+      border-radius:18px; padding:2.2rem 1.5rem; text-align:center; margin:2.6rem 0; }
+    .cta-band h2{ color:#fff; margin:0 0 .5rem; font-size:1.85rem; }
+    .cta-band p{ margin:0 0 1.3rem; color:#fff; text-shadow:0 1px 4px rgba(124,45,18,.35); }
+    .cta-band .zipform input{ box-shadow:none; }
+
+    .grid2{ display:grid; gap:22px; grid-template-columns:1fr; }
+    @media(min-width:900px){ .grid2{ grid-template-columns:1fr 1fr; } }
+    .panel{ background:#fff; border:1px solid var(--line); border-radius:16px; padding:1.4rem 1.5rem;
+      box-shadow:0 4px 14px rgba(15,23,42,.05); }
+    .panel h3{ margin:.1rem 0 .6rem; font-size:1.32rem; }
+    .panel ul{ margin:.3rem 0 0; padding-left:1.2rem; } .panel li{ margin:.35rem 0; }
+    .muted{ color:var(--muted); }
+
+    .accordion{ border:1px solid var(--line); border-radius:12px; margin-bottom:10px; background:#fff; }
+    .accordion summary{ cursor:pointer; padding:1rem 1.2rem; font-weight:700; font-size:1.1rem; list-style:none; }
+    .accordion summary::-webkit-details-marker{ display:none; }
+    .accordion summary:hover{ background:#f3f4f6; }
+    .accordion p{ padding:0 1.2rem 1rem; margin:0; color:#374151; font-size:1.06rem; }
+    .accordion ul{ padding:0 1.2rem 1rem 2.4rem; margin:0; color:#374151; font-size:1.06rem; }
+    .accordion li{ margin:.3rem 0; }
+
+    /* TDU table */
+    .tdu{ margin-top:1.2rem; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    table.tdu-table{ width:100%; border-collapse:separate; border-spacing:0; min-width:560px; background:#fff;
+      border:1px solid var(--line); border-radius:16px; overflow:hidden; box-shadow:0 6px 18px rgba(15,23,42,.06); }
+    table.tdu-table th, table.tdu-table td{ border-bottom:1px solid var(--line); padding:.95rem 1.1rem;
+      text-align:left; font-size:1.02rem; vertical-align:top; }
+    table.tdu-table thead th{ background:#f1f5f9; color:var(--ink); font-weight:700; }
+    table.tdu-table tbody tr:last-child td{ border-bottom:0; }
+
+    .crumbs{ font-size:.95rem; color:#64748b; padding:.9rem 0; }
+    .crumbs a{ color:var(--brand); text-decoration:none; }
+
+    footer{ background:linear-gradient(135deg,#f57c00 0%,#fbb034 40%,#ffb84d 100%); color:#fff; padding:2rem 1.1rem 6.5rem; margin-top:2.5rem; font-size:1rem; }
+    footer a{ color:#fff; text-decoration:none; }
+    .fnav{ margin-top:.9rem; line-height:2; }
+
+    /* sticky mobile call — the quiet always-there secondary path */
+    .stickycall{ position:fixed; left:0; right:0; bottom:0; z-index:40; display:none;
+      background:#0f172a; color:#fff; text-align:center; padding:.85rem; font-weight:800;
+      font-size:1.1rem; text-decoration:none; box-shadow:0 -4px 14px rgba(0,0,0,.25); }
+    @media(max-width:760px){ .stickycall{ display:block; } footer{ padding-bottom:5rem; } }
+  </style>
+</head>
+<body>
+
+<style>
+    .sitenav{ background:#fff; border-bottom:1px solid var(--line); position:sticky; top:0; z-index:50; }
+    .nav-row{ max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.45rem 1.3rem; }
+    .nav-logo img{ height:76px; width:auto; display:block; }
+    .nav-links{ display:flex; align-items:center; gap:.15rem; }
+    .nav-links>a,.nav-dt{ background:none; border:0; cursor:pointer; font:inherit; color:var(--ink); font-weight:700; font-size:1.14rem; padding:.6rem .8rem; border-radius:8px; text-decoration:none; display:inline-flex; align-items:center; gap:.28rem; }
+    .nav-links>a:hover,.nav-dt:hover{ background:#fff4e6; color:#d96b00; }
+    .nav-dd{ position:relative; }
+    .nav-menu{ position:absolute; top:100%; left:0; min-width:215px; background:#fff; border:1px solid var(--line); border-radius:12px; box-shadow:0 14px 34px rgba(15,23,42,.15); padding:.4rem; display:none; flex-direction:column; z-index:60; }
+    .nav-dd:hover .nav-menu,.nav-dd.open .nav-menu{ display:flex; }
+    .nav-menu a{ padding:.6rem .8rem; border-radius:8px; color:var(--body); text-decoration:none; font-size:1.05rem; white-space:nowrap; }
+    .nav-menu a:hover{ background:#fff4e6; color:#d96b00; }
+    .nav-call{ border:2px solid #f57c00; color:#d96b00 !important; font-weight:800; font-size:1.08rem; padding:.55rem 1.05rem; border-radius:10px; text-decoration:none; white-space:nowrap; }
+    .nav-call:hover{ background:#f57c00; color:#fff !important; }
+    .nav-burger{ display:none; background:none; border:0; cursor:pointer; color:var(--ink); padding:.3rem; }
+    .nav-burger svg{ width:30px; height:30px; }
+    @media(max-width:920px){
+      .nav-burger{ display:block; }
+      .nav-links{ display:none; position:absolute; top:100%; left:0; right:0; background:#fff; border-bottom:1px solid var(--line); flex-direction:column; align-items:stretch; gap:0; padding:.4rem 1rem 1rem; box-shadow:0 16px 30px rgba(15,23,42,.12); }
+      .nav-links.open{ display:flex; }
+      .nav-dd{ position:static; }
+      .nav-links>a,.nav-dt{ width:100%; justify-content:space-between; }
+      .nav-menu{ position:static; box-shadow:none; border:0; border-left:2px solid #fde6cf; border-radius:0; margin:.1rem 0 .4rem .8rem; min-width:0; }
+      .nav-call{ margin-top:.6rem; text-align:center; }
     }
   </style>
+  <header class="sitenav">
+    <div class="nav-row">
+      <a href="/" class="nav-logo" aria-label="Energy Direct home"><img src="/images/ambit%20logo.webp" alt="Ambit Energy — Independent Consultant" /></a>
+      <button class="nav-burger" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <div class="nav-dd"><button class="nav-dt">Cities <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px;opacity:.65"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-menu"><a href="/houston/">Houston</a><a href="/dallas/">Dallas</a><a href="/corpus/">Corpus Christi</a><a href="/victoria/">Victoria</a><a href="/lubbock/">Lubbock</a><a href="/abilene/">Abilene</a><a href="/midland/">Midland</a><a href="/odessa/">Odessa</a><a href="/san-angelo/">San Angelo</a><a href="/service-areas/" style="border-top:1px solid var(--line);margin-top:.2rem;font-weight:700">All Texas Service Areas →</a></div></div>
+        <div class="nav-dd"><button class="nav-dt">Plans &amp; Switching <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px;opacity:.65"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-menu"><a href="/solar/">Solar Plans</a><a href="/no-deposit-electricity/">No-Deposit &amp; Switching</a><a href="/payment-options/">Payment Options</a></div></div>
+        <div class="nav-dd"><button class="nav-dt">Learn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px;opacity:.65"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-menu"><a href="/texas/">Texas Electricity Guide</a><a href="/blog/">Blog</a></div></div>
+        <div class="nav-dd"><button class="nav-dt">About <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px;opacity:.65"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-menu"><a href="/about/">About Energy Direct</a><a href="/our-purpose/">Our Purpose</a></div></div>
+        <a class="nav-call" href="tel:+13615829724">Call or text (361) 582-9724</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- FAQPage Schema -->
+  <!-- HERO: the WHY + ONE action -->
+  <header class="hero">
+    <div class="eyebrow">Your Texas Electricity Guide</div>
+    <h1>How to choose and switch a Texas electricity plan</h1>
+    <p class="lede">In most of Texas you pick your own retail electricity provider. This guide walks you through how it
+      works, what to compare, and how to switch. Enter your ZIP to see the plans available at your address and enroll online.</p>
+    <form class="zipform" action="https://shopping.ambitenergy.com/Path2Plans" method="get" target="_blank" rel="noopener" onsubmit="this.promocode.value=(this.dwellingtype.value==='A'?'consultantpm':'consultantps');">
+      <select name="customertype" class="dwell" aria-label="Customer type"><option value="Residential">Residential</option><option value="Commercial">Commercial</option></select>
+      <input type="hidden" name="language" value="en" />
+      <input type="hidden" name="refid" value="energydirect" />
+      <input type="hidden" name="promocode" value="consultantps" />
+      <input type="text" name="zipcode" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Enter your ZIP code" aria-label="ZIP code" required />
+      <select name="dwellingtype" class="dwell" aria-label="Home type">
+        <option value="H">House</option>
+        <option value="A">Apartment / condo</option>
+      </select>
+      <button type="submit">See My Plans →</button>
+    </form>
+    <span class="micro">Takes a minute. No account, no obligation. Need help? <a href="tel:+13615829724">Call or text us</a>.</span>
+  </header>
+
+  <!-- Trust: real, verifiable credentials only -->
+  <div class="trust"><div class="wrap">
+    <span><svg class="tico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> <b>Serving Texas</b></span>
+    <span><svg class="tico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l8 3.5V11c0 5-3.4 8.2-8 10-4.6-1.8-8-5-8-10V5.5z"/><path d="M9 12l2 2 4-4"/></svg> <b>Local Texas consultant</b>, not a call center</span>
+    <span><svg class="tico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg> <b>Licensed &amp; Bonded</b> • PUCT&nbsp;#10117</span>
+    <span><svg class="tico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> <b>Free</b> to compare</span>
+  </div></div>
+
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a> › <span>Texas</span></nav>
+
+    <!-- THE STORY — Texas energy + deregulation history (authority content, below the CTA) -->
+    <section class="section">
+      <h2>How Texas got the power to choose</h2>
+      <p class="sub">For most of the last century, one utility owned everything from the power plant to your meter, and you had no say in who sold you electricity. That changed at the turn of the century.</p>
+      <div class="grid2">
+        <div class="panel">
+          <h3>Senate Bill 7 and the 2002 opening</h3>
+          <p>In 1999, Governor George W. Bush signed <strong>Senate Bill 7</strong>, the law that broke up the old monopoly and ordered Texas to open electricity to retail competition. On <strong>January 1, 2002</strong>, the market opened: for the first time, most Texas homes and businesses could choose their own retail electric provider, while the local wires company kept delivering the power.</p>
+          <p class="muted">The law split the business into three roles &mdash; the companies that generate power, the regulated utility (TDU) that delivers it, and the retail providers like Ambit that compete to sell it to you.</p>
+        </div>
+        <div class="panel">
+          <h3>ERCOT, the PUCT, and your protections</h3>
+          <p>The Public Utility Commission of Texas (PUCT) named <strong>ERCOT</strong> the independent operator of the state grid, charged with keeping the lights on and running a fair, competitive market. Senate Bill 7 also locked in consumer protections every provider must honor:</p>
+          <ul>
+            <li>Safe, reliable, and reasonably priced electricity</li>
+            <li>Clear, accurate billing and honest plan disclosures (the EFL)</li>
+            <li>Accurate metering and protection of your private information</li>
+            <li>The right to switch providers, listed on the PUCT&rsquo;s official <em>Power to Choose</em> site</li>
+          </ul>
+        </div>
+      </div>
+      <p class="cnote" style="margin-top:1rem;">Bottom line: deregulation moved the choice from the utility to <strong>you</strong>. The wires and outages stay with your local TDU, but the plan, price, and rewards are yours to shop. <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Enter your ZIP above</a> to see what is available at your address.</p>
+    </section>
+
+    <!-- WHY TEXAS RUNS ITS OWN GRID — the isolation story (verified) -->
+    <section class="section">
+      <h2>Why Texas runs its own grid</h2>
+      <p class="sub">Texas is the only state with its own self-contained power grid, and that independence is the reason it can run a competitive market the way it does.</p>
+      <div class="grid2">
+        <div class="panel">
+          <h3>A grid built to stay inside Texas</h3>
+          <p>When the federal government gained authority over interstate electricity sales under the <strong>Federal Power Act of 1935</strong>, Texas utilities made a deliberate choice: keep the power inside state lines. If electricity never crosses a state border, it is not interstate commerce, so the Texas grid largely sits outside federal (FERC) jurisdiction. Utilities linked their networks during World War II to power the war effort, formed the Texas Interconnected System, and in <strong>1970</strong> organized it as ERCOT.</p>
+        </div>
+        <div class="panel">
+          <h3>One of only three grids in the country</h3>
+          <p>The lower 48 states run on three grids: the Eastern Interconnection, the Western Interconnection, and <strong>ERCOT</strong>, which covers about 90% of Texas and ties to its neighbors only through a few small direct-current connections. That self-reliance is what lets Texas write its own market rules, including the retail competition that lets you choose your provider.</p>
+          <p class="muted">A bit of Texas lore: in the 1976 &ldquo;Midnight Connection,&rdquo; a utility briefly flipped power into Oklahoma to test federal authority over the grid. The independence held.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW DEREGULATED TEXAS WORKS — scannable two-panel -->
+    <section class="section">
+      <h2>How deregulated Texas electricity works</h2>
+      <p class="sub">In most of Texas, two different companies touch your power. Knowing which does what is the whole game.</p>
+      <div class="grid2">
+        <div class="panel">
+          <h3>Your retail provider (REP)</h3>
+          <ul>
+            <li><strong>Who they are:</strong> companies like Ambit Energy that sell you an electricity plan.</li>
+            <li><strong>What they set:</strong> your rate, your contract term, and your billing.</li>
+            <li><strong>Your choice:</strong> you pick the REP, and you can switch when you want.</li>
+            <li><strong>Why ZIP matters:</strong> the plans and prices a REP can offer change by ZIP and by usage.</li>
+          </ul>
+          <p class="muted">This is the part you control. Picking the right REP and plan is where the savings and the rewards come from.</p>
+        </div>
+        <div class="panel">
+          <h3>Your Transmission and Distribution Utility (TDU)</h3>
+          <ul>
+            <li><strong>Who they are:</strong> the Transmission and Distribution Utility: Oncor, CenterPoint, AEP Texas, or TNMP.</li>
+            <li><strong>What they do:</strong> own the poles, wires, and meters and restore outages.</li>
+            <li><strong>Assigned, not chosen:</strong> your TDU is set by your address. Switching REPs never changes it.</li>
+            <li><strong>Same for everyone:</strong> TDU delivery charges are regulated and identical across all providers in that area.</li>
+          </ul>
+          <p class="muted">Because the TDU is the same no matter who you buy from, your power stays on through a switch and outages are handled the same way.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEEP-DIVE ACCORDIONS — the educational core -->
+    <section class="section">
+      <h2>Understand the details before you switch</h2>
+      <p class="sub">The pieces that decide what you actually pay, in plain English.</p>
+
+      <details class="accordion"><summary>Why electricity rates vary by ZIP code</summary>
+        <p>Every provider asks for your ZIP first because the plans and prices they can offer change from place to place. A few reasons drive that:</p>
+        <ul>
+          <li>TDU delivery charges differ between utility areas.</li>
+          <li>Local competition shifts the range of prices on offer.</li>
+          <li>Usage patterns vary between urban and rural areas.</li>
+          <li>Wholesale energy costs differ across TDU load zones.</li>
+        </ul>
+        <p>Even neighboring cities like Dallas and Fort Worth can land on different rates depending on promotions, plan structure, and delivery fees. That is why a real comparison starts with your address, not a single statewide average.</p>
+      </details>
+
+      <details class="accordion"><summary>How to read the Electricity Facts Label (EFL)</summary>
+        <p>The EFL is the nutrition label of any Texas electricity plan. It shows the real cost details, not just the headline number. Read these lines closely:</p>
+        <ul>
+          <li><strong>Average price at 500, 1,000, and 2,000 kWh:</strong> shows how the plan behaves at different usage levels.</li>
+          <li><strong>Base or minimum usage fees:</strong> extra charges if you do not hit a certain kWh.</li>
+          <li><strong>Bill credit rules:</strong> for example, a credit that only applies between 1,000 and 2,000 kWh.</li>
+          <li><strong>TDU delivery charges:</strong> regulated charges that update a couple of times per year.</li>
+          <li><strong>Contract length and early-termination fee:</strong> what it costs if you leave early.</li>
+          <li><strong>Renewable content:</strong> the percentage of energy from renewable sources.</li>
+        </ul>
+        <p>A plan can advertise a low rate that only appears at one very specific usage level. When in doubt, compare the 1,000 kWh number, the statewide benchmark for plan comparisons.</p>
+      </details>
+
+      <details class="accordion"><summary>The plan types you will see, and who they fit</summary>
+        <ul>
+          <li><strong>Fixed-rate:</strong> the rate stays the same for the whole term. Best for budgeting and stability.</li>
+          <li><strong>Variable or indexed:</strong> the rate can change month to month with the market. Bills can spike, so it fits few homes.</li>
+          <li><strong>Time-of-use:</strong> free nights or free weekends. Best when you can shift laundry, dishwashing, and EV charging into the free window.</li>
+          <li><strong>Bill credit or usage credit:</strong> a credit kicks in once you pass a usage threshold. Great if you reliably hit it, painful if you fall just short.</li>
+          <li><strong>Prepaid:</strong> pay as you go with no traditional deposit or credit check. Handy for short stays, but rates can run higher.</li>
+        </ul>
+      </details>
+
+      <details class="accordion"><summary>Moving to Texas? Setting up electricity</summary>
+        <p>Setting up power in a deregulated part of Texas is quick and can often be done same day or next day. Have these ready:</p>
+        <ul>
+          <li>Your new address and ZIP code</li>
+          <li>Your planned move-in date</li>
+          <li>Your ID or SSN, for a soft credit check</li>
+          <li>An estimate of your usage: small apartment, townhome, or full house</li>
+        </ul>
+        <p>You can start or switch service online in a few minutes. If you are renting, the office may suggest a provider, but in most deregulated areas you are free to choose any provider that serves your ZIP.</p>
+      </details>
+
+      <details class="accordion"><summary>Electricity for apartments</summary>
+        <p>Smaller homes do best with plans built for lower usage:</p>
+        <ul>
+          <li>Plans that do not punish low usage under 800 to 900 kWh.</li>
+          <li>Shorter terms that match your lease length.</li>
+          <li>Fixed-rate plans for a predictable monthly bill.</li>
+        </ul>
+        <p>If your usage is consistently under 700 kWh, be cautious with bill-credit and minimum-usage plans. They are often designed for larger homes and can cost an apartment more.</p>
+      </details>
+    </section>
+
+    <!-- TDU TABLE -->
+    <section class="section">
+      <h2>TDU service areas and outage contacts</h2>
+      <p class="sub">Your TDU handles outages and delivery, not your retail provider. Keep its emergency number handy.</p>
+      <div class="tdu">
+        <table class="tdu-table">
+          <thead>
+            <tr>
+              <th>Utility (TDU)</th>
+              <th>Typical service area</th>
+              <th>Outage phone</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>CenterPoint Energy</strong></td>
+              <td>Greater Houston metro area</td>
+              <td>800-332-7143</td>
+            </tr>
+            <tr>
+              <td><strong>Oncor</strong></td>
+              <td>Dallas&ndash;Fort Worth and much of North, Central, and West Texas (including Midland&ndash;Odessa)</td>
+              <td>888-313-4747</td>
+            </tr>
+            <tr>
+              <td><strong>AEP Texas North</strong></td>
+              <td>Abilene, San Angelo, and surrounding West and North Texas</td>
+              <td>866-223-8508</td>
+            </tr>
+            <tr>
+              <td><strong>AEP Texas Central</strong></td>
+              <td>Corpus Christi, Victoria, the Coastal Bend, and the Rio Grande Valley</td>
+              <td>866-223-8508</td>
+            </tr>
+            <tr>
+              <td><strong>TNMP</strong> (Texas-New Mexico Power)</td>
+              <td>Scattered areas of the Gulf Coast, North, and West Texas</td>
+              <td>888-866-7456</td>
+            </tr>
+            <tr>
+              <td><strong>LP&amp;L</strong> (Lubbock Power &amp; Light)</td>
+              <td>Lubbock &mdash; opened to retail competition in 2024</td>
+              <td>806-775-2509</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Repeated conversion band -->
+    <div class="cta-band">
+      <h2>Ready to see your plans?</h2>
+      <p>Enter your ZIP to compare real Texas rates and enroll online.</p>
+      <form class="zipform" action="https://shopping.ambitenergy.com/Path2Plans" method="get" target="_blank" rel="noopener" onsubmit="this.promocode.value=(this.dwellingtype.value==='A'?'consultantpm':'consultantps');">
+        <select name="customertype" class="dwell" aria-label="Customer type"><option value="Residential">Residential</option><option value="Commercial">Commercial</option></select>
+        <input type="hidden" name="language" value="en" />
+        <input type="hidden" name="refid" value="energydirect" />
+        <input type="hidden" name="promocode" value="consultantps" />
+        <input type="text" name="zipcode" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Enter your ZIP code" aria-label="ZIP code" required />
+        <select name="dwellingtype" class="dwell" aria-label="Home type">
+          <option value="H">House</option>
+          <option value="A">Apartment / condo</option>
+        </select>
+        <button type="submit">See My Plans →</button>
+      </form>
+    </div>
+
+    <!-- FAQ -->
+    <section class="section">
+      <h2>Texas electricity questions</h2>
+      <details class="accordion"><summary>How do I know if I live in a deregulated area?</summary>
+        <p>If you are in cities like Houston, Dallas, Fort Worth, Corpus Christi, Lubbock, Midland, Odessa, Abilene, or many surrounding suburbs, you are likely in a deregulated area where you can choose your electricity provider.</p></details>
+      <details class="accordion"><summary>Will my electricity get disconnected when I switch providers?</summary>
+        <p>No. Switching providers in deregulated Texas is designed to be seamless. As long as your account is in good standing, your power stays on while the switch is processed.</p></details>
+      <details class="accordion"><summary>Do I choose my TDU?</summary>
+        <p>No. Your TDU is assigned based on your physical location. You choose the retail provider, like Ambit Energy, but the TDU that maintains the grid in your area stays the same.</p></details>
+      <details class="accordion"><summary>Are delivery charges the same for every provider?</summary>
+        <p>Yes. TDU delivery charges are regulated by the state and are identical across all providers in that service area. Every provider passes through those same charges on your bill.</p></details>
+      <details class="accordion"><summary>What contract length is best?</summary>
+        <p>Many Texans choose a 12-month fixed plan for balance and predictability. When rates are favorable, longer terms like 24 or 36 months can lock in protection for a longer period.</p></details>
+    </section>
+  </div>
+
+  <a class="stickycall" href="tel:+13615829724"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:1em;height:1em;vertical-align:-2px;margin-right:.35em" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Call or text (361) 582-9724</a>
+
+  <footer>
+    <div class="wrap">
+      © 2026 Energy Direct — Independent Ambit Energy Consultant · PUCT&nbsp;#10117 · <a href="tel:+13615829724">(361) 582-9724</a>
+      <div class="fnav">
+        <a href="../">Home</a> · <a href="../houston/">Houston</a> · <a href="../dallas/">Dallas</a> ·
+        <a href="../corpus/">Corpus Christi</a> · <a href="../victoria/">Victoria</a> · <a href="../lubbock/">Lubbock</a> ·
+        <a href="../abilene/">Abilene</a> · <a href="../midland/">Midland</a> · <a href="../odessa/">Odessa</a> ·
+        <a href="../san-angelo/">San Angelo</a> · <a href="../solar/">Solar Plans</a> · <a href="../texas/">Texas Electricity Guide</a> &middot;
+        <a href="/blog/">Blog</a> &middot; <a href="/no-deposit-electricity/">No-Deposit Switching</a> &middot; <a href="/payment-options/">Payment Options</a> &middot; <a href="/service-areas/">Service Areas</a> &middot; <a href="/about/">About</a> &middot; <a href="/our-purpose/">Our Purpose</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Business-identity schema (item 5 fix: full Organization + WebSite + LocalBusiness graph) -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How do I know if I live in a deregulated area in Texas?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "If you live in cities like Houston, Dallas, Fort Worth, Corpus Christi, Lubbock, Midland, Odessa, Abilene, or many surrounding suburbs, you are likely in a deregulated electricity area where you can choose your retail electricity provider."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does my electricity get disconnected when I switch providers?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. In deregulated parts of Texas, switching providers is a seamless process handled behind the scenes. Your lights stay on during the switch as long as there are no billing or disconnect issues on the account."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I choose my TDU in Texas?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Your Transmission and Distribution Utility (TDU) is assigned based on your location. You can choose your retail electricity provider, but not the TDU that maintains the poles and wires in your area."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Are delivery charges the same no matter which provider I choose?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. TDU delivery charges are regulated and are the same across all retail electricity providers in that TDU service area. Those charges appear as a separate line item on your bill regardless of which supplier you choose."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What contract length is best for a Texas electricity plan?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Most Texans choose a 12-month fixed-rate plan because it balances rate stability with flexibility. Longer terms like 24 or 36 months can be a good fit when market prices are low and you want long-term price protection."
-        }
-      }
+    "@context":"https://schema.org",
+    "@graph":[
+      {"@type":"Organization","@id":"https://energydirect.org/#org","name":"Energy Direct",
+       "description":"Local independent Ambit Energy consultant helping Texas homes compare and enroll in electricity plans.",
+       "url":"https://energydirect.org/","logo":"https://energydirect.org/images/ambit%20logo.png",
+       "telephone":"+1-361-582-9724","areaServed":["Texas","Houston, TX","Dallas, TX","Corpus Christi, TX","Victoria, TX","Lubbock, TX","Abilene, TX","Midland, TX","Odessa, TX","San Angelo, TX"],
+       "sameAs":["https://www.facebook.com/energydirect.org"]},
+      {"@type":"WebSite","@id":"https://energydirect.org/#website","name":"Energy Direct",
+       "url":"https://energydirect.org/","publisher":{"@id":"https://energydirect.org/#org"}},
+      {"@type":"LocalBusiness","@id":"https://energydirect.org/texas/#local","name":"Energy Direct",
+       "url":"https://energydirect.org/texas/","image":"https://energydirect.org/images/ambit%20logo.png",
+       "telephone":"+1-361-582-9724","parentOrganization":{"@id":"https://energydirect.org/#org"},
+       "address":{"@type":"PostalAddress","addressRegion":"TX","addressCountry":"US"},
+       "areaServed":"Texas"}
     ]
   }
   </script>
-</head>
-<body>
-  <!-- Logo -->
-  <div style="text-align:center; margin: 1rem 0;">
-    <img src="/images/ambit logo.png" alt="Ambit Energy Consultant" style="width: 450px; max-width: 100%; height: auto; margin-bottom: 1rem;">
-  </div>
-
-  <div class="breadcrumb-wrapper">
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a href="/">Home</a> › 
-      <a href="/texas/">Texas Hub</a>
-    </nav>
-  </div>
-
-  <!-- Hero -->
-  <header style="background: linear-gradient(135deg, #f57c00 0%, #fbb034 100%); color:#fff; text-align:center; padding:4rem 1rem; text-shadow:2px 2px 6px rgba(0,0,0,.3);">
-    <h1 style="font-size:2.5rem; margin:0;">Texas Electricity Guide</h1>
-    <p style="max-width:800px; margin:1rem auto 0; font-size:1.15rem;">
-      Learn how to compare plans by ZIP, read the EFL, and understand delivery charges from TDUs like Oncor, CenterPoint, AEP Texas, and TNMP.
-      <strong>Rates vary by ZIP</strong> and usage.
-    </p>
-    <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener" class="btn-primary">Compare Plans</a>
-  </header>
-
-  <!-- Plan Images -->
-  <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:20px; padding:20px 0;">
-    <img src="/images/budget.webp" alt="Budget Relief" style="width:200px; border-radius:10px;" />
-    <img src="/images/free.webp" alt="Free Nights" style="width:200px; border-radius:10px;" />
-    <img src="/images/secure.webp" alt="Secure Savings" style="width:200px; border-radius:10px;" />
-    <img src="/images/summer.webp" alt="Summer Break" style="width:200px; border-radius:10px;" />
-    <div style="font-weight:700; align-self:center;">+ many more</div>
-  </div>
-
-  <!-- Cards -->
-  <main class="grid-2" style="max-width:1100px; margin:0 auto; padding:2rem;">
-    <div class="card">
-      <h2>How Texas electricity choice works</h2>
-      <p>In deregulated areas, TDUs maintain the poles and wires while retail electricity providers offer plans and billing. Delivery charges are set by your TDU and apply regardless of provider.</p>
-      <div class="cta-section"><a class="btn-primary" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">See Options</a></div>
-    </div>
-
-    <div class="card">
-      <h2>What to check in the EFL</h2>
-      <ul>
-        <li>Average price at 500/1000/2000 kWh</li>
-        <li>Base/minimum usage fees</li>
-        <li>Bill credit thresholds</li>
-        <li>Contract length &amp; early termination fee</li>
-        <li>Renewable content</li>
-      </ul>
-      <div class="cta-section"><a class="btn-primary" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">Compare Plans</a></div>
-    </div>
-
-    <div class="card">
-      <h2>Popular City Pages</h2>
-      <ul>
-        <li><a href="/dallas/">Dallas</a></li>
-        <li><a href="/houston/">Houston</a></li>
-        <li><a href="/corpus/">Corpus Christi</a></li>
-        <li><a href="/victoria/">Victoria</a></li>
-        <li><a href="/lubbock/">Lubbock</a></li>
-        <li><a href="/abilene/">Abilene</a></li>
-        <li><a href="/midland/">Midland</a></li>
-        <li><a href="/odessa/">Odessa</a></li>
-        <li><a href="/san-angelo/">San Angelo</a></li>
-      </ul>
-      <div class="cta-section"><a class="btn-primary" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">Start or Switch</a></div>
-    </div>
-
-    <div class="card">
-      <h2>Texas Resources</h2>
-      <ul style="list-style:none; padding:0; line-height:1.8;">
-        <li><a href="/texas/electricity-facts-label/">Electricity Facts Label (EFL) Guide</a></li>
-        <li><a href="/texas/electricity-glossary/">Electricity Glossary</a></li>
-      </ul>
-      <p>Outages are handled by your TDU. For delivery emergencies, contact your local utility (Oncor, CenterPoint, AEP Texas, TNMP).</p>
-    </div>
-  </main>
-
-  <!-- Long-Form Texas Electricity Guide (Authority Content) -->
-  <section id="texas-guide" style="max-width:1100px; margin:0 auto; padding:2rem; line-height:1.7; color:#1e293b;">
-
-    <!-- Table of Contents -->
-    <div class="toc">
-      <h2>On this page</h2>
-      <ul>
-        <li><a href="#how-texas-electricity-works">How electricity works in deregulated Texas</a></li>
-        <li><a href="#why-rates-vary">Why electricity rates vary by ZIP code</a></li>
-        <li><a href="#compare-plans">How to compare Texas electricity plans</a></li>
-        <li><a href="#reading-efl">How to read the Electricity Facts Label (EFL)</a></li>
-        <li><a href="#moving-to-texas">Moving to Texas: setting up electricity</a></li>
-        <li><a href="#apartments">Electricity for apartments</a></li>
-        <li><a href="#tdu-table">TDU service areas and outage contacts</a></li>
-        <li><a href="#texas-faq">Frequently asked questions</a></li>
-      </ul>
-    </div>
-
-    <h2 id="how-texas-electricity-works" style="font-size:2rem; margin-bottom:1rem;">How electricity works in deregulated Texas</h2>
-    <p>
-      Texas has one of the most unique electricity systems in the country. In deregulated areas—such as Houston, Dallas, Fort Worth, Waco, Corpus Christi, Lubbock, Abilene, Midland, Odessa, and many others—you have the freedom to choose your electricity provider.
-    </p>
-    <p>
-      This choice exists because Texas split responsibilities between two groups:
-    </p>
-
-    <h3>Retail Electricity Providers (REPs)</h3>
-    <ul>
-      <li>Companies like Ambit Energy that sell electricity plans.</li>
-      <li>They handle billing, customer service, and plan options.</li>
-      <li>Rates vary by ZIP code and usage.</li>
-    </ul>
-
-    <h3>Transmission &amp; Distribution Utilities (TDUs)</h3>
-    <p>TDUs maintain the poles, wires, and deliver the electricity to your home. These include:</p>
-    <ul>
-      <li><strong>Oncor</strong> – Dallas/Fort Worth and surrounding areas</li>
-      <li><strong>CenterPoint</strong> – Greater Houston region</li>
-      <li><strong>AEP Texas</strong> – Corpus Christi, Rio Grande Valley, West Texas</li>
-      <li><strong>TNMP</strong> – Parts of North, Central, and West Texas</li>
-    </ul>
-    <p>
-      Your REP does not change your TDU. If you switch providers, your TDU remains the same, and outages are still handled by that utility—not the REP.
-    </p>
-
-    <hr style="margin:2rem 0;">
-
-    <h2 id="why-rates-vary" style="font-size:2rem; margin-bottom:1rem;">Why electricity rates vary by ZIP code</h2>
-    <p>When you search for electricity plans in Texas, you’ll notice every provider asks for your ZIP code. This is because:</p>
-    <ul>
-      <li>TDUs have different delivery charges.</li>
-      <li>Local competition affects price ranges.</li>
-      <li>Usage patterns vary by region (urban vs. rural).</li>
-      <li>Wholesale energy costs differ across TDU load zones.</li>
-    </ul>
-    <p>
-      Even neighboring cities—like Dallas and Fort Worth—can have different rates depending on promotions, plan structures, and delivery fees.
-    </p>
-
-    <hr style="margin:2rem 0;">
-
-    <h2 id="compare-plans" style="font-size:2rem; margin-bottom:1rem;">How to compare Texas electricity plans</h2>
-    <p>Not all plans are built the same. Before choosing a REP, look for these plan types and how they fit your usage habits:</p>
-
-    <h3>1. Fixed-rate plans</h3>
-    <p>Rate stays the same for the entire contract. Best for budgeting and stability.</p>
-
-    <h3>2. Variable or indexed plans</h3>
-    <p>Rate may change month-to-month based on the market. Not ideal for most homes because bills can spike unexpectedly.</p>
-
-    <h3>3. Time-of-use (TOU) plans</h3>
-    <p>Examples: Free Nights, Free Weekends. Best when your usage matches the free windows and you can shift laundry, dishwashing, and EV charging into those hours.</p>
-
-    <h3>4. Bill credit or usage credit plans</h3>
-    <p>
-      Plans that give a bill credit once you pass a certain usage threshold (for example, 1200 kWh). These can be great if you consistently hit that number—but painful if you fall just short and miss the credit.
-    </p>
-
-    <h3>5. Prepaid electricity</h3>
-    <p>Pay-as-you-go electricity with no traditional deposit or credit check. Useful for short-term stays or when credit is a concern, but daily or weekly notifications are common and rates can be higher.</p>
-
-    <hr style="margin:2rem 0;">
-
-    <h2 id="reading-efl" style="font-size:2rem; margin-bottom:1rem;">How to read the Electricity Facts Label (EFL)</h2>
-    <p>The EFL is the “nutrition label” of any Texas electricity plan. It shows the real cost details. Look closely at:</p>
-    <ul>
-      <li><strong>Average price at 500, 1000, and 2000 kWh</strong> – these show how the plan behaves at different usage levels.</li>
-      <li><strong>Base or minimum usage fees</strong> – extra charges if you don’t hit a certain kWh.</li>
-      <li><strong>Bill credit rules</strong> – such as credits only applying between 1200–2000 kWh.</li>
-      <li><strong>TDU delivery charges</strong> – regulated charges that change a couple of times per year.</li>
-      <li><strong>Contract length and early termination fee</strong> – what it costs if you leave early.</li>
-      <li><strong>Renewable content</strong> – the percentage of energy from renewable sources.</li>
-    </ul>
-    <p>
-      A plan may advertise a low rate but only deliver that rate at a very specific usage level. When in doubt, compare the 1000 kWh number—that’s the statewide benchmark for plan comparisons.
-    </p>
-
-    <hr style="margin:2rem 0;">
-
-    <h2 id="moving-to-texas" style="font-size:2rem; margin-bottom:1rem;">Moving to Texas? Here’s how to set up electricity</h2>
-    <p>Setting up electricity in a deregulated part of Texas is quick and can usually be done same day or next day. Here’s what you’ll need:</p>
-    <ul>
-      <li>Your new address and ZIP code</li>
-      <li>Planned move-in date</li>
-      <li>Your ID or SSN (for a soft credit check)</li>
-      <li>Estimated usage (small apartment, townhome, or full house)</li>
-    </ul>
-    <p>
-      You can start or switch service online in just a few minutes. If you’re renting an apartment, the office may recommend a provider—but in most deregulated areas you are free to choose any REP that serves your ZIP.
-    </p>
-
-    <hr style="margin:2rem 0;">
-
-    <h2 id="apartments" style="font-size:2rem; margin-bottom:1rem;">Electricity for apartments in Texas</h2>
-    <p>Apartments often benefit from:</p>
-    <ul>
-      <li>Plans that don’t punish low usage under 800–900 kWh.</li>
-      <li>Shorter-term contracts that match your lease length.</li>
-      <li>Fixed-rate plans for predictable monthly bills.</li>
-    </ul>
-    <p>
-      If your usage is consistently under 700 kWh, be cautious with plans that rely on bill credits or minimum usage requirements. Those plans are often designed for larger homes and may cost more for small apartments.
-    </p>
-
-    <hr style="margin:2rem 0;">
-
-    <h2 id="tdu-table" style="font-size:2rem; margin-bottom:1rem;">TDU service areas and outage contacts</h2>
-    <p>
-      Your <strong>TDU</strong> handles outages and delivery issues—not your REP. Keep your TDU’s emergency number handy:
-    </p>
-
-    <table class="tdu-table">
-      <thead>
-        <tr>
-          <th>TDU</th>
-          <th>Typical Service Area</th>
-          <th>Outage Phone</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Oncor</strong></td>
-          <td>Dallas/Fort Worth, parts of North and Central Texas</td>
-          <td>888-313-4747</td>
-        </tr>
-        <tr>
-          <td><strong>CenterPoint</strong></td>
-          <td>Greater Houston metro area</td>
-          <td>800-332-7143</td>
-        </tr>
-        <tr>
-          <td><strong>AEP Texas</strong></td>
-          <td>Corpus Christi, Rio Grande Valley, West and South Texas</td>
-          <td>866-223-8508</td>
-        </tr>
-        <tr>
-          <td><strong>TNMP</strong></td>
-          <td>Parts of North, Central, and West Texas</td>
-          <td>888-866-7456</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <hr style="margin:2rem 0;">
-
-    <h2 id="texas-faq" style="font-size:2rem; margin-bottom:1rem;">Frequently asked questions</h2>
-    
-    <h3>How do I know if I live in a deregulated area?</h3>
-    <p>
-      If you’re in cities like Houston, Dallas, Fort Worth, Corpus Christi, Lubbock, Midland, Odessa, Abilene, or many surrounding suburbs, you are likely in a deregulated area where you can choose your electricity provider.
-    </p>
-
-    <h3>Does my electricity get disconnected when I switch providers?</h3>
-    <p>
-      No. Switching providers in deregulated Texas is designed to be seamless. As long as your account is in good standing, your power stays on while the switch is processed.
-    </p>
-
-    <h3>Do I choose my TDU?</h3>
-    <p>
-      No. Your TDU is assigned based on your physical location. You choose the REP (like Ambit Energy), but the TDU that maintains the grid in your area stays the same.
-    </p>
-
-    <h3>Are delivery charges the same for every REP?</h3>
-    <p>
-      Yes. TDU delivery charges are regulated by the state and are identical across all providers in that service area. Every REP passes through those same charges on your bill.
-    </p>
-
-    <h3>What contract length is best?</h3>
-    <p>
-      Many Texans choose a 12-month fixed plan for balance and predictability. When rates are favorable, longer terms like 24 or 36 months can lock in protection for a longer period.
-    </p>
-
-    <div class="cta-section" style="margin-top:2rem;">
-      <a class="btn-primary" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">
-        Compare Texas Electricity Plans
-      </a>
-    </div>
-
-  </section>
-
-  <!-- Footer -->
-  <footer style="text-align:center; padding:1.5rem; background:rgba(0,0,0,0.05); font-size:.9rem;">
-    © 2025 EnergyDirect | Independent Ambit Energy Consultant
-    <div class="puct">PUCT#10117</div>
-    <div style="margin-top:1rem;">
-      <a href="/">Home</a> |
-      <a href="/houston/">Houston</a> |
-      <a href="/dallas/">Dallas</a> |
-      <a href="/corpus/">Corpus Christi</a> |
-      <a href="/victoria/">Victoria</a> |
-      <a href="/lubbock/">Lubbock</a> |
-      <a href="/texas/">Texas Hub</a> |
-      <a href="/abilene/">Abilene</a> |
-      <a href="/midland/">Midland</a> |
-      <a href="/odessa/">Odessa</a> |
-      <a href="/san-angelo/">San Angelo</a> |
-      <a href="/solar/">Solar Plans</a>
-    </div>
-  </footer>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How do I know if I live in a deregulated area in Texas?","acceptedAnswer":{"@type":"Answer","text":"If you live in cities like Houston, Dallas, Fort Worth, Corpus Christi, Lubbock, Midland, Odessa, Abilene, or many surrounding suburbs, you are likely in a deregulated electricity area where you can choose your retail electricity provider."}},
+    {"@type":"Question","name":"Does my electricity get disconnected when I switch providers in Texas?","acceptedAnswer":{"@type":"Answer","text":"No. Switching providers in deregulated Texas is designed to be seamless. As long as your account is in good standing, your power stays on while the switch is processed."}},
+    {"@type":"Question","name":"Do I choose my TDU in Texas?","acceptedAnswer":{"@type":"Answer","text":"No. Your Transmission and Distribution Utility (TDU) is assigned based on your location. You can choose your retail electricity provider, but not the TDU that maintains the poles and wires in your area."}},
+    {"@type":"Question","name":"Are delivery charges the same no matter which provider I choose?","acceptedAnswer":{"@type":"Answer","text":"Yes. TDU delivery charges are regulated and are the same across all retail electricity providers in that TDU service area. Those charges appear as a separate line item on your bill regardless of which supplier you choose."}},
+    {"@type":"Question","name":"What contract length is best for a Texas electricity plan?","acceptedAnswer":{"@type":"Answer","text":"Most Texans choose a 12-month fixed-rate plan because it balances rate stability with flexibility. Longer terms like 24 or 36 months can be a good fit when market prices are low and you want long-term price protection."}}
+  ]}
+  </script>
+  <script src="/chat-widget.js" defer></script>
+  <script src="/form-enhance.js" defer></script>
+  <script src="/nav.js" defer></script>
 </body>
 </html>

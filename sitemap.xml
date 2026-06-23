@@ -1,89 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Homepage -->
-  <url>
-    <loc>https://energydirect.org/</loc>
-  </url>
-
-  <!-- Solar -->
-  <url>
-    <loc>https://energydirect.org/solar/</loc>
-  </url>
-
-  <!-- City landing pages -->
-  <url>
-    <loc>https://energydirect.org/houston/</loc>
-  </url>
-  <url>
-    <loc>https://energydirect.org/lubbock/</loc>
-  </url>
-  <url>
-    <loc>https://energydirect.org/dallas/</loc>
-  </url>
-  <url>
-    <loc>https://energydirect.org/victoria/</loc>
-  </url>
-  <url>
-    <loc>https://energydirect.org/corpus/</loc>
-  </url>
-
-  <!-- NEW: West Texas cities -->
-  <url>
-    <loc>https://energydirect.org/midland/</loc>
-    <lastmod>2025-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://energydirect.org/odessa/</loc>
-    <lastmod>2025-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://energydirect.org/abilene/</loc>
-    <lastmod>2025-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://energydirect.org/san-angelo/</loc>
-    <lastmod>2025-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Texas section -->
-  <url>
-    <loc>https://energydirect.org/texas/</loc>
-  </url>
-  <url>
-    <loc>https://energydirect.org/texas/electricity-facts-label/</loc>
-  </url>
-  <url>
-    <loc>https://energydirect.org/texas/electricity-glossary/</loc>
-  </url>
-
-  <!-- City subpages -->
-  <url>
-    <loc>https://energydirect.org/houston/compare-ambit-plans-by-zip/</loc>
-  </url>
-  <url>
-    <loc>https://energydirect.org/dallas/moving-electric-service/</loc>
-  </url>
-  <url>
-    <loc>https://energydirect.org/corpus/tdu-delivery-charges-explained/</loc>
-  </url>
-  <url>
-    <loc>https://energydirect.org/victoria/switching-electricity-providers/</loc>
-  </url>
-  <url>
-    <loc>https://energydirect.org/lubbock/moving-electric-service/</loc>
-  </url>
-  
-  <url>
-   <loc>https://energydirect.org/midland/compare-ambit-plans/</loc>
-  </url>
-
+  <url><loc>https://energydirect.org/abilene/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/about/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/alvin/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/angleton/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/arlington/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/baytown/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/blog/ambit-free-energy-explained/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/average-home-electricity-usage-texas/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/bill-credit-plans-explained/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/compare-plans-by-zip-texas/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/deregulated-electricity-texas-guide/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/early-termination-fee-texas/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/electricity-contract-expires-texas/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/fixed-vs-variable-rate-plans/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/free-nights-weekends-plans-texas/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/green-renewable-electricity-texas/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/how-to-read-electricity-bill/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/blog/lower-summer-electric-bill-texas/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/minimum-usage-fees-texas/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/moving-electricity-new-address-texas/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/prepaid-vs-postpaid-electricity-texas/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/report-power-outage-texas/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/small-business-electricity-texas/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/smart-thermostat-cut-electric-bill/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/solar-buyback-plans/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/switching-providers-guide/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/tdu-delivery-charges-texas/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/understanding-electricity-facts-label/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/what-is-ercot/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/why-rates-vary-by-zip/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/blog/winter-electricity-bills-texas/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/carrollton/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/conroe/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/corpus/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/corpus/tdu-delivery-charges-explained/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/dallas/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/dallas/moving-electric-service/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/dickinson/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/edinburg/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/fort-worth/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/friendswood/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/frisco/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/galveston/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/garland/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/grand-prairie/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/harlingen/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/houston/compare-ambit-plans-by-zip/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/houston/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://energydirect.org/katy/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/laredo/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/league-city/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/lewisville/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/lubbock/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/lubbock/moving-electric-service/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/mansfield/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/mcallen/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/mckinney/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/mesquite/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/midland/compare-ambit-plans/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/midland/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/no-deposit-electricity/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/odessa/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/our-purpose/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/pasadena/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/payment-options/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/pearland/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/plano/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/richardson/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/san-angelo/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/service-areas/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/solar/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/sugar-land/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/texas/electricity-facts-label/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/texas/electricity-glossary/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/texas/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/texas-city/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/the-woodlands/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/tyler/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/victoria/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/victoria/switching-electricity-providers/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://energydirect.org/waco/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://energydirect.org/wichita-falls/</loc><lastmod>2026-06-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>
