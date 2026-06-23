@@ -2,225 +2,495 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Solar Buyback Plans in Texas | Compare Electricity Options | EnergyDirect</title>
-  <meta name="description" content="Learn how solar buyback works in Texas and compare electricity plans that support solar credits. Explore panel options, Texas TDUs (Oncor, CenterPoint, AEP Texas, TNMP), and FAQs. Always review the EFL." />
-  <meta name="author" content="EnergyDirect" />
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://energydirect.org/solar/" />
-
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4CWH67FHM0"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-4CWH67FHM0');
-  </script>
-
-  <!-- LocalBusiness schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Energy Direct",
-    "url": "https://energydirect.org",
-    "logo": "https://energydirect.org/logo.png",
-    "description": "Independent electricity consultant offering solar buyback plans in Texas deregulated markets.",
-    "telephone": "979-743-5601",
-    "areaServed": {"@type":"State","name":"Texas"},
-    "address": {"@type":"PostalAddress","addressLocality":"Houston","addressRegion":"TX","addressCountry":"US"}
-  }
-  </script>
-
+  <title>Texas Solar Buyback Plans | Energy Direct</title>
+  <meta name="description" content="Get credited for the power your panels send back with Ambit Energy solar buyback plans in Texas. Estimate your monthly credit and enroll with Energy Direct." />
+  <link rel="canonical" href="https://energydirect.org/solar/"
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Energy Direct">
+  <meta property="og:title" content="Texas Solar Buyback Plans | Energy Direct">
+  <meta property="og:description" content="Get credited for the power your panels send back with Ambit Energy solar buyback plans in Texas. Estimate your monthly credit and enroll with Energy Direct.">
+  <meta property="og:url" content="https://energydirect.org/solar/">
+  <meta property="og:image" content="https://energydirect.org/images/solar-buyback-texas.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Texas Solar Buyback Plans | Energy Direct">
+  <meta name="twitter:description" content="Get credited for the power your panels send back with Ambit Energy solar buyback plans in Texas. Estimate your monthly credit and enroll with Energy Direct.">
+  <meta name="twitter:image" content="https://energydirect.org/images/solar-buyback-texas.png">
+   />
+  <link rel="icon" type="image/png" href="../favicon.png" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-    :root{
-      --orange-1:#f57c00; --orange-2:#fbb034;
-      --blue:#2563eb; --blue-dark:#1d4ed8;
-      --muted:#475569; --bg:#f9fafb; --card:#fff; --border:#e5e7eb;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:'Poppins',Arial,sans-serif;background:var(--bg);color:#0f172a}
-    a{color:var(--blue);text-decoration:none}
-    .btn-primary{display:inline-block;padding:12px 20px;background:var(--blue);color:#fff!important;font-weight:700;border-radius:12px}
-    .btn-primary:hover{background:var(--blue-dark)}
-    .wrap{max-width:1100px;margin:0 auto;padding:0 1.25rem}
-    .logo{text-align:center;margin:1rem 0}
-    .logo img{max-width:450px;width:100%;height:auto}
-    header.hero{background:linear-gradient(135deg,var(--orange-1) 0%,var(--orange-2) 100%);color:#fff;text-align:center;padding:3.5rem 1rem;text-shadow:2px 2px 6px rgba(0,0,0,.25)}
-    header.hero h1{margin:0;font-size:2.6rem}
-    header.hero p{max-width:760px;margin:1rem auto 1.25rem;font-size:1.15rem}
-    /* cards */
-    .cards{display:grid;gap:16px;grid-template-columns:1fr; margin:0 auto 2rem}
-    @media(min-width:900px){.cards{grid-template-columns:repeat(3,1fr)}}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;box-shadow:0 2px 8px rgba(15,23,42,.04)}
-    .card h3{margin:.25rem 0 .5rem}
-    .card ul{margin:.25rem 0 0 1.1rem}
-    .card li{margin:.35rem 0}
-    .cta-center{text-align:center;margin-top:1rem}
-    /* FAQ */
-    .faq{max-width:900px;margin:0 auto 2rem}
-    .faq h2{text-align:center;margin:0 0 .5rem}
-    details{background:#fff;border:1px solid var(--border);border-radius:12px;padding:.75rem 1rem;margin:.5rem 0}
-    summary{cursor:pointer;font-weight:600}
-    /* footer */
-    footer{ text-align:center; padding:1.5rem; background:rgba(0,0,0,0.05); font-size:.9rem; }
-    footer .puct{margin-top:.5rem;font-weight:700}
-    /* responsive */
-    @media(max-width:520px){
-      header.hero h1{font-size:2.1rem}
-      header.hero p{font-size:1.05rem}
-    }
+    :root{ --ink:#0f172a; --body:#1e293b; --muted:#475569; --line:#e5e7eb;
+           --brand:#f57c00; --brand-d:#d96b00; --go:#16a34a; --go-d:#15803d; }
+    *{ box-sizing:border-box; }
+    body{ margin:0; background:#f7f8fa; color:var(--body);
+          font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+          font-size:1.18rem; line-height:1.65; -webkit-text-size-adjust:100%; }
+    .wrap{ max-width:1080px; margin:0 auto; padding:0 1.1rem; }
+    h1,h2,h3,h4{ color:var(--ink); }
+    p{ font-size:1.13rem; }
+    a{ color:var(--brand); }
+
+    /* Slim identity bar — phone is a quiet secondary link, NOT a loud CTA */
+    .util{ background:#fff; color:var(--ink); font-size:.95rem; border-bottom:1px solid var(--line);
+           display:flex; justify-content:space-between; flex-wrap:wrap; gap:.3rem 1rem;
+           align-items:center; padding:.5rem 1.1rem; }
+    .util b{ color:#fff; }
+    .util a{ color:var(--ink); text-decoration:none; font-weight:800; }
+    .util a:hover{ text-decoration:underline; }
+    .util img{ height:62px; width:auto; display:block; }
+
+    /* HERO — the WHY + the one conversion action */
+    .hero{ position:relative; color:#fff; text-align:center; padding:4rem 1rem 3.4rem;
+      background:linear-gradient(180deg, rgba(15,23,42,.32) 0%, rgba(15,23,42,.55) 100%),
+                 url('../images/solar-buyback-texas.png') center/cover no-repeat; }
+    .hero .eyebrow{ display:inline-block; letter-spacing:.13em; text-transform:uppercase; font-size:1rem; font-weight:800; color:#ffb84d; background:rgba(245,124,0,.16); border:1px solid rgba(255,184,77,.5); padding:.42rem 1.05rem; border-radius:999px; margin:0 0 1.1rem; }
+    .hero h1{ color:#fff; font-size:3.25rem; line-height:1.1; margin:.5rem auto .7rem; max-width:900px;
+      text-shadow:0 2px 14px rgba(0,0,0,.45); }
+    .hero .lede{ max-width:680px; margin:0 auto 1.6rem; font-size:1.3rem; line-height:1.5;
+      color:#f1f5f9; text-shadow:0 1px 8px rgba(0,0,0,.5); }
+    .zipform{ display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap;
+      max-width:560px; margin:0 auto; }
+    .zipform input[type=text]{ flex:1 1 200px; min-width:0; padding:1.15rem 1.2rem; border-radius:12px;
+      border:0; font-size:1.2rem; color:#0f172a; box-shadow:0 8px 22px rgba(0,0,0,.25); }
+    .zipform select.dwell{ flex:0 1 170px; padding:1.15rem .9rem; border-radius:12px; border:0;
+      font-size:1.1rem; color:#0f172a; background:#fff; box-shadow:0 8px 22px rgba(0,0,0,.25); cursor:pointer; }
+    .zipform button{ padding:1.15rem 1.9rem; border-radius:12px; border:0; background:var(--go);
+      color:#fff; font-weight:800; font-size:1.18rem; cursor:pointer;
+      box-shadow:0 8px 22px rgba(22,163,74,.45); }
+    .zipform button:hover{ background:var(--go-d); }
+    .hero .micro{ display:block; margin:1rem auto 0; font-size:1rem; color:#fed7aa; }
+    .hero .micro a{ color:#fff; font-weight:700; }
+
+    /* 3-step: "here is how you convert" */
+    .steps{ background:#fff; border-bottom:1px solid var(--line); }
+    .steps .wrap{ display:grid; gap:20px; grid-template-columns:1fr; padding:1.8rem 1.1rem; }
+    @media(min-width:760px){ .steps .wrap{ grid-template-columns:repeat(3,1fr); } }
+    .step{ display:flex; gap:.9rem; align-items:flex-start; }
+    .step .n{ flex:0 0 auto; width:44px; height:44px; border-radius:50%; background:var(--brand);
+      color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:1.3rem; }
+    .step h4{ margin:.15rem 0 .25rem; font-size:1.2rem; }
+    .step p{ margin:0; font-size:1.05rem; color:var(--muted); }
+
+    /* Trust strip — real credentials only */
+    .trust{ background:linear-gradient(135deg,#f57c00 0%,#fbb034 40%,#ffb84d 100%); color:#fff; }
+    .trust .wrap{ display:flex; flex-wrap:wrap; justify-content:center; gap:.7rem 2.2rem; padding:1rem 1.1rem; }
+    .trust span{ font-size:1rem; font-weight:600; }
+    .trust b{ color:#fff; }
+    .trust .tico{ width:17px; height:17px; vertical-align:-3px; color:#fff; }
+
+    .section{ padding:2.6rem 0 .4rem; }
+    .section h2{ font-size:2.05rem; line-height:1.18; margin:0 0 .4rem; }
+    .section .sub{ color:var(--muted); max-width:720px; margin:0 0 1.4rem; }
+    .center{ text-align:center; } .center .sub{ margin-left:auto; margin-right:auto; }
+
+    /* WHY-switch benefit cards with REAL photography */
+    .why{ display:grid; gap:22px; grid-template-columns:1fr; margin-top:1.2rem; }
+    @media(min-width:820px){ .why{ grid-template-columns:repeat(3,1fr); } }
+    .why .card{ background:#fff; border:1px solid var(--line); border-radius:18px; overflow:hidden;
+      box-shadow:0 8px 24px rgba(15,23,42,.07); }
+    .why .card img{ width:100%; height:190px; object-fit:cover; display:block; }
+    .why .card .pad{ padding:1.1rem 1.25rem 1.4rem; }
+    .why .card h3{ margin:.1rem 0 .45rem; font-size:1.3rem; }
+    .why .card p{ font-size:1.05rem; color:var(--muted); margin:0; }
+
+    /* Value-comparison grid — where Ambit genuinely wins (verified terms only) */
+    .compare{ margin-top:1.3rem; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    .ctable{ width:100%; border-collapse:separate; border-spacing:0; min-width:560px; background:#fff;
+      border:1px solid var(--line); border-radius:18px; overflow:hidden; box-shadow:0 10px 28px rgba(15,23,42,.08); }
+    .ctable th,.ctable td{ padding:1.05rem 1.15rem; text-align:left; border-bottom:1px solid var(--line);
+      font-size:1.04rem; vertical-align:top; }
+    .ctable thead th{ background:#f1f5f9; color:var(--ink); font-size:1.05rem; text-align:center; }
+    .ctable thead th.feat{ text-align:left; }
+    .ctable thead th.amb{ background:linear-gradient(135deg,#c25e00,#f57c00); color:#fff; font-weight:800; font-size:1.15rem; }
+    .ctable .feat{ font-weight:600; color:var(--ink); width:46%; }
+    .ctable td.amb{ background:#fff7ed; text-align:center; font-weight:700; }
+    .ctable td.alt{ text-align:center; color:var(--muted); }
+    .ctable tbody tr:last-child td{ border-bottom:0; }
+    .yes{ color:var(--go-d); font-weight:800; }
+    .meh{ color:#94a3b8; font-weight:700; }
+    .cnote{ font-size:.92rem; color:var(--muted); margin:.8rem 0 0; }
+    .cnote a{ color:var(--brand); }
+
+    /* Repeated conversion band */
+    .cta-band{ background:linear-gradient(135deg,#f57c00 0%,#fbb034 40%,#ffb84d 100%); color:#fff;
+      border-radius:18px; padding:2.2rem 1.5rem; text-align:center; margin:2.6rem 0; }
+    .cta-band h2{ color:#fff; margin:0 0 .5rem; font-size:1.85rem; }
+    .cta-band p{ margin:0 0 1.3rem; color:#fff; text-shadow:0 1px 4px rgba(124,45,18,.35); }
+    .cta-band .zipform input{ box-shadow:none; }
+
+    .grid2{ display:grid; gap:22px; grid-template-columns:1fr; }
+    @media(min-width:900px){ .grid2{ grid-template-columns:1fr 1fr; } }
+    .panel{ background:#fff; border:1px solid var(--line); border-radius:16px; padding:1.4rem 1.5rem;
+      box-shadow:0 4px 14px rgba(15,23,42,.05); }
+    .panel h3{ margin:.1rem 0 .6rem; font-size:1.32rem; }
+    .panel ul{ margin:.3rem 0 0; padding-left:1.2rem; } .panel li{ margin:.35rem 0; }
+    .muted{ color:var(--muted); }
+
+    .accordion{ border:1px solid var(--line); border-radius:12px; margin-bottom:10px; background:#fff; }
+    .accordion summary{ cursor:pointer; padding:1rem 1.2rem; font-weight:700; font-size:1.1rem; list-style:none; }
+    .accordion summary::-webkit-details-marker{ display:none; }
+    .accordion summary:hover{ background:#f3f4f6; }
+    .accordion p{ padding:0 1.2rem 1rem; margin:0; color:#374151; font-size:1.06rem; }
+
+    .crumbs{ font-size:.95rem; color:#64748b; padding:.9rem 0; }
+    .crumbs a{ color:var(--brand); text-decoration:none; }
+
+    footer{ background:linear-gradient(135deg,#f57c00 0%,#fbb034 40%,#ffb84d 100%); color:#fff; padding:2rem 1.1rem 6.5rem; margin-top:2.5rem; font-size:1rem; }
+    footer a{ color:#fff; text-decoration:none; }
+    .fnav{ margin-top:.9rem; line-height:2; }
+
+    /* sticky mobile call — the quiet always-there secondary path */
+    .stickycall{ position:fixed; left:0; right:0; bottom:0; z-index:40; display:none;
+      background:#0f172a; color:#fff; text-align:center; padding:.85rem; font-weight:800;
+      font-size:1.1rem; text-decoration:none; box-shadow:0 -4px 14px rgba(0,0,0,.25); }
+    @media(max-width:760px){ .stickycall{ display:block; } footer{ padding-bottom:5rem; } }
   </style>
 </head>
 <body>
 
-  <!-- Logo -->
-  <div class="logo">
-    <img src="/images/solar-buyback-texas.png" alt="EnergyDirect Solar Buyback">
-  </div>
-  <div class="breadcrumb-wrapper">
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a href="/">Home</a> › <span>Solar</span>
-    </nav>
-  </div>
-
-  <!-- Hero -->
-  <header class="hero">
-    <div class="wrap">
-      <h1>Solar Buyback Plans in Texas</h1>
-      <p>Send your extra rooftop solar back to the grid and receive bill credits through eligible electricity plans. <strong>Rates vary by ZIP and Transmission & Distribution Utility (Oncor, CenterPoint, AEP Texas, TNMP)</strong>. Always review the <strong>Electricity Facts Label (EFL)</strong> before you enroll.</p>
-      <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener" class="btn-primary">Compare Plans by ZIP</a>
-      <p style="margin-top:.75rem;font-size:.9rem;color:#fefefe">Not all plans include solar buyback. Check the EFL for details on credits and caps.</p>
+<style>
+    .sitenav{ background:#fff; border-bottom:1px solid var(--line); position:sticky; top:0; z-index:50; }
+    .nav-row{ max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.45rem 1.3rem; }
+    .nav-logo img{ height:76px; width:auto; display:block; }
+    .nav-links{ display:flex; align-items:center; gap:.15rem; }
+    .nav-links>a,.nav-dt{ background:none; border:0; cursor:pointer; font:inherit; color:var(--ink); font-weight:700; font-size:1.14rem; padding:.6rem .8rem; border-radius:8px; text-decoration:none; display:inline-flex; align-items:center; gap:.28rem; }
+    .nav-links>a:hover,.nav-dt:hover{ background:#fff4e6; color:#d96b00; }
+    .nav-dd{ position:relative; }
+    .nav-menu{ position:absolute; top:100%; left:0; min-width:215px; background:#fff; border:1px solid var(--line); border-radius:12px; box-shadow:0 14px 34px rgba(15,23,42,.15); padding:.4rem; display:none; flex-direction:column; z-index:60; }
+    .nav-dd:hover .nav-menu,.nav-dd.open .nav-menu{ display:flex; }
+    .nav-menu a{ padding:.6rem .8rem; border-radius:8px; color:var(--body); text-decoration:none; font-size:1.05rem; white-space:nowrap; }
+    .nav-menu a:hover{ background:#fff4e6; color:#d96b00; }
+    .nav-call{ border:2px solid #f57c00; color:#d96b00 !important; font-weight:800; font-size:1.08rem; padding:.55rem 1.05rem; border-radius:10px; text-decoration:none; white-space:nowrap; }
+    .nav-call:hover{ background:#f57c00; color:#fff !important; }
+    .nav-burger{ display:none; background:none; border:0; cursor:pointer; color:var(--ink); padding:.3rem; }
+    .nav-burger svg{ width:30px; height:30px; }
+    @media(max-width:920px){
+      .nav-burger{ display:block; }
+      .nav-links{ display:none; position:absolute; top:100%; left:0; right:0; background:#fff; border-bottom:1px solid var(--line); flex-direction:column; align-items:stretch; gap:0; padding:.4rem 1rem 1rem; box-shadow:0 16px 30px rgba(15,23,42,.12); }
+      .nav-links.open{ display:flex; }
+      .nav-dd{ position:static; }
+      .nav-links>a,.nav-dt{ width:100%; justify-content:space-between; }
+      .nav-menu{ position:static; box-shadow:none; border:0; border-left:2px solid #fde6cf; border-radius:0; margin:.1rem 0 .4rem .8rem; min-width:0; }
+      .nav-call{ margin-top:.6rem; text-align:center; }
+    }
+  </style>
+  <header class="sitenav">
+    <div class="nav-row">
+      <a href="/" class="nav-logo" aria-label="Energy Direct home"><img src="/images/ambit%20logo.webp" alt="Ambit Energy — Independent Consultant" /></a>
+      <button class="nav-burger" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <div class="nav-dd"><button class="nav-dt">Cities <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px;opacity:.65"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-menu"><a href="/houston/">Houston</a><a href="/dallas/">Dallas</a><a href="/corpus/">Corpus Christi</a><a href="/victoria/">Victoria</a><a href="/lubbock/">Lubbock</a><a href="/abilene/">Abilene</a><a href="/midland/">Midland</a><a href="/odessa/">Odessa</a><a href="/san-angelo/">San Angelo</a><a href="/service-areas/" style="border-top:1px solid var(--line);margin-top:.2rem;font-weight:700">All Texas Service Areas →</a></div></div>
+        <div class="nav-dd"><button class="nav-dt">Plans &amp; Switching <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px;opacity:.65"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-menu"><a href="/solar/">Solar Plans</a><a href="/no-deposit-electricity/">No-Deposit &amp; Switching</a><a href="/payment-options/">Payment Options</a></div></div>
+        <div class="nav-dd"><button class="nav-dt">Learn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px;opacity:.65"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-menu"><a href="/texas/">Texas Electricity Guide</a><a href="/blog/">Blog</a></div></div>
+        <div class="nav-dd"><button class="nav-dt">About <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px;opacity:.65"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-menu"><a href="/about/">About Energy Direct</a><a href="/our-purpose/">Our Purpose</a></div></div>
+        <a class="nav-call" href="tel:+13615829724">Call or text (361) 582-9724</a>
+      </nav>
     </div>
   </header>
 
-  <!-- Expanded Info Cards -->
-  <section class="wrap">
-    <div class="cards">
-      <div class="card">
-        <h3>How Solar Buyback Works</h3>
-        <ul>
-          <li>Your solar powers your home first, then excess flows to the grid.</li>
-          <li>Export credits depend on provider and TDU (Oncor, CenterPoint, AEP Texas, TNMP).</li>
-          <li>Credit type (1:1, rate-based, or capped) is in the plan’s EFL.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Types of Buyback Programs</h3>
-        <ul>
-          <li><strong>Net Metering–Style:</strong> Excess offsets your usage on future bills.</li>
-          <li><strong>Fixed-Rate Buyback:</strong> You’re credited at a set price per kWh.</li>
-          <li><strong>Utility Rebates:</strong> Some TDUs offer incentives to install solar.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>What to Check in the EFL</h3>
-        <ul>
-          <li>Export credit rules and rollover policies.</li>
-          <li>Base or minimum usage fees.</li>
-          <li>Renewable content of the plan.</li>
-        </ul>
-      </div>
-    </div>
+  <!-- HERO: the WHY + ONE action -->
+  <header class="hero">
+    <div class="eyebrow">Texas Solar Buyback</div>
+    <h1>Get paid for the solar power your Texas home sends back</h1>
+    <p class="lede">If you have rooftop solar, an Ambit solar buyback plan credits you for the excess energy
+      your home exports to the grid. Enter your ZIP to compare the buyback plans available at your address and enroll online.</p>
+    <form class="zipform" action="https://shopping.ambitenergy.com/Path2Plans" method="get" target="_blank" rel="noopener" onsubmit="this.promocode.value=(this.dwellingtype.value==='A'?'consultantpm':'consultantps');">
+      <select name="customertype" class="dwell" aria-label="Customer type"><option value="Residential">Residential</option><option value="Commercial">Commercial</option></select>
+      <input type="hidden" name="language" value="en" />
+      <input type="hidden" name="refid" value="energydirect" />
+      <input type="hidden" name="promocode" value="consultantps" />
+      <input type="text" name="zipcode" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Enter your ZIP code" aria-label="ZIP code" required />
+      <select name="dwellingtype" class="dwell" aria-label="Home type">
+        <option value="H">House</option>
+        <option value="A">Apartment / condo</option>
+      </select>
+      <button type="submit">See My Plans →</button>
+    </form>
+    <span class="micro">Takes a minute. No account, no obligation. Need help? <a href="tel:+13615829724">Call or text us</a>.</span>
+  </header>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Solar Panel Options</h3>
-        <ul>
-          <li><strong>Monocrystalline:</strong> High efficiency, long lifespan.</li>
-          <li><strong>Polycrystalline:</strong> More affordable, slightly lower efficiency.</li>
-          <li><strong>Thin-Film:</strong> Lightweight, flexible, less efficient.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Benefits of Solar Buyback</h3>
-        <ul>
-          <li>Lower bills through energy credits.</li>
-          <li>Reduce reliance on fossil fuels.</li>
-          <li>Support grid stability with clean energy.</li>
-          <li>Boost your home’s long-term value.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Looking Ahead</h3>
-        <ul>
-          <li>Battery storage for excess solar energy.</li>
-          <li>Virtual power plants may allow energy resale.</li>
-          <li>Panel efficiency continues to improve.</li>
-        </ul>
-      </div>
+  <!-- HOW YOU CONVERT, in 3 steps -->
+  <section class="steps">
+    <div class="wrap">
+      <div class="step"><div class="n">1</div><div><h4>Enter your ZIP</h4><p>See the solar buyback plans available at your Texas address.</p></div></div>
+      <div class="step"><div class="n">2</div><div><h4>Compare the solar buyback rate</h4><p>See how each plan credits the excess power your panels send back to the grid.</p></div></div>
+      <div class="step"><div class="n">3</div><div><h4>Enroll online</h4><p>Pick your plan and sign up in minutes. No call required.</p></div></div>
     </div>
   </section>
 
-  <!-- Expanded FAQ -->
-  <section class="faq wrap">
-    <h2>FAQ: Solar Buyback in Texas</h2>
-    <details>
-      <summary>Which providers offer solar buyback?</summary>
-      <p>Availability changes. Enter your ZIP on the plans page to compare current options. Always review the plan’s EFL for details.</p>
-    </details>
-    <details>
-      <summary>Do credits roll over month to month?</summary>
-      <p>Some plans allow rollover, others apply credits only in the current billing cycle. Rules are in the EFL.</p>
-    </details>
-    <details>
-      <summary>Is there a minimum system size?</summary>
-      <p>Some plans require interconnection approval via your TDU. System sizing and caps are explained in the EFL.</p>
-    </details>
-    <details>
-      <summary>Can I get 1:1 credit for exports?</summary>
-      <p>Some plans offer 1:1 credits up to a cap. Others use a set buyback rate. Check the EFL for exact terms.</p>
-    </details>
-    <details>
-      <summary>What types of solar panels work best in Texas?</summary>
-      <p>Monocrystalline panels are popular for their efficiency and heat tolerance. Polycrystalline and thin-film panels are also options depending on budget and space.</p>
-    </details>
-    <details>
-      <summary>Do TDUs like Oncor or CenterPoint offer rebates?</summary>
-      <p>Some TDUs provide upfront rebates or incentives for approved solar installations. Check your TDU’s program details before installation.</p>
-    </details>
-  </section>
+  <!-- Trust: real, verifiable credentials only -->
+  <div class="trust"><div class="wrap">
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:1em;height:1em;vertical-align:-2px;margin-right:.3em" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></svg><b>Rooftop solar</b> homes welcome</span>
+    <span><svg class="tico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l8 3.5V11c0 5-3.4 8.2-8 10-4.6-1.8-8-5-8-10V5.5z"/><path d="M9 12l2 2 4-4"/></svg> <b>Local Texas consultant</b>, not a call center</span>
+    <span><svg class="tico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg> <b>Licensed &amp; Bonded</b> • PUCT&nbsp;#10117</span>
+    <span><svg class="tico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> <b>Free</b> to compare</span>
+  </div></div>
 
-  <!-- Footer -->
-  <footer>
-    © 2025 EnergyDirect | Independent Electricity Consultant
-    <div class="puct">PUCT#10117</div>
-    <section class="wrap" style="text-align:center;margin-top:1rem;">
-      <h2 style="margin:.5rem 0 0;">Find Electricity Plans in Your City</h2>
-      <div style="margin-top:.5rem;">
-        <a href="/">Home</a> |
-        <a href="/houston/">Houston</a> |
-        <a href="/dallas/">Dallas</a> |
-        <a href="/corpus/">Corpus Christi</a> |
-        <a href="/victoria/">Victoria</a> |
-        <a href="/lubbock/">Lubbock</a> |
-        <a href="/texas/">Texas Hub</a> |
-        <a href="/abilene/">Abilene</a> |
-        <a href="/midland/">Midland</a> |
-        <a href="/odessa/">Odessa</a> |
-        <a href="/san-angelo/">San Angelo</a> |
-        <a href="/solar/">Solar Plans</a>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a> › <span>Solar Plans</span></nav>
+
+    <!-- WHY AMBIT — product reasons, real photography, one idea per card -->
+    <section class="section center">
+      <h2>Why Texas solar homeowners choose Ambit Energy</h2>
+      <p class="sub">What you actually get when you pick an Ambit plan for your solar home.</p>
+      <div class="why">
+        <div class="card">
+          <img src="../images/benefit-d.webp" alt="Texas solar homeowner with a steady, predictable electricity bill" loading="lazy" />
+          <div class="pad">
+            <h3>Plans built for solar homes</h3>
+            <p>Ambit offers solar buyback plans that credit you for the excess power your panels export, so the energy you do not use still works for you.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/benefit-b.webp" alt="Ambit Energy Free Energy and reward plan benefits" loading="lazy" />
+          <div class="pad">
+            <h3>Earn Free Energy &amp; rewards</h3>
+            <p>Refer 15 active customers and Ambit credits your own energy free. Travel and reward plans are available too.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/benefit-e.webp" alt="Ambit Energy Texas-based customer care after you switch" loading="lazy" />
+          <div class="pad">
+            <h3>Support after you switch</h3>
+            <p>Once you enroll, Ambit's Texas-based Customer Care handles billing and service Monday through Saturday. Green-e certified renewable plans are available.</p>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- SOLAR EXPLAINER -->
+    <section class="section">
+      <h2>How a solar buyback plan works</h2>
+      <div class="grid2">
+        <div class="panel">
+          <h3>How solar buyback works</h3>
+          <ul>
+            <li><strong>You generate power:</strong> your rooftop panels produce electricity for your home during the day.</li>
+            <li><strong>You use what you need:</strong> your home draws from your panels first.</li>
+            <li><strong>You export the excess:</strong> extra power your home does not use flows back onto the grid.</li>
+            <li><strong>The plan credits you:</strong> a solar buyback plan credits you for that exported energy on your bill.</li>
+          </ul>
+          <p class="muted">Your panels and your retail plan are two separate things. The plan sets how your exported energy is credited and how you are billed for the power you pull from the grid at night or on cloudy days.</p>
+        </div>
+        <div class="panel">
+          <h3>What to compare on a solar plan</h3>
+          <ul>
+            <li><strong>Buyback structure:</strong> how the plan credits the energy you export back to the grid.</li>
+            <li><strong>Export caps:</strong> whether credits are limited to a certain amount of exported energy.</li>
+            <li><strong>Term and early-termination fee:</strong> the contract length and what leaving early costs.</li>
+            <li><strong>Monthly and minimum-usage fees:</strong> any base charges or fees if you draw very little from the grid.</li>
+            <li><strong>Renewable content:</strong> the green percentage, if it matters to you.</li>
+          </ul>
+          <p class="muted">Plans and availability vary by ZIP, so a smart comparison starts with your address, not a single statewide number. Always read a plan's Electricity Facts Label before you enroll.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLAR BUYBACK CALCULATOR (adjustable rate — TX buyback is plan-specific) -->
+    <style>
+      .solarcalc{ display:grid; gap:24px; grid-template-columns:1fr; background:#fff; border:1px solid var(--line);
+        border-radius:18px; padding:1.6rem; box-shadow:0 10px 28px rgba(15,23,42,.08); margin-top:1.2rem; }
+      @media(min-width:820px){ .solarcalc{ grid-template-columns:1.05fr .95fr; align-items:center; } }
+      .sc-field{ display:block; margin-bottom:1.4rem; }
+      .sc-field:last-child{ margin-bottom:0; }
+      .sc-label{ display:flex; justify-content:space-between; gap:1rem; font-weight:700; color:var(--ink); margin-bottom:.55rem; font-size:1.05rem; }
+      .sc-label b{ color:var(--brand-d); white-space:nowrap; }
+      .sc-field input[type=range]{ width:100%; accent-color:var(--go); height:6px; }
+      .sc-hint{ display:block; font-size:.9rem; color:var(--muted); margin-top:.45rem; }
+      .sc-out{ background:linear-gradient(135deg,#15803d,#16a34a); color:#fff; border-radius:14px; padding:1.6rem; text-align:center; }
+      .sc-money{ font-size:3rem; font-weight:800; line-height:1; display:block; }
+      .sc-per{ font-size:1rem; opacity:.9; }
+      .sc-sub{ margin:.7rem 0 0; font-size:1.15rem; font-weight:700; }
+      .sc-note{ font-size:.9rem; opacity:.93; margin:1rem 0 1.1rem; line-height:1.5; text-align:left; }
+      .sc-cta{ display:inline-block; background:#fff; color:var(--go-d); font-weight:800; padding:.85rem 1.5rem; border-radius:10px; text-decoration:none; }
+      .sc-cta:hover{ background:#f0fdf4; }
+    </style>
+    <section class="section">
+      <h2 id="solar-buyback-calculator">Texas Solar Buyback Calculator</h2>
+      <p class="sub">Estimate your monthly credit in seconds. Texas buyback rates are set per plan, so slide in the numbers for your home. Use your plan's exact buyback credit from its Electricity Facts Label for the most accurate estimate.</p>
+      <div class="solarcalc">
+        <div class="sc-controls">
+          <label class="sc-field">
+            <span class="sc-label">Excess solar you send back each month <b id="scKwhOut">300 kWh</b></span>
+            <input id="scKwh" type="range" min="0" max="1500" step="25" value="300" aria-label="Monthly exported kWh" />
+            <span class="sc-hint">The surplus your panels push to the grid. Varies by system size and season.</span>
+          </label>
+          <label class="sc-field">
+            <span class="sc-label">Your plan's buyback credit <b id="scRateOut">9.5&cent; / kWh</b></span>
+            <input id="scRate" type="range" min="3" max="13" step="0.5" value="9.5" aria-label="Buyback credit cents per kWh" />
+            <span class="sc-hint">Texas plans run roughly 3.5&cent; to 12.5&cent; per kWh. Set this to your plan's rate from the EFL.</span>
+          </label>
+        </div>
+        <div class="sc-out">
+          <span class="sc-money" id="scMonthly">$28.50</span>
+          <span class="sc-per">estimated credit / month</span>
+          <div class="sc-sub"><span id="scAnnual">$342</span> a year in buyback credit</div>
+          <p class="sc-note">Buyback credits offset the <strong>energy charge</strong> on your bill, not the monthly base fee or the Transmission and Distribution Utility (TDU) delivery charges, and they roll over on Ambit's plans. This is an estimate; your real credit depends on your exported kWh and your plan's EFL.</p>
+          <a class="sc-cta" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">See solar plans by ZIP &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE COMPARISON — "you can choose anyone; here is why Ambit" -->
+    <section class="section">
+      <h2>You can choose anyone in Texas. Here is why people choose Ambit.</h2>
+      <p class="sub">Texas lets you pick your retail provider. On price, plans run close. Where Ambit pulls ahead is what you get back.</p>
+      <div class="compare">
+        <table class="ctable">
+          <thead>
+            <tr>
+              <th class="feat">What you get</th>
+              <th class="amb">Ambit (Energy&nbsp;Direct)</th>
+              <th>Typical Texas provider</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feat">A real path to a $0 energy bill — refer 15 active customers and Ambit credits the average of what they pay, up to your entire energy charge, every month with no time limit to get there</td>
+              <td class="amb"><span class="yes">✓ Free Energy</span></td>
+              <td class="alt"><span class="meh">Not offered</span></td>
+            </tr>
+            <tr>
+              <td class="feat">$50 a month in Reward Dollars that never expire, redeemable 500,000+ ways (dining, retail, travel) on the Ultimate Perks plan</td>
+              <td class="amb"><span class="yes">✓</span></td>
+              <td class="alt"><span class="meh">Rare</span></td>
+            </tr>
+            <tr>
+              <td class="feat">Travel reward points — 1 point for every kWh you already use, redeemable toward travel</td>
+              <td class="amb"><span class="yes">✓</span></td>
+              <td class="alt"><span class="meh">Rare</span></td>
+            </tr>
+            <tr>
+              <td class="feat">A 60-day "Try it, Like it, or Change it" window — switch to another Ambit term plan in your first 60 days with no early-termination fee</td>
+              <td class="amb"><span class="yes">✓</span></td>
+              <td class="alt"><span class="meh">Varies</span></td>
+            </tr>
+            <tr>
+              <td class="feat">100% green / renewable plan option</td>
+              <td class="amb"><span class="yes">✓</span></td>
+              <td class="alt">Common</td>
+            </tr>
+            <tr>
+              <td class="feat">No-deposit options and a switch with no interruption to your power</td>
+              <td class="amb"><span class="yes">✓</span></td>
+              <td class="alt">Common</td>
+            </tr>
+            <tr>
+              <td class="feat">Your actual rate for your address</td>
+              <td class="amb"><strong>See it by ZIP&nbsp;↓</strong></td>
+              <td class="alt">Varies</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="cnote">Ambit program terms verified on Ambit Energy's official site, June 2026:
+          <a href="https://www.ambitenergy.com/rates-and-plans/ambit-advantages/free-energy" target="_blank" rel="noopener">Free&nbsp;Energy</a>,
+          <a href="https://www.ambitenergy.com/spark/ambit-ultimate-perks" target="_blank" rel="noopener">Ultimate&nbsp;Perks</a>,
+          and the Lone Star Plus / "Try it, Like it, Change it" guarantee. "Typical Texas provider" reflects common fixed-rate retail plans;
+          always compare a specific plan's Electricity Facts Label before you enroll.</p>
+      </div>
+    </section>
+
+    <!-- Repeated conversion band -->
+    <div class="cta-band">
+      <h2>Ready to see your solar plans?</h2>
+      <p>Enter your ZIP to compare Texas solar buyback plans and enroll online.</p>
+      <form class="zipform" action="https://shopping.ambitenergy.com/Path2Plans" method="get" target="_blank" rel="noopener" onsubmit="this.promocode.value=(this.dwellingtype.value==='A'?'consultantpm':'consultantps');">
+        <select name="customertype" class="dwell" aria-label="Customer type"><option value="Residential">Residential</option><option value="Commercial">Commercial</option></select>
+        <input type="hidden" name="language" value="en" />
+        <input type="hidden" name="refid" value="energydirect" />
+        <input type="hidden" name="promocode" value="consultantps" />
+        <input type="text" name="zipcode" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Enter your ZIP code" aria-label="ZIP code" required />
+        <select name="dwellingtype" class="dwell" aria-label="Home type">
+          <option value="H">House</option>
+          <option value="A">Apartment / condo</option>
+        </select>
+        <button type="submit">See My Plans →</button>
+      </form>
+    </div>
+
+    <!-- FAQ -->
+    <section class="section">
+      <h2>Texas solar buyback questions</h2>
+      <details class="accordion"><summary>What is a solar buyback plan?</summary>
+        <p>It is a retail electricity plan that credits you for the excess solar energy your home exports to the grid. You still draw power from the grid at night or on cloudy days, and the plan sets how that energy is billed and how your exports are credited.</p></details>
+      <details class="accordion"><summary>Do I need rooftop solar already installed?</summary>
+        <p>Yes. A solar buyback plan credits the energy your panels send back to the grid, so it is for homes that already have rooftop solar. If you are still planning your system, you can compare standard plans now and switch when your panels are online.</p></details>
+      <details class="accordion"><summary>Will switching to a solar plan interrupt my power?</summary>
+        <p>No. Your local utility keeps delivering power without interruption while your new plan simply begins billing. Your panels and your meter keep working exactly as before.</p></details>
+      <details class="accordion"><summary>Is there any cost to compare or to get help?</summary>
+        <p>No. Comparing plans and getting help from Energy Direct is free. You enroll directly in the plan you choose.</p></details>
+    </section>
+  </div>
+
+  <a class="stickycall" href="tel:+13615829724"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:1em;height:1em;vertical-align:-2px;margin-right:.35em" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Call or text (361) 582-9724</a>
+
+  <footer>
+    <div class="wrap">
+      © 2026 Energy Direct — Independent Ambit Energy Consultant · PUCT&nbsp;#10117 · <a href="tel:+13615829724">(361) 582-9724</a>
+      <div class="fnav">
+        <a href="../">Home</a> · <a href="../houston/">Houston</a> · <a href="../dallas/">Dallas</a> ·
+        <a href="../corpus/">Corpus Christi</a> · <a href="../victoria/">Victoria</a> · <a href="../lubbock/">Lubbock</a> ·
+        <a href="../abilene/">Abilene</a> · <a href="../midland/">Midland</a> · <a href="../odessa/">Odessa</a> ·
+        <a href="../san-angelo/">San Angelo</a> · <a href="../solar/">Solar Plans</a> · <a href="../texas/">Texas Electricity Guide</a> &middot;
+        <a href="/blog/">Blog</a> &middot; <a href="/no-deposit-electricity/">No-Deposit Switching</a> &middot; <a href="/payment-options/">Payment Options</a> &middot; <a href="/service-areas/">Service Areas</a> &middot; <a href="/about/">About</a> &middot; <a href="/our-purpose/">Our Purpose</a>
+      </div>
+    </div>
   </footer>
 
-  <!-- FAQ JSON-LD -->
+  <!-- Business-identity schema (item 4) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {"@type":"Question","name":"Which providers offer solar buyback?","acceptedAnswer":{"@type":"Answer","text":"Availability changes. Enter your ZIP on the plans page to compare current options. Always review the plan’s EFL for details."}},
-      {"@type":"Question","name":"Do credits roll over month to month?","acceptedAnswer":{"@type":"Answer","text":"Some plans allow rollover, others apply credits only in the current billing cycle. Rules are in the EFL."}},
-      {"@type":"Question","name":"Is there a minimum system size?","acceptedAnswer":{"@type":"Answer","text":"Some plans require interconnection approval via your TDU. System sizing and caps are explained in the EFL."}},
-      {"@type":"Question","name":"Can I get 1:1 credit for exports?","acceptedAnswer":{"@type":"Answer","text":"Some plans offer 1:1 credits up to a cap. Others use a set buyback rate. Check the EFL for exact terms."}},
-      {"@type":"Question","name":"What types of solar panels work best in Texas?","acceptedAnswer":{"@type":"Answer","text":"Monocrystalline panels are popular for their efficiency and heat tolerance. Polycrystalline and thin-film panels are also options depending on budget and space."}},
-      {"@type":"Question","name":"Do TDUs like Oncor or CenterPoint offer rebates?","acceptedAnswer":{"@type":"Answer","text":"Some TDUs provide upfront rebates or incentives for approved solar installations. Check your TDU’s program details before installation."}}
+    "@graph":[
+      {"@type":"Organization","@id":"https://energydirect.org/#org","name":"Energy Direct",
+       "description":"Local independent Ambit Energy consultant helping Texas homes compare and enroll in electricity plans.",
+       "url":"https://energydirect.org/","logo":"https://energydirect.org/images/ambit%20logo.png",
+       "telephone":"+1-361-582-9724","areaServed":["Houston, TX","Dallas, TX","Corpus Christi, TX","Victoria, TX","Texas"],
+       "sameAs":["https://www.facebook.com/energydirect.org"]},
+      {"@type":"WebSite","@id":"https://energydirect.org/#website","name":"Energy Direct",
+       "url":"https://energydirect.org/","publisher":{"@id":"https://energydirect.org/#org"}},
+      {"@type":"LocalBusiness","@id":"https://energydirect.org/solar/#local","name":"Energy Direct — Texas Solar Plans",
+       "url":"https://energydirect.org/solar/","image":"https://energydirect.org/images/ambit%20logo.png",
+       "telephone":"+1-361-582-9724","parentOrganization":{"@id":"https://energydirect.org/#org"},
+       "address":{"@type":"PostalAddress","addressRegion":"TX","addressCountry":"US"},
+       "areaServed":"Texas"}
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"What is a solar buyback plan?","acceptedAnswer":{"@type":"Answer","text":"It is a retail electricity plan that credits you for the excess solar energy your home exports to the grid. You still draw power from the grid at night or on cloudy days, and the plan sets how that energy is billed and how your exports are credited."}},
+    {"@type":"Question","name":"Do I need rooftop solar already installed for a solar buyback plan?","acceptedAnswer":{"@type":"Answer","text":"Yes. A solar buyback plan credits the energy your panels send back to the grid, so it is for homes that already have rooftop solar. If you are still planning your system, you can compare standard plans now and switch when your panels are online."}},
+    {"@type":"Question","name":"Will switching to a solar plan interrupt my power?","acceptedAnswer":{"@type":"Answer","text":"No. Your local utility keeps delivering power without interruption while your new plan begins billing. Your panels and your meter keep working exactly as before."}},
+    {"@type":"Question","name":"Is there any cost to compare Texas solar plans with Energy Direct?","acceptedAnswer":{"@type":"Answer","text":"No. Comparing plans and getting help from Energy Direct is free; you enroll directly in the plan you choose."}}
+  ]}
+  </script>
+  <script>
+  (function(){
+    var k=document.getElementById('scKwh'), r=document.getElementById('scRate');
+    if(!k||!r) return;
+    function money(n){ return '$'+n.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+    function upd(){
+      var kwh=+k.value, rate=+r.value, monthly=kwh*rate/100;
+      document.getElementById('scKwhOut').textContent=kwh.toLocaleString()+' kWh';
+      document.getElementById('scRateOut').innerHTML=rate.toFixed(1)+'&cent; / kWh';
+      document.getElementById('scMonthly').textContent=money(monthly);
+      document.getElementById('scAnnual').textContent='$'+Math.round(monthly*12).toLocaleString();
+    }
+    k.addEventListener('input',upd); r.addEventListener('input',upd); upd();
+  })();
+  </script>
+  <script src="/chat-widget.js" defer></script>
+  <script src="/form-enhance.js" defer></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Texas Solar Buyback Calculator",
+   "applicationCategory":"FinanceApplication","operatingSystem":"Web","browserRequirements":"Requires JavaScript",
+   "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+   "description":"Free calculator that estimates your monthly Texas solar buyback credit from your exported kWh and your plan's buyback rate.",
+   "url":"https://energydirect.org/solar/#solar-buyback-calculator",
+   "publisher":{"@type":"Organization","name":"Energy Direct"}}
+  </script>
+  <script src="/nav.js" defer></script>
 </body>
 </html>

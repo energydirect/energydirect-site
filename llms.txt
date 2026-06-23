@@ -1,56 +1,77 @@
-# Energy Direct
-> This website offers electricity plans and services for residents and businesses in Texas, aiming to provide reliable, affordable, and transparent energy solutions. The site allows users to compare and select various electricity plans, including options for fixed rates, variable rates, renewable green energy, and solar buyback programs. It also provides comprehensive information on setting up utilities, accessing customer support, and managing energy accounts. The platform emphasizes a customer-first approach, focusing on helping Texans easily navigate the deregulated energy market.
+# Energy Direct — Texas Electricity (independent Ambit Energy consultant)
+> Energy Direct helps Texas homeowners compare and switch electricity plans by ZIP. A local, independent Ambit Energy consultant — a real Texan, not a call center. Phone/text (361) 582-9724.
 
-## AI Agent Access
+## Key pages
+- [Home](https://energydirect.org/): compare Texas electricity by ZIP and enroll online
+- [Service Areas](https://energydirect.org/service-areas/): coverage across deregulated Texas, by utility (TDU)
+- [Texas Electricity Guide](https://energydirect.org/texas/): deregulation, ERCOT, how to choose & switch
+- [Solar Buyback Calculator](https://energydirect.org/solar/): estimate solar buyback credit
+- [No-Deposit & Switching](https://energydirect.org/no-deposit-electricity/): no-deposit options + $250 cancellation-fee reimbursement
+- [Payment Options](https://energydirect.org/payment-options/), [About](https://energydirect.org/about/), [Our Purpose](https://energydirect.org/our-purpose/)
 
-This site supports the Model Context Protocol (MCP) for agentic AI access. AI agents can connect directly to retrieve live, up-to-date site content - no traditional scraping required.
+## City pages (electricity rates & how to switch, by local utility)
+- https://energydirect.org/abilene/
+- https://energydirect.org/alvin/
+- https://energydirect.org/arlington/
+- https://energydirect.org/baytown/
+- https://energydirect.org/carrollton/
+- https://energydirect.org/conroe/
+- https://energydirect.org/dallas/
+- https://energydirect.org/dickinson/
+- https://energydirect.org/edinburg/
+- https://energydirect.org/fort-worth/
+- https://energydirect.org/friendswood/
+- https://energydirect.org/frisco/
+- https://energydirect.org/galveston/
+- https://energydirect.org/garland/
+- https://energydirect.org/grand-prairie/
+- https://energydirect.org/harlingen/
+- https://energydirect.org/houston/
+- https://energydirect.org/katy/
+- https://energydirect.org/laredo/
+- https://energydirect.org/league-city/
+- https://energydirect.org/lewisville/
+- https://energydirect.org/lubbock/
+- https://energydirect.org/mansfield/
+- https://energydirect.org/mcallen/
+- https://energydirect.org/mckinney/
+- https://energydirect.org/mesquite/
+- https://energydirect.org/midland/
+- https://energydirect.org/odessa/
+- https://energydirect.org/pasadena/
+- https://energydirect.org/pearland/
+- https://energydirect.org/plano/
+- https://energydirect.org/richardson/
+- https://energydirect.org/san-angelo/
+- https://energydirect.org/sugar-land/
+- https://energydirect.org/tyler/
+- https://energydirect.org/victoria/
+- https://energydirect.org/waco/
+- https://energydirect.org/wichita-falls/
 
-- **Site MCP Endpoint:** https://www.energydirect.org/_api/mcp
-
-## Available MCP Tools
-
-### GetBusinessDetails
-Retrieves business and site details such as timezone, email, phone, and address.
-- No parameters required.
-
-### SearchInSite
-Searches the site for general content, articles, and coverage information.
-- `searchTerm` - The term to search for across the site.
-
-### SearchSiteApiDocs
-Retrieves the API schema and documentation for the integrated energy services and platform endpoints. Use this tool for locating structured fields regarding rates, plans, and provider information instead of generic text searches.
-- `searchTerm` - The term to search for in the site API documentation.
-
-### GenerateVisitorToken
-Creates a new visitor session and obtains an ephemeral visitor access token for the site session. Must be called before making any platform API requests if no token is already available in context.
-- No parameters required.
-
-### CallSiteAPI
-Calls API methods on the platform to perform actions or fetch structured data on a visitor's behalf, such as querying specific rate schedules, checking plan details, or initiating a service enrollment.
-- `visitorToken` - Visitor access token. Use GenerateVisitorToken first if not available.
-- `url` - Absolute URL of the API method to call. Retrieve using SearchSiteApiDocs.
-- `method` - HTTP method to use for the API call (e.g., GET, POST).
-- `body` - Request body as a valid JSON string.
-
-### ReadFullDocsArticle
-Fetches a complete reference or support article from the platform's developer or documentation portal.
-- `articleUrl` - URL of an article in the site's documentation portal.
-
-### ReadFullDocsMethodSchema
-Fetches the full schema for a platform API method. Should be called before executing the actual method via CallSiteAPI to ensure correct parameter structures.
-- `articleUrl` - URL of the reference article for the platform API method.
-
-## What Visitors Can Do via AI + MCP
-
-- Get operational details (contact info, hours, Texas TDSP service coverage areas)
-- Discover, filter, and compare available electricity plans, TDU charges, and EFL (Electricity Facts Label) details
-- Start an energy service enrollment and be seamlessly directed to the site to complete checkout
-- Ask questions about Texas energy deregulation, fixed vs. variable rates, and green energy options
-- Receive precise, real-time answers without having to manually parse or filter the site layout
-
-## Notes
-
-- No authentication or developer keys required to connect to the public MCP endpoint
-- Only public information and public-facing plans accessible on the site are available
-- Data provided via the endpoint is always live and pulled straight from the platform database
-- To receive tool updates, implement a tools/list call upon receipt of a tool update notification
+## Blog (Texas electricity guides)
+- https://energydirect.org/blog/ambit-free-energy-explained/
+- https://energydirect.org/blog/average-home-electricity-usage-texas/
+- https://energydirect.org/blog/bill-credit-plans-explained/
+- https://energydirect.org/blog/compare-plans-by-zip-texas/
+- https://energydirect.org/blog/deregulated-electricity-texas-guide/
+- https://energydirect.org/blog/early-termination-fee-texas/
+- https://energydirect.org/blog/electricity-contract-expires-texas/
+- https://energydirect.org/blog/fixed-vs-variable-rate-plans/
+- https://energydirect.org/blog/free-nights-weekends-plans-texas/
+- https://energydirect.org/blog/green-renewable-electricity-texas/
+- https://energydirect.org/blog/how-to-read-electricity-bill/
+- https://energydirect.org/blog/lower-summer-electric-bill-texas/
+- https://energydirect.org/blog/minimum-usage-fees-texas/
+- https://energydirect.org/blog/moving-electricity-new-address-texas/
+- https://energydirect.org/blog/prepaid-vs-postpaid-electricity-texas/
+- https://energydirect.org/blog/report-power-outage-texas/
+- https://energydirect.org/blog/small-business-electricity-texas/
+- https://energydirect.org/blog/smart-thermostat-cut-electric-bill/
+- https://energydirect.org/blog/solar-buyback-plans/
+- https://energydirect.org/blog/switching-providers-guide/
+- https://energydirect.org/blog/tdu-delivery-charges-texas/
+- https://energydirect.org/blog/understanding-electricity-facts-label/
+- https://energydirect.org/blog/what-is-ercot/
+- https://energydirect.org/blog/why-rates-vary-by-zip/
+- https://energydirect.org/blog/winter-electricity-bills-texas/
