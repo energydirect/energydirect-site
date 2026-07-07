@@ -17,6 +17,31 @@
     });
   }
 
+  function chain(existing, next) {
+    return function () {
+      if (typeof existing === 'function') existing.apply(this, arguments);
+      next.apply(this, arguments);
+    };
+  }
+
+  function wireTawk() {
+    window.Tawk_API = window.Tawk_API || {};
+    if (window.Tawk_API.__energyDirectCtaTracking) return;
+    window.Tawk_API.__energyDirectCtaTracking = true;
+    window.Tawk_API.onChatMaximized = chain(window.Tawk_API.onChatMaximized, function () {
+      trackCta('chat_open', 'Tawk chat maximized');
+    });
+    window.Tawk_API.onChatStarted = chain(window.Tawk_API.onChatStarted, function () {
+      trackCta('chat_started', 'Tawk chat started');
+    });
+    window.Tawk_API.onPrechatSubmit = chain(window.Tawk_API.onPrechatSubmit, function () {
+      trackCta('chat_prechat_submit', 'Tawk prechat submit');
+    });
+    window.Tawk_API.onOfflineSubmit = chain(window.Tawk_API.onOfflineSubmit, function () {
+      trackCta('chat_offline_submit', 'Tawk offline submit');
+    });
+  }
+
   function wire(ct) {
     var form = ct.closest('form'); if (!form) return;
     var dw = form.querySelector('select[name="dwellingtype"]'); if (!dw) return;
@@ -31,6 +56,8 @@
     sync();
   }
   function init() {
+    wireTawk();
+
     var nodes = document.querySelectorAll('select[name="customertype"]');
     for (var i = 0; i < nodes.length; i++) wire(nodes[i]);
 
