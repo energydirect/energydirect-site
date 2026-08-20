@@ -49,7 +49,7 @@
     /* HERO — the WHY + the one conversion action */
     .hero{ position:relative; color:#fff; text-align:center; padding:4rem 1rem 3.4rem;
       background: linear-gradient(180deg, rgba(15,23,42,.42) 0%, rgba(15,23,42,.62) 100%),
-                 url('images/tx-home-hero.webp') center 42%/cover no-repeat; }
+                  url('images/tx-home-hero.webp') center 42%/cover no-repeat; }
     .hero .eyebrow{ display:inline-block; letter-spacing:.13em; text-transform:uppercase; font-size:1rem; font-weight:800; color:#ffb84d; background:rgba(245,124,0,.16); border:1px solid rgba(255,184,77,.5); padding:.42rem 1.05rem; border-radius:999px; margin:0 0 1.1rem; }
     .hero h1{ color:#fff; font-size:3.25rem; line-height:1.1; margin:.5rem auto .7rem; max-width:900px;
       text-shadow:0 2px 14px rgba(0,0,0,.45); }
@@ -163,6 +163,67 @@
       background:#0f172a; color:#fff; text-align:center; padding:.85rem; font-weight:800;
       font-size:1.1rem; text-decoration:none; box-shadow:0 -4px 14px rgba(0,0,0,.25); }
     @media(max-width:760px){ .stickycall{ display:block; } footer{ padding-bottom:5rem; } }
+
+    /* 55+ Fly-Out Modal Styles */
+    .flyout-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      padding: 1rem;
+    }
+    .flyout-modal {
+      position: relative;
+      max-width: 520px;
+      width: 100%;
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+      transform: translateY(80px) scale(0.92);
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .flyout-modal img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .flyout-close {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      background: rgba(15, 23, 42, 0.8);
+      color: #fff;
+      border: none;
+      font-size: 24px;
+      line-height: 1;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+    .flyout-close:hover {
+      background: var(--brand);
+      transform: scale(1.05);
+    }
+    .flyout-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    .flyout-overlay.active .flyout-modal {
+      transform: translateY(0) scale(1);
+    }
   </style>
 </head>
 <body>
@@ -437,87 +498,61 @@
     <section class="section">
       <h2>Texas electricity questions</h2>
       <details class="accordion"><summary>Will my lights go out when I switch providers?</summary>
-        <p>No. Your local utility keeps delivering power without interruption while your new plan simply begins billing.</p></details>
-      <details class="accordion"><summary>What is a Transmission and Distribution Utility (TDU)?</summary>
-        <p>A Transmission and Distribution Utility (TDU) owns the poles, wires, and meters in your area and restores outages no matter which retail plan you pick. Your retail provider only sets your price, term, and billing.</p></details>
-      <details class="accordion"><summary>How do I compare rates by ZIP code?</summary>
-        <p>Enter your ZIP to see the plans available at your address. Rates and availability vary by ZIP and by how much electricity your home uses.</p></details>
-      <details class="accordion"><summary>Is there any cost to compare or to get help?</summary>
-        <p>No. Comparing plans and getting help from Energy Direct is free. You enroll directly in the plan you choose.</p></details>
+        <p>No. Your local utility keeps delivering power without interruption while you switch.</p>
+      </details>
     </section>
-  </div>
 
-  <a class="stickycall" href="tel:+13615829724"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:1em;height:1em;vertical-align:-2px;margin-right:.35em" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Call or text (361) 582-9724</a>
+  </div> <!-- /.wrap -->
 
   <footer>
     <div class="wrap">
-      © 2026 Energy Direct — Independent Ambit Energy Consultant · PUCT&nbsp;#10117 · <a href="tel:+13615829724">(361) 582-9724</a>
+      <p>&copy; 2026 Energy Direct. Independent Ambit Energy Consultant #10117.</p>
       <div class="fnav">
-        <a href="./">Home</a> · <a href="houston/">Houston</a> · <a href="dallas/">Dallas</a> ·
-        <a href="corpus/">Corpus Christi</a> · <a href="victoria/">Victoria</a> · <a href="lubbock/">Lubbock</a> ·
-        <a href="abilene/">Abilene</a> · <a href="midland/">Midland</a> · <a href="odessa/">Odessa</a> ·
-        <a href="san-angelo/">San Angelo</a> · <a href="solar/">Solar Plans</a> · <a href="texas/">Texas Electricity Guide</a> &middot;
-        <a href="/blog/">Blog</a> &middot; <a href="/no-deposit-electricity/">No-Deposit Switching</a> &middot; <a href="/payment-options/">Payment Options</a> &middot; <a href="/service-areas/">Service Areas</a> &middot; <a href="/about/">About</a> &middot; <a href="/our-purpose/">Our Purpose</a> &middot; <a href="https://eaglepointpublishing.com/" target="_blank" rel="noopener">Design by Eagle Point Publishing</a>
+        <a href="/about/">About</a> | <a href="/no-deposit-electricity/">No-Deposit Electricity</a> | <a href="/texas/">Texas Guide</a>
       </div>
     </div>
   </footer>
 
-  <!-- Business-identity schema (item 4) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@graph":[
-      {"@type":"Organization","@id":"https://energydirect.org/#org","name":"Energy Direct",
-       "description":"Local independent Ambit Energy consultant helping Texas homes compare and enroll in electricity plans.",
-       "url":"https://energydirect.org/","logo":"https://energydirect.org/images/ambit%20logo.png",
-       "telephone":"+1-361-582-9724","areaServed":["Houston, TX","Dallas, TX","Corpus Christi, TX","Victoria, TX","Texas"],
-       "sameAs":["https://www.facebook.com/energydirect.org"]},
-      {"@type":"WebSite","@id":"https://energydirect.org/#website","name":"Energy Direct",
-       "url":"https://energydirect.org/","publisher":{"@id":"https://energydirect.org/#org"}},
-      {"@type":"LocalBusiness","@id":"https://energydirect.org/#local","name":"Energy Direct",
-       "url":"https://energydirect.org/","image":"https://energydirect.org/images/ambit%20logo.png",
-       "telephone":"+1-361-582-9724","parentOrganization":{"@id":"https://energydirect.org/#org"},
-       "address":{"@type":"PostalAddress","addressRegion":"TX","addressCountry":"US"},
-       "areaServed":"Texas"}
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-    {"@type":"Question","name":"Will my lights go out if I switch providers in Texas?","acceptedAnswer":{"@type":"Answer","text":"No. Your local utility continues electric delivery without interruption while your new plan begins billing."}},
-    {"@type":"Question","name":"What is a TDU?","acceptedAnswer":{"@type":"Answer","text":"A Transmission and Distribution Utility (TDU) owns the poles, wires, and meters in your area and restores outages no matter which retail plan you pick. Your retail provider only sets your price, term, and billing."}},
-    {"@type":"Question","name":"How do I compare electricity rates by ZIP code in Texas?","acceptedAnswer":{"@type":"Answer","text":"Enter your service address or ZIP code to see the plans available at your location. Rates and availability vary by ZIP and usage."}},
-    {"@type":"Question","name":"Is there any cost to compare Texas electricity plans with Energy Direct?","acceptedAnswer":{"@type":"Answer","text":"No. Comparing plans and getting help from Energy Direct is free; you enroll directly in the plan you choose."}}
-  ]}
-  </script>
-  <script src="/form-enhance.js" defer></script>
-  <script src="/nav.js" defer></script>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6a1719dac95c7a1c33cecd4e/1jpl3pvmm';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-  <div id="promoFlyout" class="flyout-overlay">
-  <div class="flyout-card">
-    <button id="closeFlyout" class="flyout-close" aria-label="Close promotional offer">&times;</button>
-    <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">
-      <!-- Replace '55-plus-deposit-waived.jpg' with your uploaded image filename or URL -->
-      <img src="ambit-55-deposit-waiver.jpg" alt="Ambit Energy 55+ Deposit Waiver Offer" class="flyout-image">
-    </a>
-    <div class="flyout-cta-container">
-      <a href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener" class="flyout-btn">
-        View Rates & Sign Up
+  <a class="stickycall" href="tel:+13615829724">Call or Text (361) 582-9724</a>
+
+  <!-- 55+ Fly-Out Image Modal Markup -->
+  <div id="flyout-overlay" class="flyout-overlay" aria-hidden="true">
+    <div class="flyout-modal">
+      <button id="flyout-close" class="flyout-close" aria-label="Close deposit waived offer">&times;</button>
+      <a href="https://shopping.ambitenergy.com/Path2Plans" target="_blank" rel="noopener">
+        <img src="images/55-plus-deposit-waived.jpg" alt="55 Plus Electricity Deposit Waived Offer" />
       </a>
     </div>
   </div>
-</div>
+
+  <!-- Fly-Out Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const overlay = document.getElementById('flyout-overlay');
+      const closeBtn = document.getElementById('flyout-close');
+
+      // Display fly-out after 2 seconds unless already dismissed during this session
+      setTimeout(() => {
+        if (!sessionStorage.getItem('flyoutDismissed')) {
+          overlay.classList.add('active');
+          overlay.setAttribute('aria-hidden', 'false');
+        }
+      }, 2000);
+
+      const dismissFlyout = () => {
+        overlay.classList.remove('active');
+        overlay.setAttribute('aria-hidden', 'true');
+        sessionStorage.setItem('flyoutDismissed', 'true');
+      };
+
+      closeBtn.addEventListener('click', dismissFlyout);
+
+      // Close if user clicks outside the modal box
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) dismissFlyout();
+      });
+    });
+  </script>
+
 </body>
 </html>
