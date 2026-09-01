@@ -14,7 +14,6 @@
     h1,h2,h3,h4{ color:var(--ink); }
     p{ font-size:1.13rem; }
     a{ color:var(--brand); }
-    /* Reverted hero image path to the original relative path */
     .hero{ position:relative; color:#fff; text-align:center; padding:4rem 1rem 3.4rem; background:linear-gradient(180deg, rgba(15,23,42,.32) 0%, rgba(15,23,42,.55) 100%), url('../images/ohio-electricity-skyline.webp') center/cover no-repeat; }
     .hero .eyebrow{ display:inline-block; letter-spacing:.13em; text-transform:uppercase; font-size:1rem; font-weight:800; color:#ffb84d; background:rgba(245,124,0,.16); border:1px solid rgba(255,184,77,.08); padding:.45rem .7rem; border-radius:8px; }
     .hero h1{ color:#fff; font-size:3.25rem; line-height:1.1; margin:.5rem auto .7rem; max-width:900px; text-shadow:0 2px 14px rgba(0,0,0,.45); }
@@ -63,6 +62,9 @@
     .stickycall{ position:fixed; left:0; right:0; bottom:0; z-index:40; display:none; background:#0f172a; color:#fff; text-align:center; padding:.85rem; font-weight:800; font-size:1.1rem; text-decoration:none; }
     @media(max-width:760px){ .stickycall{ display:block; } footer{ padding-bottom:5rem; } }
     .cnote{ font-size:.92rem; color:var(--muted); margin:.8rem 0 0; }
+    /* Simple CTA link styling so replacement looks like the original button */
+    .cta-link{ display:inline-block; padding:1.05rem 1.5rem; border-radius:12px; background:var(--go); color:#fff; font-weight:800; text-decoration:none; font-size:1.18rem; }
+    .cta-link:hover{ background:var(--go-d); }
   </style>
 </head>
 <body>
@@ -74,17 +76,17 @@
 
   <!-- Replaced ZIP input form with a direct link to energydirect.myambit.com as requested -->
   <div class="zipform" aria-hidden="false">
-    <button type="button" onclick="window.open('https://energydirect.myambit.com/rates-and-plans/','_blank')" aria-label="See My Plans on Ambit">See My Plans →</button>
+    <a class="cta-link" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">See My Plans →</a>
   </div>
 
   <span class="micro">Takes a minute. No account, no obligation. Need help? <a href="tel:+13615829724">Call or text us</a>.</span>
 </header>
 
 <div class="trust"><div class="wrap">
-  <span><!-- icons omitted for brevity --></span>
-  <span></span>
-  <span></span>
-  <span></span>
+  <span><svg class="tico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 2 21 14 13 2"></polygon></svg></span>
+  <span><svg class="tico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span>
+  <span><svg class="tico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v12"></path></svg></span>
+  <span><svg class="tico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="2" x2="12" y2="22"></line></svg></span>
 </div></div>
 
 <div class="wrap">
@@ -113,14 +115,136 @@
     </div>
   </section>
 
-  <!-- ... rest of content unchanged ... -->
+  <section class="section">
+    <h2>How deregulated Ohio electricity works</h2>
+    <p class="sub">Two different companies touch your power. Knowing which does what is the whole game.</p>
+    <div class="grid2">
+      <div class="panel">
+        <h3>Your retail supplier (CRES)</h3>
+        <ul>
+          <li><strong>Who they are:</strong> Certified Retail Electric Suppliers like Ambit Energy that sell you an electricity plan.</li>
+          <li><strong>What they set:</strong> your rate, your contract term, and your billing.</li>
+          <li><strong>Your choice:</strong> you pick the supplier, and you can switch when you want.</li>
+          <li><strong>Why ZIP matters:</strong> the plans and prices a supplier can offer change by ZIP and utility area.</li>
+        </ul>
+        <p class="muted">This is the part you control. Picking the right supplier and plan is where the savings come from.</p>
+      </div>
+      <div class="panel">
+        <h3>Your local utility (delivery company)</h3>
+        <ul>
+          <li><strong>Who they are:</strong> AEP Ohio, Duke Energy Ohio, FirstEnergy, or Dayton Power &amp; Light.</li>
+          <li><strong>What they do:</strong> own the poles, wires, and meters and restore outages.</li>
+          <li><strong>Assigned, not chosen:</strong> your utility is set by your address. Switching suppliers never changes it.</li>
+          <li><strong>Same for everyone:</strong> delivery charges are regulated and identical across all suppliers in that area.</li>
+        </ul>
+        <p class="muted">Because the utility is the same no matter who you buy from, your power stays on through a switch and outages are handled the same way.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Understand the details before you switch</h2>
+    <p class="sub">The pieces that decide what you actually pay, in plain English.</p>
+
+    <details class="accordion"><summary>Why electricity rates vary by ZIP code</summary>
+      <p>Every supplier asks for your ZIP first because the plans and prices they can offer change from place to place:</p>
+      <ul>
+        <li>Utility delivery charges differ between service areas.</li>
+        <li>Local competition shifts the range of prices on offer.</li>
+        <li>Usage patterns vary between urban and rural areas.</li>
+        <li>Wholesale energy costs differ across utility load zones.</li>
+      </ul>
+      <p>Even neighboring cities can land on different rates. That is why a real comparison starts with your exact address and ZIP.</p>
+    </details>
+
+    <details class="accordion"><summary>How to read your electricity plan</summary>
+      <p>Before you sign up, understand these key details:</p>
+      <ul>
+        <li><strong>Energy charge (rate per kWh):</strong> the main price you pay for electricity.</li>
+        <li><strong>Utility delivery charges:</strong> regulated charges set by your local utility for maintaining poles and wires.</li>
+        <li><strong>Contract length:</strong> how long you are locked in. Shorter is more flexible, longer can lock in savings.</li>
+        <li><strong>Early termination fee:</strong> what it costs if you leave before the term ends.</li>
+        <li><strong>Any monthly base fees:</strong> extra charges just for having an account.</li>
+        <li><strong>Renewable content:</strong> the percentage of energy from renewable sources, if any.</li>
+      </ul>
+      <p>Always ask the supplier to show you the plan details before you enroll.</p>
+    </details>
+
+    <details class="accordion"><summary>The plan types you will see</summary>
+      <ul>
+        <li><strong>Fixed-rate:</strong> the rate stays the same for the whole term. Best for budgeting and stability.</li>
+        <li><strong>Variable or indexed:</strong> the rate can change month to month. Bills can spike, so compare carefully.</li>
+        <li><strong>Time-of-use:</strong> free nights or free weekends. Best if you can shift usage into the free window.</li>
+        <li><strong>Green/Renewable:</strong> matched to wind or solar generation. Often priced the same as standard plans in Ohio.</li>
+      </ul>
+    </details>
+
+    <details class="accordion"><summary>Moving to Ohio? Setting up electricity</summary>
+      <p>Setting up power in a deregulated part of Ohio is quick. Have these ready:</p>
+      <ul>
+        <li>Your new address and ZIP code</li>
+        <li>Your planned move-in date</li>
+        <li>Your ID or SSN for a soft credit check</li>
+        <li>An estimate of your usage: apartment, townhome, or full house</li>
+      </ul>
+      <p>You can start or switch service online in a few minutes.</p>
+    </details>
+
+    <details class="accordion"><summary>Electricity for apartments</summary>
+      <p>Smaller homes do best with plans built for lower usage:</p>
+      <ul>
+        <li>Fixed-rate plans that do not penalize low usage under 600-800 kWh.</li>
+        <li>Shorter terms that match your lease length.</li>
+        <li>Plans without high monthly base fees.</li>
+      </ul>
+      <p>Compare your exact usage level when shopping.</p>
+    </details>
+  </section>
+
+  <section class="section">
+    <h2>Major Ohio utilities and service areas</h2>
+    <p class="sub">Your utility handles delivery and outages, not your retail supplier.</p>
+    <div class="util-table">
+      <table class="util-list">
+        <thead>
+          <tr>
+            <th>Utility</th>
+            <th>Typical service area</th>
+            <th>Outage phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>AEP Ohio</strong> (American Electric Power)</td>
+            <td>Central and Southern Ohio, including Columbus</td>
+            <td>1-888-544-4877</td>
+          </tr>
+          <tr>
+            <td><strong>Duke Energy Ohio</strong></td>
+            <td>Southwest Ohio, including Cincinnati</td>
+            <td>1-800-543-5599</td>
+          </tr>
+          <tr>
+            <td><strong>FirstEnergy</strong> (Ohio Edison, The Illuminating Co., Toledo Edison)</td>
+            <td>Northeast and Northwest Ohio, including Cleveland and Toledo</td>
+            <td>1-888-544-4877</td>
+          </tr>
+          <tr>
+            <td><strong>Dayton Power &amp; Light (AES Ohio)</strong></td>
+            <td>Miami Valley region including Dayton</td>
+            <td>1-844-233-0123</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
   <div class="cta-band">
     <h2>Ready to see your plans?</h2>
     <p>Enter your ZIP to compare real Ohio rates and enroll online.</p>
     <!-- Replaced ZIP input form with a direct link to energydirect.myambit.com as requested -->
     <div class="zipform">
-      <button type="button" onclick="window.open('https://energydirect.myambit.com/rates-and-plans/','_blank')" aria-label="See My Plans on Ambit">See My Plans →</button>
+      <a class="cta-link" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">See My Plans →</a>
     </div>
   </div>
 
@@ -144,6 +268,15 @@
   </section>
 </div>
 
+<a class="stickycall" href="tel:+13615829724"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="18" height="18" style="vertical-align:middle;margin-right:.5rem"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12 1.05.35 2.07.67 3.03a2 2 0 0 1-.45 2.11L8.09 11.91a16 16 0 0 0 6 6l1.05-1.05a2 2 0 0 1 2.11-.45c.96.32 1.98.55 3.03.67A2 2 0 0 1 22 16.92z"></path></svg>Call or text: (361) 582-9724</a>
+
+<footer>
+  <div class="wrap">
+    <p style="margin:0; font-weight:700">Ambit Energy — EnergyDirect</p>
+    <nav class="fnav"><a href="/">Home</a> · <a href="/states/ohio/">Ohio</a> · <a href="/privacy/">Privacy</a></nav>
+  </div>
+</footer>
+
 <!-- Start of Tawk.to Script -->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -157,15 +290,6 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!-- End of Tawk.to Script -->
-
-<a class="stickycall" href="tel:+13615829724"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="18" height="18" style="vertical-align:middle;margin-right:.5rem"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12 1.05.35 2.07.67 3.03a2 2 0 0 1-.45 2.11L8.09 11.91a16 16 0 0 0 6 6l1.05-1.05a2 2 0 0 1 2.11-.45c.96.32 1.98.55 3.03.67A2 2 0 0 1 22 16.92z"></path></svg>Call or text: (361) 582-9724</a>
-
-<footer>
-  <div class="wrap">
-    <p style="margin:0; font-weight:700">Ambit Energy — EnergyDirect</p>
-    <nav class="fnav"><a href="/">Home</a> · <a href="/states/ohio/">Ohio</a> · <a href="/privacy/">Privacy</a></nav>
-  </div>
-</footer>
 
 </body>
 </html>
