@@ -147,21 +147,24 @@
         <p>Smart Meter Texas allows you to grant secure, limited-time access to independent energy consultants or prospective providers. Having an exact 12-month usage profile ensures you receive accurate plan recommendations based on actual historical consumption rather than rough square-footage estimates.</p>
       </div>
 
-      <!-- Conversion CTA Band -->
-      <section class="cta-band">
-        <h2>Want Help Finding the Right Plan for Your Usage Profile?</h2>
-        <p>Enter your ZIP code to compare straightforward, fixed-rate Ambit Energy plans with no hidden fees.</p>
-        <form class="zipform" action="/compare/" method="GET">
-          <input type="text" name="zip" placeholder="Enter ZIP Code" maxlength="5" pattern="[0-9]{5}" required aria-label="ZIP Code">
-          <select name="dwelling" class="dwell" aria-label="Select home type">
-            <option value="house">House</option>
-            <option value="apartment">Apartment</option>
-          </select>
-          <button type="submit">Compare Plans</button>
-        </form>
-      </section>
-    </article>
-  </main>
+    <!-- Repeated conversion band with ZIP form -->
+    <div class="cta-band">
+      <h2>See your real rate by address</h2>
+      <p>Enter your ZIP to compare the plans available at your Texas address and enroll online.</p>
+      <form class="zipform" action="https://shopping.ambitenergy.com/Path2Plans" method="get" target="_blank" rel="noopener" onsubmit="this.promocode.value=(this.dwellingtype.value==='A'?'consultantpm':'consultantps');">
+        <select name="customertype" class="dwell" aria-label="Customer type"><option value="Residential">Residential</option><option value="Commercial">Commercial</option></select>
+        <input type="hidden" name="language" value="en" />
+        <input type="hidden" name="refid" value="energydirect" />
+        <input type="hidden" name="promocode" value="consultantps" />
+        <input type="text" name="zipcode" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Enter your ZIP code" aria-label="ZIP code" required />
+        <select name="dwellingtype" class="dwell" aria-label="Home type">
+          <option value="H">House</option>
+          <option value="A">Apartment / condo</option>
+        </select>
+        <button type="submit">See My Plans →</button>
+      </form>
+    </div>
+  </div>
 
   <footer>
     <div class="wrap" style="text-align:center;">
