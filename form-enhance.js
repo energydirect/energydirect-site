@@ -1,6 +1,5 @@
-/* Energy Direct — enroll-form UX. When "Commercial" is selected, the Home type
-   (House/Apartment) selector greys out, since dwelling type applies to
-   residential accounts only. Included site-wide: <script src="/form-enhance.js" defer></script> */
+/* Energy Direct — site-wide CTA tracking.
+   Included site-wide: <script src="/form-enhance.js" defer></script> */
 (function () {
   function cleanLabel(text) {
     return (text || '').replace(/\s+/g, ' ').trim().slice(0, 80);
@@ -42,30 +41,8 @@
     });
   }
 
-  function wire(ct) {
-    var form = ct.closest('form'); if (!form) return;
-    var dw = form.querySelector('select[name="dwellingtype"]'); if (!dw) return;
-    function sync() {
-      var commercial = ct.value === 'Commercial';
-      dw.disabled = commercial;
-      dw.style.opacity = commercial ? '0.45' : '';
-      dw.style.cursor = commercial ? 'not-allowed' : '';
-      dw.title = commercial ? 'Home type applies to residential accounts only' : '';
-    }
-    ct.addEventListener('change', sync);
-    sync();
-  }
   function init() {
     wireTawk();
-
-    var nodes = document.querySelectorAll('select[name="customertype"]');
-    for (var i = 0; i < nodes.length; i++) wire(nodes[i]);
-
-    document.addEventListener('submit', function (e) {
-      var form = e.target;
-      if (!form || !form.matches || !form.matches('form.zipform')) return;
-      trackCta('zip_submit', form.getAttribute('action') || 'zip form');
-    }, true);
 
     document.addEventListener('click', function (e) {
       var fab = e.target.closest && e.target.closest('#ed-fab');

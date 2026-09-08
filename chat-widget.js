@@ -2,7 +2,7 @@
    Free, no backend, no third-party account, no LLM. Answers ONLY site-specific
    questions (Texas electricity / Ambit / Energy Direct) from a curated knowledge
    base; typed input is keyword-matched, off-topic questions are deflected (never
-   answered), and every reply steers the visitor to enter their ZIP and enroll.
+   answered), and every reply steers the visitor to plans and enrollment.
    Included site-wide via: <script src="/chat-widget.js" defer></script> */
 (function () {
   var PHONE = "(361) 582-9724", TEL = "+13615829724", TEL_HREF = "tel:+13615829724";
@@ -11,49 +11,49 @@
   // The bot only knows these topics; anything else hits the deflecting fallback.
   var KB = [
     { k: ["switch", "switching", "change provider", "change my provider", "sign up", "enroll", "get started", "make the move", "move to ambit"],
-      a: "Switching is easy: enter your ZIP at the top to see the Ambit plans at your address, pick one, and enroll online in minutes. Ambit handles the switch with your utility and your power is never interrupted.", zip: true },
+      a: "Switching is easy: visit our plans page to see the Ambit plans at your address, pick one, and enroll online in minutes. Ambit handles the switch with your utility and your power is never interrupted." },
     { k: ["tdu", "utility", "poles", "wires", "who delivers", "delivery charge", "deliver my power", "distribution"],
       a: "Your TDU (Transmission and Distribution Utility) owns the poles, wires, and meters and restores outages, no matter which plan you pick. Your Ambit plan only sets your price, term, and rewards." },
     { k: ["lights go out", "lights out", "interrupt", "power off", "go dark", "outage when i switch", "lose power"],
       a: "No, your lights won't go out. Switching only changes who bills you for energy; your local utility keeps delivering power with zero interruption." },
     { k: ["save", "saving", "cheap", "cheaper", "lower my bill", "lower bill", "how much", "rate", "rates", "price", "cost", "expensive"],
-      a: "It depends on your address and usage. Enter your ZIP to see your real rate, and ask about Ambit's Free Energy and reward plans that help earn back what you spend.", zip: true },
+      a: "It depends on your address and usage. Visit our plans page to see your real rate, and ask about Ambit's Free Energy and reward plans that help earn back what you spend." },
     { k: ["solar", "buyback", "buy back", "panels", "net meter", "sell power"],
-      a: "Yes, Ambit has solar buyback plans that credit you for the excess power your panels send to the grid. Check the calculator on our Solar Plans page, then enter your ZIP to enroll." },
+      a: "Yes, Ambit has solar buyback plans that credit you for the excess power your panels send to the grid. Check the calculator on our Solar Plans page, then visit our plans page to enroll." },
     { k: ["residential", "commercial", "business", "my business", "small business"],
-      a: "Both. Use the Residential / Commercial selector in the rate form, then enter your ZIP to see the plans for your account type.", zip: true },
+      a: "Both. Choose your account type on the plans page to see the right options." },
     { k: ["deposit", "no deposit", "no-deposit", "credit check", "down payment"],
-      a: "Many customers qualify to start service with no deposit. Enter your ZIP to check your options, or call us to confirm.", zip: true },
+      a: "Many customers qualify to start service with no deposit. Visit our plans page to check your options, or call us to confirm." },
     { k: ["fixed", "variable", "rate type", "lock my rate", "lock in", "fixed rate"],
-      a: "Ambit offers fixed-rate plans that lock your energy rate for the term, plus other options. Enter your ZIP to compare the plans at your address.", zip: true },
+      a: "Ambit offers fixed-rate plans that lock your energy rate for the term, plus other options. Visit our plans page to compare the plans at your address." },
     { k: ["free energy", "rewards", "refer", "referral", "free month", "points"],
-      a: "Ambit's Free Energy program is a referral reward: refer enough active customers and you can earn a month of free energy charges. Enter your ZIP to start on a plan." },
+      a: "Ambit's Free Energy program is a referral reward: refer enough active customers and you can earn a month of free energy charges. Visit our plans page to start on a plan." },
     { k: ["cancel", "cancellation", "early termination", "etf", "termination fee", "switch from my current", "break my contract", "buyout"],
-      a: "Some plans have an early termination fee, but Ambit currently offers up to a $250 cancellation-fee reimbursement when you switch (a current promotion, conditions apply). Enter your ZIP or call us for details." },
+      a: "Some plans have an early termination fee, but Ambit currently offers up to a $250 cancellation-fee reimbursement when you switch (a current promotion, conditions apply). Visit our plans page or call us for details." },
     { k: ["payment", "pay my bill", "autopay", "auto pay", "ways to pay", "pay online"],
-      a: "Ambit offers flexible ways to pay, including online and autopay. See our Payment Options page, then enter your ZIP to choose your plan." },
+      a: "Ambit offers flexible ways to pay, including online and autopay. See our Payment Options page, then visit our plans page to choose your plan." },
     { k: ["move", "moving", "new address", "new home", "new place", "transfer service", "start service"],
-      a: "Setting up service at a new Texas address is quick. Enter your ZIP for your new address to see plans and start service for your move-in date.", zip: true },
+      a: "Setting up service at a new Texas address is quick. Visit our plans page to see plans for your new address and start service for your move-in date." },
     { k: ["efl", "electricity facts label", "facts label", "plan terms", "fine print"],
-      a: "The Electricity Facts Label (EFL) summarizes a plan's rate, fees, and term. You'll see the EFL for each plan after you enter your ZIP." },
+      a: "The Electricity Facts Label (EFL) summarizes a plan's rate, fees, and term. You'll see the EFL for each plan after you visit our plans page." },
     { k: ["prepaid", "postpaid", "pay as you go", "pay-as-you-go"],
-      a: "Ambit plans are postpaid, so you're billed for what you use. Enter your ZIP to see the plan options at your address." },
+      a: "Ambit plans are postpaid, so you're billed for what you use. Visit our plans page to see the plan options at your address." },
     { k: ["green", "renewable", "100%", "clean energy", "wind", "eco"],
-      a: "Ambit offers green, renewable electricity plans in Texas. Enter your ZIP to see the renewable options at your address.", zip: true },
+      a: "Ambit offers green, renewable electricity plans in Texas. Visit our plans page to see the renewable options at your address." },
     { k: ["minimum usage", "minimum fee", "usage fee", "use too little"],
-      a: "Some plans add a minimum-usage fee in low-usage months. The EFL shows it for each plan, so enter your ZIP to compare and avoid surprises." },
+      a: "Some plans add a minimum-usage fee in low-usage months. The EFL shows it for each plan, so visit our plans page to compare and avoid surprises." },
     { k: ["contract", "expire", "expiring", "end of term", "renew", "term ends", "my term"],
-      a: "When your contract ends you can switch without penalty. Enter your ZIP to see current Ambit plans and lock a new rate.", zip: true },
+      a: "When your contract ends you can switch without penalty. Visit our plans page to see current Ambit plans and lock a new rate." },
     { k: ["who are you", "energy direct", "consultant", "local", "who is ambit", "what is ambit"],
-      a: "Energy Direct is a local independent Ambit Energy consultant helping Texans compare plans and switch. Enter your ZIP to see your options, or call us to talk." },
+      a: "Energy Direct is a local independent Ambit Energy consultant helping Texans compare plans and switch. Visit our plans page to see your options, or call us to talk." },
     { k: ["zip", "enter my zip", "see plans", "see my plans", "my address", "my rate"],
-      a: "Great — enter your ZIP at the top of the page to see the Ambit plans at your address and enroll online in minutes.", zip: true }
+      a: "Great — visit our plans page to see the Ambit plans at your address and enroll online in minutes." }
   ];
 
   var STARTERS = ["How do I switch?", "Do I need a deposit?", "What is a TDU?", "How much can I save?", "Solar buyback?"];
 
   var FALLBACK = "I can help with questions about switching, plans, rates, deposits, solar, rewards, and your Ambit options. " +
-    "For anything specific to your address, enter your ZIP at the top of the page, or call/text us at <a href=\"" + TEL_HREF + "\">" + PHONE + "</a>.";
+    "For anything specific to your address, visit our plans page, or call/text us at <a href=\"" + TEL_HREF + "\">" + PHONE + "</a>.";
 
   function match(text) {
     var t = (" " + text.toLowerCase() + " ").replace(/[^a-z0-9% ]+/g, " ");
@@ -71,7 +71,7 @@
 
   // generic coverage answer (only when no specific city/TDU/topic is named)
   var AREA = { k: ["service area", "areas you serve", "area", "serve", "coverage", "cities", "city", "near me"],
-    a: "Energy Direct serves cities across Texas. Enter your ZIP to confirm coverage and see the plans at your address." };
+    a: "Energy Direct serves cities across Texas. Visit our plans page to confirm coverage and see the plans at your address." };
   function matchArea(text) {
     var t = (" " + text.toLowerCase() + " ").replace(/[^a-z0-9% ]+/g, " ");
     var sc = 0;
@@ -115,7 +115,7 @@
       var n = CITY_NAMES[i];
       if (q.indexOf(" " + n + " ") > -1) {
         var c = CITY[n];
-        return { a: c[0] + " is in " + c[3] + ". Energy Direct serves " + c[0] + "; your local utility (TDU) there is " + c[1] + ". Enter your ZIP to see Ambit plans at your " + c[0] + " address.", u: "/" + c[2] + "/", t: c[0] };
+        return { a: c[0] + " is in " + c[3] + ". Energy Direct serves " + c[0] + "; your local utility (TDU) there is " + c[1] + ". Visit our plans page to see Ambit plans at your " + c[0] + " address.", u: "/" + c[2] + "/", t: c[0] };
       }
     }
     return null;
@@ -130,16 +130,10 @@
       var k = TDU_KEYS[i];
       if (q.indexOf(" " + k + " ") > -1) {
         var d = TDU[k];
-        return { a: d[0] + " delivers electricity in these Texas cities Energy Direct serves: " + d[1] + ". Enter your ZIP to confirm your area and see your Ambit plans.", u: "/service-areas/", t: "Service Areas" };
+        return { a: d[0] + " delivers electricity in these Texas cities Energy Direct serves: " + d[1] + ". Visit our plans page to confirm your area and see your Ambit plans.", u: "/service-areas/", t: "Service Areas" };
       }
     }
     return null;
-  }
-
-  function goZip() {
-    var zf = document.querySelector('.zipform input[type=text], .zipform input, input[name="zipcode"], input[name="zip"]');
-    if (zf) { zf.scrollIntoView({ behavior: "smooth", block: "center" }); try { zf.focus({ preventScroll: true }); } catch (e) { zf.focus(); } return true; }
-    return false;
   }
 
   var css = [
@@ -197,11 +191,9 @@
       m.innerHTML = text; body.appendChild(m); body.scrollTop = body.scrollHeight;
       return m;
     }
-    // every bot answer ends by steering to ZIP / enrollment
+    // every bot answer ends by steering to plans / enrollment
     function steer() {
-      var m = add('Ready to see your plans? <span class="ed-cta">Enter your ZIP &rarr;</span>', 'bot');
-      var cta = m.querySelector('.ed-cta');
-      cta.onclick = function () { if (!goZip()) location.href = '/'; };
+      add('Ready to see your plans? <a class="ed-cta" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">See My Plans &rarr;</a>', 'bot');
     }
     function botAnswer(text) {
       add(text, 'bot');
