@@ -30,6 +30,37 @@
   else init();
 })();
 
+(function injectPromoBanner() {
+  function createStyle(css) {
+    var s = document.createElement('style');
+    s.type = 'text/css';
+    s.appendChild(document.createTextNode(css));
+    return s;
+  }
+
+  function mount() {
+    var path = (window.location.pathname || '').toLowerCase();
+    if (/^\/ohio(?:\/|$)/.test(path)) return;
+
+    var nav = document.querySelector('.sitenav');
+    if (!nav || document.querySelector('.promo-banner')) return;
+
+    document.head.appendChild(createStyle(
+      '.promo-banner{background:linear-gradient(135deg,#f57c00 0%,#fbb034 40%,#ffb84d 100%);color:#fff;text-align:center;padding:.8rem 1rem;box-shadow:0 4px 14px rgba(15,23,42,.08);}' +
+      '.promo-banner-inner{max-width:1200px;margin:0 auto;font-size:1rem;font-weight:700;line-height:1.45;}' +
+      '.promo-banner strong{font-weight:800;}' +
+      '@media(max-width:920px){.promo-banner{padding:.75rem .9rem;}.promo-banner-inner{font-size:.95rem;}}'
+    ));
+
+    var banner = document.createElement('div');
+    banner.className = 'promo-banner';
+    banner.innerHTML = '<div class="promo-banner-inner">Switch to <strong>Ambit Energy</strong> to take advantage of a prepaid gift card offer &mdash; $100 for homes and $50 for apartments. Offer valid 9/7&ndash;12/31. Terms and conditions apply.</div>';
+    nav.parentNode.insertBefore(banner, nav);
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mount);
+  else mount();
+})();
 
 // --- Begin flyout injection (55+ deposit-waived) ---
 (function injectFlyout() {

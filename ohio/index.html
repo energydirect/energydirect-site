@@ -62,9 +62,48 @@
     /* Simple CTA link styling so replacement looks like the original button */
     .cta-link{ display:inline-block; padding:1.05rem 1.5rem; border-radius:12px; background:var(--go); color:#fff; font-weight:800; text-decoration:none; font-size:1.18rem; }
     .cta-link:hover{ background:var(--go-d); }
+    .sitenav{ background:#fff; border-bottom:1px solid var(--line); position:sticky; top:0; z-index:50; }
+    .nav-row{ max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.45rem 1.3rem; }
+    .nav-logo img{ height:76px; width:auto; display:block; }
+    .nav-links{ display:flex; align-items:center; gap:.15rem; }
+    .nav-links>a,.nav-dt{ background:none; border:0; cursor:pointer; font:inherit; color:var(--ink); font-weight:700; font-size:1.14rem; padding:.6rem .8rem; border-radius:8px; text-decoration:none; display:inline-flex; align-items:center; gap:.28rem; }
+    .nav-links>a:hover,.nav-dt:hover{ background:#fff4e6; color:#d96b00; }
+    .nav-dd{ position:relative; }
+    .nav-menu{ position:absolute; top:100%; left:0; min-width:215px; background:#fff; border:1px solid var(--line); border-radius:12px; box-shadow:0 14px 34px rgba(15,23,42,.15); padding:.4rem; display:none; flex-direction:column; z-index:60; }
+    .nav-dd:hover .nav-menu,.nav-dd.open .nav-menu{ display:flex; }
+    .nav-menu a{ padding:.6rem .8rem; border-radius:8px; color:var(--body); text-decoration:none; font-size:1.05rem; white-space:nowrap; }
+    .nav-menu a:hover{ background:#fff4e6; color:#d96b00; }
+    .nav-call{ border:2px solid #f57c00; color:#d96b00 !important; font-weight:800; font-size:1.08rem; padding:.55rem 1.05rem; border-radius:10px; text-decoration:none; white-space:nowrap; }
+    .nav-call:hover{ background:#f57c00; color:#fff !important; }
+    .nav-burger{ display:none; background:none; border:0; cursor:pointer; color:var(--ink); padding:.3rem; }
+    .nav-burger svg{ width:30px; height:30px; }
+    @media(max-width:920px){
+      .nav-burger{ display:block; }
+      .nav-links{ display:none; position:absolute; top:100%; left:0; right:0; background:#fff; border-bottom:1px solid var(--line); flex-direction:column; align-items:stretch; gap:0; padding:.4rem 1rem 1rem; box-shadow:0 16px 30px rgba(15,23,42,.12); }
+      .nav-links.open{ display:flex; }
+      .nav-dd{ position:static; }
+      .nav-links>a,.nav-dt{ width:100%; justify-content:space-between; }
+      .nav-menu{ position:static; box-shadow:none; border:0; border-left:2px solid #fde6cf; border-radius:0; margin:.1rem 0 .4rem .8rem; min-width:0; }
+      .nav-call{ margin-top:.6rem; text-align:center; }
+    }
   </style>
 </head>
 <body>
+
+<header class="sitenav">
+  <div class="nav-row">
+    <a href="/" class="nav-logo" aria-label="Energy Direct home"><img src="/images/ambit%20logo.webp" alt="Ambit Energy — Independent Consultant" /></a>
+    <button class="nav-burger" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <div class="nav-dd"><button class="nav-dt">Cities <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px;opacity:.65"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-menu"><a href="/houston/">Houston</a><a href="/dallas/">Dallas</a><a href="/corpus/">Corpus Christi</a><a href="/victoria/">Victoria</a><a href="/lubbock/">Lubbock</a><a href="/abilene/">Abilene</a><a href="/midland/">Midland</a><a href="/odessa/">Odessa</a><a href="/san-angelo/">San Angelo</a><a href="/service-areas/" style="border-top:1px solid var(--line);margin-top:.2rem;font-weight:700">All Texas Service Areas →</a></div></div>
+      <div class="nav-dd"><button class="nav-dt">Plans &amp; Switching <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px;opacity:.65"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-menu"><a href="/solar/">Solar Plans</a><a href="/no-deposit-electricity/">No-Deposit &amp; Switching</a><a href="/payment-options/">Payment Options</a></div></div>
+      <div class="nav-dd"><button class="nav-dt">Learn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px;opacity:.65"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-menu"><a href="/texas/">Texas Electricity Guide</a><a href="/blog/">Blog</a></div></div>
+      <div class="nav-dd"><button class="nav-dt">About <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px;opacity:.65"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-menu"><a href="/about/">About Energy Direct</a><a href="/our-purpose/">Our Purpose</a></div></div>
+      <a class="nav-call" href="tel:+13615829724">Call or text (361) 582-9724</a>
+    </nav>
+  </div>
+</header>
 
 <header class="hero">
   <div class="eyebrow">Your Ohio Electricity Guide</div>
@@ -281,6 +320,8 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!-- End of Tawk.to Script -->
+
+<script src="/nav.js" defer></script>
 
 </body>
 </html>
