@@ -55,16 +55,6 @@
       text-shadow:0 2px 14px rgba(0,0,0,.45); }
     .hero .lede{ max-width:680px; margin:0 auto 1.6rem; font-size:1.3rem; line-height:1.5;
       color:#f1f5f9; text-shadow:0 1px 8px rgba(0,0,0,.5); }
-    .zipform{ display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap;
-      max-width:560px; margin:0 auto; }
-    .zipform input[type=text]{ flex:1 1 200px; min-width:0; padding:1.15rem 1.2rem; border-radius:12px;
-      border:0; font-size:1.2rem; color:#0f172a; box-shadow:0 8px 22px rgba(0,0,0,.25); }
-    .zipform select.dwell{ flex:0 1 170px; padding:1.15rem .9rem; border-radius:12px; border:0;
-      font-size:1.1rem; color:#0f172a; background:#fff; box-shadow:0 8px 22px rgba(0,0,0,.25); cursor:pointer; }
-    .zipform button{ padding:1.15rem 1.9rem; border-radius:12px; border:0; background:var(--go);
-      color:#fff; font-weight:800; font-size:1.18rem; cursor:pointer;
-      box-shadow:0 8px 22px rgba(22,163,74,.45); }
-    .zipform button:hover{ background:var(--go-d); }
     .hero .micro{ display:block; margin:1rem auto 0; font-size:1rem; color:#fed7aa; }
     .hero .micro a{ color:#fff; font-weight:700; }
 
@@ -123,7 +113,6 @@
       border-radius:18px; padding:2.2rem 1.5rem; text-align:center; margin:2.6rem 0; }
     .cta-band h2{ color:#fff; margin:0 0 .5rem; font-size:1.85rem; }
     .cta-band p{ margin:0 0 1.3rem; color:#fff; text-shadow:0 1px 4px rgba(124,45,18,.35); }
-    .cta-band .zipform input{ box-shadow:none; }
 
     .grid2{ display:grid; gap:22px; grid-template-columns:1fr; }
     @media(min-width:900px){ .grid2{ grid-template-columns:1fr 1fr; } }
@@ -151,6 +140,10 @@
       background:#0f172a; color:#fff; text-align:center; padding:.85rem; font-weight:800;
       font-size:1.1rem; text-decoration:none; box-shadow:0 -4px 14px rgba(0,0,0,.25); }
     @media(max-width:760px){ .stickycall{ display:block; } footer{ padding-bottom:5rem; } }
+
+    .plan-cta{ display:inline-block; padding:1.15rem 1.9rem; border-radius:12px; border:0; background:#16a34a;
+      color:#fff; font-weight:800; font-size:1.18rem; cursor:pointer; box-shadow:0 8px 22px rgba(22,163,74,.45); text-decoration:none; }
+    .plan-cta:hover{ background:#15803d; }
   </style>
 </head>
 <body>
@@ -202,18 +195,7 @@
     <h1>A local person behind your Texas electricity switch</h1>
     <p class="lede">Energy Direct is an independent, local Ambit Energy consultant. We help Texas homeowners
       compare plans by ZIP, choose the right one, and switch, with a real person you can call. Enter your ZIP to get started.</p>
-    <form class="zipform" action="https://shopping.ambitenergy.com/Path2Plans" method="get" target="_blank" rel="noopener" onsubmit="this.promocode.value=(this.dwellingtype.value==='A'?'consultantpm':'consultantps');">
-      <select name="customertype" class="dwell" aria-label="Customer type"><option value="Residential">Residential</option><option value="Commercial">Commercial</option></select>
-      <input type="hidden" name="language" value="en" />
-      <input type="hidden" name="refid" value="energydirect" />
-      <input type="hidden" name="promocode" value="consultantps" />
-      <input type="text" name="zipcode" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Enter your ZIP code" aria-label="ZIP code" required />
-      <select name="dwellingtype" class="dwell" aria-label="Home type">
-        <option value="H">House</option>
-        <option value="A">Apartment / condo</option>
-      </select>
-      <button type="submit">See My Plans →</button>
-    </form>
+    <a class="plan-cta" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">See My Plans →</a>
     <span class="micro">Takes a minute. No account, no obligation. Need help? <a href="tel:+13615829724">Call or text us</a>.</span>
   </header>
 
@@ -320,18 +302,7 @@
     <div class="cta-band">
       <h2>Ready to compare your plans?</h2>
       <p>Enter your ZIP to see the Texas electricity plans available at your address and enroll online.</p>
-      <form class="zipform" action="https://shopping.ambitenergy.com/Path2Plans" method="get" target="_blank" rel="noopener" onsubmit="this.promocode.value=(this.dwellingtype.value==='A'?'consultantpm':'consultantps');">
-        <select name="customertype" class="dwell" aria-label="Customer type"><option value="Residential">Residential</option><option value="Commercial">Commercial</option></select>
-        <input type="hidden" name="language" value="en" />
-        <input type="hidden" name="refid" value="energydirect" />
-        <input type="hidden" name="promocode" value="consultantps" />
-        <input type="text" name="zipcode" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Enter your ZIP code" aria-label="ZIP code" required />
-        <select name="dwellingtype" class="dwell" aria-label="Home type">
-          <option value="H">House</option>
-          <option value="A">Apartment / condo</option>
-        </select>
-        <button type="submit">See My Plans →</button>
-      </form>
+      <a class="plan-cta" href="https://energydirect.myambit.com/rates-and-plans/" target="_blank" rel="noopener">See My Plans →</a>
     </div>
 
     <!-- FAQ -->
